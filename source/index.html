@@ -4,9 +4,233 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
   </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>
-
+  <body class="main-page">
+    <h1 class="visually-hidden">Сайт приложения 'Пинк'</h1>
+    <!--Хедер гл.стр-->
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-navigation__logo-link">
+        <img class="main-navigation__logo-header" src="" width="" height="" alt="приложение 'Пинк'">
+        </a>
+        <button class="main-navigation__button" type="button"><span class="visually-hidden">Меню сайта</span></button>
+        <div class="main-navigation__wrapper">
+          <ul class="main-navigation__list site-list">
+            <li class="site-list__item site-list__item--active"><a class="site-list__link">Главная</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="photo.html">Фотографии</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="form.html">Конкурс</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!--Основная чатсь гл.стр-->
+    <main>
+      <!--Платформы-->
+      <section class="application">
+        <h2 class="visually-hidden">Платформы для приложения</h2>
+        <img class="application__image" src="" width="" height="" alt="Приложение 'Пинк'">
+        <a class="application__link" href="#">Скачать приложение</a>
+        <ul class="application__list">
+          <li class="application__item">
+            <a href="#">
+              <svg></svg>
+            </a>
+          </li>
+          <li class="application__item">
+            <a href="#">
+              <svg></svg>
+            </a>
+          </li>
+          <li class="application__item">
+            <a href="#">
+              <svg></svg>
+            </a>
+          </li>
+        </ul>
+        <p class="application__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </section>
+      <!--Особенности-->
+      <section class="features">
+        <h2 class="visually-hidden">Особенности</h2>
+        <p class="features__description">Устали от серости мегаполиса?</p>
+        <p class="features__description">Нам есть, что вам предложить!</p>
+        <ul class="features__list">
+          <li class="features__item">
+            <h3 class="features__title">Поднимает настроение</h3>
+            <p class="features__list-description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <li class="features__item">
+            <h3 class="features__title">Меняет мир вокруг</h3>
+            <p class="features__list-description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="features__item">
+            <h3 class="features__title">Заводит новых друзей</h3>
+            <p class="features__list-description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
+        <img class="features__iamge" src="" width="" height="" alt="Приложение 'Пинк'">
+      </section>
+      <!--Отзывы-->
+      <section class="feedback">
+        <h2 class="visually-hidden">Отзывы</h2>
+        <input type="radio" name="first-slider" id="first-slider-first-button" checked>
+        <input type="radio" name="first-slider" id="first-slider-second-button">
+        <input type="radio" name="first-slider" id="first-slider-third-button">
+        <div class="feedback__wrapper slider">
+          <ul class="feedback__list slider__list">
+            <li class="feedback__item slider__item">
+              <span class="slider__title">Николай Петров</span>
+              <p class="slider__description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </li>
+            <li class="feedback__item slider__item">
+              <span class="slider__title">Николай Петров</span>
+              <p class="slider__description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </li>
+            <li class="feedback__item slider__item">
+              <span class="slider__title">Николай Петров</span>
+              <p class="slider__description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </li>
+          </ul>
+        </div>
+        <div class="feedback__buttons slider__buttons">
+          <label for="first-slider-first-button"><span class="visually-hidden">Первый слайд</span></label>
+          <label for="first-slider-second-button"><span class="visually-hidden">Второй слайд</span></label>
+          <label for="first-slider-third-button"><span class="visually-hidden">Третий слайд</span></label>
+        </div>
+      </section>
+      <!--Комплектация-->
+      <section class="equipment">
+        <h2 class="visually-hidden">Комплектация приложений</h2>
+        <input type="radio" name="second-slider" id="second-slider-first-button" checked>
+        <input type="radio" name="second-slider" id="second-slider-second-button">
+        <input type="radio" name="second-slider" id="second-slider-third-button">
+        <div class="equipment__wrapper slider">
+          <ul class="equipment__list slider__list">
+            <li class="equipment__item slider__item">
+              <table class="equipment__table slider__table">
+                <tr class="slider__line slider__line--first slider__line--hit">
+                  <th class="slider__title">Стандарт</th>
+                  <td class="slider__value">3,99 USD</td>
+                </tr>
+                <tr class="slider__line">
+                  <td class="slider__description">Розовый фильтр</td>
+                  <td class="slider__description slider__description--checked"><span class="visually-hidden">Присутствует</span></td>
+                </tr>
+                <tr class="slider__line">
+                  <td class="slider__description">Смайлики</td>
+                  <td class="slider__description slider__description--checked"><span class="visually-hidden">Присутствует</span></td>
+                </tr>
+                <tr class="slider__line">
+                  <td class="slider__description">Комментарии</td>
+                  <td class="slider__description slider__description--none"><span class="visually-hidden">Отсутствует</span></td>
+                </tr>
+              </table>
+            </li>
+            <li class="equipment__item slider__item">
+              <table class="equipment__table slider__table">
+                <tr class="slider__line slider__line--first slider__line--hit">
+                  <th class="slider__title">Стандарт</th>
+                  <td class="slider__value">3,99 USD</td>
+                </tr>
+                <tr class="slider__line">
+                  <td class="slider__description">Розовый фильтр</td>
+                  <td class="slider__description slider__description--checked"><span class="visually-hidden">Присутствует</span></td>
+                </tr>
+                <tr class="slider__line">
+                  <td class="slider__description">Смайлики</td>
+                  <td class="slider__description slider__description--checked"><span class="visually-hidden">Присутствует</span></td>
+                </tr>
+                <tr class="slider__line">
+                  <td class="slider__description">Комментарии</td>
+                  <td class="slider__description slider__description--none"><span class="visually-hidden">Отсутствует</span></td>
+                </tr>
+              </table>
+            </li>
+            <li class="equipment__item slider__item">
+              <table class="equipment__table slider__table">
+                <tr class="slider__line slider__line--first slider__line--hit">
+                  <th class="slider__title">Стандарт</th>
+                  <td class="slider__value">3,99 USD</td>
+                </tr>
+                <tr class="slider__line">
+                  <td class="slider__description">Розовый фильтр</td>
+                  <td class="slider__description slider__description--checked"><span class="visually-hidden">Присутствует</span></td>
+                </tr>
+                <tr class="slider__line">
+                  <td class="slider__description">Смайлики</td>
+                  <td class="slider__description slider__description--checked"><span class="visually-hidden">Присутствует</span></td>
+                </tr>
+                <tr class="slider__line">
+                  <td class="slider__description">Комментарии</td>
+                  <td class="slider__description slider__description--none"><span class="visually-hidden">Отсутствует</span></td>
+                </tr>
+              </table>
+            </li>
+          </ul>
+          <div class="equipment__buttons slider__buttons">
+              <label for="second-slider-first-button"><span class="visually-hidden">Первый слайд</span></label>
+              <label for="second-slider-second-button"><span class="visually-hidden">Второй слайд</span></label>
+              <label for="second-slider-third-button"><span class="visually-hidden">Третий слайд</span></label>
+          </div>
+        </div>
+      </section>
+      <!--Контакты-->
+      <section class="contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <p class="contacts__description">Остались вопросы?</p>
+        <p class="contacts__description">Свяжитесь с нами!</p>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <p class="contacts__title">Звоните:</p>
+            <p class="contacts__description contacts__description--tel"><a href="tel:+7(812)5556666">+7 (812) 555-66-66</a></p>
+          </li>
+          <li class="contacts__item">
+            <p class="contacts__title">Пишите:</p>
+            <p class="contacts__description contacts__description--email">mail@htmlacademy.ru</p>
+          </li>
+          <li class="contacts__item">
+            <p class="contacts__title">Приезжайте в гости:</p>
+            <p class="contacts__description contacts__description--adress">ул. Большая Конюшенная, 19/8</p>
+          </li>
+        </ul>
+      </section>
+      <!--Карта-->
+      <section class="map">
+        <h2 class="visually-hidden">Карта</h2>
+        <iframe class="map__iframe"></iframe>
+      </section>
+    </main>
+    <!--Футер гл.стр-->
+    <footer class="main-footer">
+      <a class="main-footer__logo-link">
+        <img class="main-footer__logo-footer" src="" width="" height="" alt="приложение 'Пинк'">
+      </a>
+      <ul class="main-footer__list">
+        <li class="main-footer__item">
+          <a class="main-footer__link" href="#">
+            <span class="visually-hidden">Twitter</span>
+            <svg></svg>
+          </a>
+        </li>
+        <li class="main-footer__item">
+          <a class="main-footer__link" href="#">
+            <span class="visually-hidden">Facebook</span>
+            <svg></svg>
+          </a>
+        </li>
+        <li class="main-footer__item">
+          <a class="main-footer__link" href="#">
+            <span class="visually-hidden">Youtube</span>
+            <svg></svg>
+          </a>
+        </li>
+      </ul>
+      <div class="main-footer__wrapper">
+        <p class="main-footer__description">Разработано</p>
+        <a class="main-footer__html-link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="main-footer__html-logo" src="" width="" height="" alt="Логотип HTML Academy">
+        </a>
+      </div>
+    </footer>
   </body>
 </html>
