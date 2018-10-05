@@ -1,0 +1,51 @@
+.application {
+  background-color: $color-dark;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  @include background;
+  background-position: 0 -68px;
+  width: 320px;
+  height: 667px;
+}
+
+.application__image {
+  margin-top: 108px;
+}
+
+.application__link {
+  @include flex;
+  justify-content: center;
+  align-items: center;
+  @include link;
+  font-weight: $font-bold;
+  font-size: $body-font-size + 4px;
+  line-height: $body-line-height - 6px;
+  text-align: center;
+  min-width: 270px;
+  min-height: 30px;
+  border: 3px solid $text-white;
+  border-radius: 40px;
+  margin: 25px 20px 0 20px;
+  padding: 10px 5px;
+}
+
+.application__list {
+  @include list;
+  @include flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 230px;
+  margin: 30px auto 0;
+}
+
+.application__item {
+  margin: 0 5px;
+}
+
+.application__description {
+  margin: 20px 20px 0;
+  color: $text-white;
+  text-align: center;
+}
+
+

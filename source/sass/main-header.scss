@@ -1,0 +1,31 @@
+.main-header {
+  background-color: $color-light;
+  color: $text-white;
+  min-height: 325px;
+}
+
+.main-navigation {
+  @include flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.main-navigation__logo-link {
+  margin: 20px 0;
+  margin-left: 20px;
+}
+
+.main-navigation__button {
+  width: 24px;
+  height: 23px;
+  margin: 20px 0;
+  margin-right: 20px;
+//  background-color: transparent;
+  border: none;
+}
+
+.main-navigation__wrapper {
+//  display: none;
+  width: 100%;
+}

@@ -1,0 +1,159 @@
+.equipment {
+  position: relative;
+  background-color: $background-color;
+//  margin-top: -53px;
+  padding: 66px 0 99px;
+}
+
+.equipment input[type="radio"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+}
+
+.equipment .slider {
+  overflow: hidden;
+}
+
+.equipment .slider__list {
+  @include list;
+  @include flex;
+  width: 300%;
+  transition: transform 1s ease;
+}
+
+.equipment .slider__item:first-child {
+  margin-left: 2%;
+}
+
+.equipment .slider__item:last-child {
+  margin-right: 2%;
+}
+
+.equipment .slider__table {
+  border-collapse: collapse;
+  border-left: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+//  border-bottom: 2px solid #e5e5e5;
+}
+
+.equipment .slider__line {
+  @include flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  position: relative;
+  width: 276px;
+  min-height: 60px;
+  background-color: $text-white;
+  border-bottom: 2px solid #e5e5e5;
+}
+
+.equipment .slider__line--first {
+  @include flex(flex, column);
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  min-height: 98px;
+  background-color: $color-light;
+}
+
+.equipment .slider__title {
+  font-size: $body-font-size + 4px;
+  line-height: $body-line-height + 6px;
+  font-weight: $font-bold;
+  color: $text-white;
+  text-transform: uppercase;
+}
+
+.equipment .slider__value {
+  font-size: $body-font-size + 10px;
+  line-height: $body-line-height + 6px;
+  color: $text-white;
+  text-transform: uppercase;
+}
+
+.equipment .slider__description {
+  line-height: $body-line-height + 6px;
+  font-weight: $font-normal;
+  color: $color-light;
+  width: 180px;
+  margin: 0 20px;
+  text-transform: uppercase;
+}
+
+.equipment .slider__description--checked {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 30px;
+  height: 30px;
+  box-shadow: inset -3px -3px #3dc644;
+  clip: rect(auto, auto, auto, 15px);
+  transform: rotate(45deg);
+}
+
+.equipment .slider__description--none {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 30px;
+  height: 30px;
+    &::before {
+      @include pseudo;
+      top: 8px;
+      right: 12px;
+      width: 3px;
+      height: 33px;
+      background-color: #f25b26;
+      transform: rotate(-45deg);
+  }
+  &::after {
+      @include pseudo;
+      top: 8px;
+      left: 17px;
+      width: 3px;
+      height: 33px;
+      background-color: #f25b26;
+      transform: rotate(45deg);
+  }
+}
+
+.equipment__buttons {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.equipment__buttons label {
+  display: inline-block;
+  margin: 6px;
+  width: 6px;
+  height: 6px;
+  background-color: #bec2c7;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+//стили для управления вторым слайдером
+
+#second-slider-first-button:checked ~ .equipment__wrapper label[for="second-slider-first-button"],
+#second-slider-second-button:checked ~ .equipment__wrapper label[for="second-slider-second-button"],
+#second-slider-third-button:checked ~ .equipment__wrapper label[for="second-slider-third-button"] {
+  box-shadow: 0 0 0 3px $color-light;
+  background-color: transparent;
+}
+
+#second-slider-first-button:checked ~ .slider .slider__list {
+  transform: translateX(0px);
+}
+
+#second-slider-second-button:checked ~ .slider .slider__list {
+  transform: translateX(-275px);
+}
+
+#second-slider-third-button:checked ~ .slider .slider__list {
+  transform: translateX(-555px);
+}

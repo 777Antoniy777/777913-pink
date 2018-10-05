@@ -1,0 +1,91 @@
+.feedback {
+  position: relative;
+  background-color: lightblue;
+  margin-top: -53px;
+  padding: 46px 0 126px;
+}
+
+.feedback::before {
+  @include pseudo;
+  top: 0;
+  left: -20px;
+  background-color: lightblue;
+  margin-top: -40px;
+}
+
+.feedback input[type="radio"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+}
+
+.feedback .slider {
+  overflow: hidden;
+}
+
+.feedback .slider__list {
+  @include list;
+  @include flex;
+  width: 300%;
+  transition: transform 1s ease;
+}
+
+.feedback .feedback__item {
+  margin: 0 20px;
+}
+
+.feedback .slider__item {
+  text-align: center;
+}
+
+.feedback .slider__title {
+  font-weight: $font-bold;
+  font-size: $body-font-size + 4px;
+  line-height: $body-line-height + 6px;
+  color: black;
+}
+
+.feedback .slider__description {
+  line-height: $body-line-height + 6px;
+  font-weight: $font-normal;
+  color: $color-light;
+}
+
+.feedback__buttons {
+  position: absolute;
+  bottom: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.feedback__buttons label {
+  display: inline-block;
+  margin: 6px;
+  width: 6px;
+  height: 6px;
+  background-color: #bec2c7;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+//стили для управления первым слайдером
+
+#first-slider-first-button:checked ~ .feedback__buttons label[for="first-slider-first-button"],
+#first-slider-second-button:checked ~ .feedback__buttons label[for="first-slider-second-button"],
+#first-slider-third-button:checked ~ .feedback__buttons label[for="first-slider-third-button"] {
+  box-shadow: 0 0 0 3px $color-light;
+  background-color: transparent;
+}
+
+#first-slider-second-button:checked ~ .slider .slider__list {
+  transform: translateX(0px);
+}
+
+#first-slider-second-button:checked ~ .slider .slider__list {
+  transform: translateX(-320px);
+}
+
+#first-slider-third-button:checked ~ .slider .slider__list {
+  transform: translateX(-640px);
+}

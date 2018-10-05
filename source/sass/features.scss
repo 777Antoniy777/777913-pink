@@ -1,0 +1,44 @@
+.features {
+  @include background;
+  padding-top: 35px;
+}
+
+.features__description {
+  font-size: $body-font-size + 10px;
+  line-height: $body-line-height + 6px;
+  text-align: center;
+  color: $color-light;
+  margin: 0px 20px 35px;
+}
+
+.features__list {
+  @include list;
+  text-align: center;
+  margin: 57px 0 0;
+  padding-top: 50px;
+  padding-bottom: 320px;
+  background-color: $background-color;
+}
+
+.features__item {
+  margin: 0px 30px;
+}
+
+.features__title {
+  font-weight: $font-bold;
+  font-size: $body-font-size + 4px;
+  color: $color-light;
+  margin-bottom: 15px;
+}
+
+.features__list-description {
+  font-weight: $font-normal;
+  color: $color-light;
+  margin-bottom: 39px;
+}
+
+.features__image {
+  @include flex;
+  margin: -280px auto 0;
+  text-align: center;
+}

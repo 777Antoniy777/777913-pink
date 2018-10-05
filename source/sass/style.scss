@@ -1,0 +1,63 @@
+@import "variables.scss";
+@import "mixin.scss";
+@import "normilize.scss";
+@import "main-header.scss";
+@import "site-list.scss";
+@import "application.scss";
+@import "features.scss";
+@import "feedback.scss";
+@import "equipment.scss";
+@import "contacts.scss";
+@import "map.scss";
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensans.woff") format("woff"),
+       url("../fonts/opensans.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensanslight.woff") format("woff"),
+       url("../fonts/opensanslight.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensansbold.woff") format("woff"),
+       url("../fonts/opensansbold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font;
+  font-weight: $font-light;
+  font-size: $body-font-size;
+  line-height: $body-line-height;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.site-wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+}
