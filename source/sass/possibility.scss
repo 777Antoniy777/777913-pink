@@ -1,0 +1,26 @@
+.possibility {
+  min-height: 325px;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 320px 462px;
+  text-align: center;
+  padding: 0 20px;
+  margin-top: -20px;
+}
+
+.possibility__title {
+  font-size: $body-font-size + 10px;
+  line-height: $body-line-height + 6px;
+  font-weight: $font-light;
+  color: $text-white;
+  padding: 33px 0 48px;
+}
+
+.possibility__description {
+  font-size: $body-font-size;
+  line-height: $body-line-height + 6px;
+  color: $color-light;
+  background-color: $text-white;
+  padding: 52px 0 20px;
+}
