@@ -1,0 +1,31 @@
+.form {
+  padding: 0 20px;
+}
+
+.form-wrapper__main {
+  margin: 10px 0;
+}
+
+.form-wrapper__main label[for="surname"],
+.form-wrapper__main label[for="name"],
+.form-wrapper__main label[for="patronymic"] {
+  display: inline-block;
+  vertical-align: top;
+  text-transform: uppercase;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  color: $text-pink;
+}
+
+.form-wrapper__main input {
+  width: 280px;
+  height: 60px;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.form-wrapper__title {
+  text-transform: uppercase;
+  color: $text-pink;
+}
