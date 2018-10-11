@@ -1,0 +1,110 @@
+.filter {
+  @include flex;
+  padding: 20px 20px 0;
+  background-color: $background-color;
+}
+
+.filter__form {
+  position: relative;
+}
+
+.filter__form input[type="radio"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+}
+
+.filter__image {
+  margin-bottom: 40px;
+}
+
+.filter__list {
+  @include list;
+  @include flex;
+  align-items: center;
+}
+
+.filter__item label {
+  margin: 0 22px;
+  cursor: pointer;
+}
+
+.filter__list-image {
+  opacity: 0.3;
+}
+
+.filter__list-image--size {
+  width: 48px;
+  height: 48px;
+}
+
+.filter__list-image--color {
+  width: 48px;
+  height: 48px;
+}
+
+.filter__list-image--opacity {
+  width: 32px;
+  height: 32px;
+}
+
+.filter__range-list {
+  @include list;
+}
+
+.filter__form input[type="range"] {
+  width: 90%;
+  margin: 40px 20px 0;
+}
+
+.filter__buttons {
+  @include flex(flex, column);
+  min-height: 115px;
+  padding: 38px 0 29px;
+}
+
+.filter__button {
+  font-size: $body-font-size + 4px;
+  line-height: $body-line-height - 6px;
+  font-weight: $font-bold;
+  width: 280px;
+  min-height: 50px;
+  padding: 5px 10px;
+  margin-bottom: 12px;
+  color: $text-pink;
+  background-color: transparent;
+  border: 3px solid $text-pink;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.filter__buttons--reset {
+  color: rgba($color-light, 0.1);
+  border: 3px solid rgba($color-light, 0.1);
+}
+
+//стили для управления range слайдером
+
+#button-size:checked ~ .filter__list .filter__list-image--size,
+#button-color:checked ~ .filter__list .filter__list-image--color,
+#button-opacity:checked ~ .filter__list .filter__list-image--opacity {
+  fill: #d22856;
+  opacity: 1;
+}
+
+.filter__range-wrapper .slider__item {
+  display: none;
+}
+
+#button-size:checked ~ .filter__range-wrapper .slider__item--first {
+  display: block;
+}
+
+#button-color:checked ~ .filter__range-wrapper .slider__item--second {
+  display: block;
+}
+
+#button-opacity:checked ~ .filter__range-wrapper .slider__item--third {
+  display: block;
+}

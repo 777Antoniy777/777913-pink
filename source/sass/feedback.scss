@@ -78,14 +78,14 @@
   background-color: transparent;
 }
 
-#first-slider-second-button:checked ~ .slider .slider__list {
+#first-slider-second-button:checked ~ .feedback__wrapper .feedback__list {
   transform: translateX(0px);
 }
 
-#first-slider-second-button:checked ~ .slider .slider__list {
+#first-slider-second-button:checked ~ .feedback__wrapper .feedback__list {
   transform: translateX(-320px);
 }
 
-#first-slider-third-button:checked ~ .slider .slider__list {
+#first-slider-third-button:checked ~ .feedback__wrapper .feedback__list {
   transform: translateX(-640px);
 }

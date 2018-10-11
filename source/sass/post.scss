@@ -1,0 +1,63 @@
+.post {
+  @include flex(flex, column);
+}
+
+.post__image {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.post__caption {
+  margin: 0 20px 35px;
+  padding: 0;
+  background-color: $background-color;
+}
+
+.post__title {
+  font-size: $body-font-size;
+  line-height: $body-line-height;
+  font-weight: $font-bold;
+  color: $color-light;
+  padding: 0 15px;
+  margin-bottom: 0;
+}
+
+.post__time {
+  font-size: $body-font-size - 2px;
+  line-height: $body-line-height;
+  font-weight: $font-light;
+  color: #818181;
+  text-transform: uppercase;
+}
+
+.post__description {
+  font-size: $body-font-size;
+  line-height: $body-line-height;
+  font-weight: $font-normal;
+  color: $color-light;
+  padding: 0 15px;
+  margin-top: 0;
+}
+
+.post__likes {
+  position: relative;
+  font-size: $body-font-size - 2px;
+  line-height: $body-line-height;
+  font-weight: $font-normal;
+  color: $text-pink;
+  text-transform: uppercase;
+  padding-left: 48px;
+  padding-bottom: 10px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/svg/icon-heart.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    top: 5px;
+    left: 15px;
+    width: 13px;
+    height: 12px;
+  }
+}
