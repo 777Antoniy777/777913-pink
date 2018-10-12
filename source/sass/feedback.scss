@@ -1,16 +1,16 @@
 .feedback {
   position: relative;
-  background-color: lightblue;
-  margin-top: -53px;
-  padding: 46px 0 126px;
-}
+  background-color: $text-white;
+  margin-top: -41px;
+  padding: 41px 0 98px;
 
-.feedback::before {
+  &::before {
   @include pseudo;
   top: 0;
   left: -20px;
-  background-color: lightblue;
+  background-color: $text-white;
   margin-top: -40px;
+  }
 }
 
 .feedback input[type="radio"] {
@@ -54,14 +54,16 @@
 
 .feedback__buttons {
   position: absolute;
-  bottom: 70px;
-  left: 50%;
+  bottom: 52px;
+  left: 52.9%;
+  width: 90px;
   transform: translateX(-50%);
 }
 
 .feedback__buttons label {
   display: inline-block;
-  margin: 6px;
+  vertical-align: top;
+  margin: 0 8px;
   width: 6px;
   height: 6px;
   background-color: #bec2c7;

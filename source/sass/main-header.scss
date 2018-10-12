@@ -1,18 +1,17 @@
 .main-header {
   background-color: $color-light;
   color: $text-white;
-  min-height: 325px;
+  min-height: 66px;
 }
 
 .main-navigation {
   @include flex;
   justify-content: space-between;
-  align-items: center;
   flex-wrap: wrap;
 }
 
 .main-navigation__logo-link {
-  margin: 20px 0;
+  margin: 21px 0 19px;
   margin-left: 20px;
 }
 
@@ -27,4 +26,5 @@
 .main-navigation__wrapper {
 //  display: none;
   width: 100%;
+  box-shadow: 0 -1px rgba(0, 0, 0, 1);
 }

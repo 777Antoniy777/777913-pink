@@ -6,7 +6,7 @@
 }
 
 .main-footer__logo-footer {
-  margin-bottom: 30px;
+  margin-bottom: 33px;
 }
 
 .main-footer__list {
@@ -14,7 +14,7 @@
   @include flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  margin: 0 auto 10px 53px;
+  margin: 0 auto 11px 53px;
   width: 188px;
   min-height: 66px;
 }
@@ -49,14 +49,15 @@
   line-height: $body-line-height - 6px;
   width: 180px;
   color: $color-light;
-  margin: 0 auto 10px;
+  margin: 17px auto 10px;
 }
 
 .main-footer__description {
-  margin-right: 15px;
-  margin-bottom: 18px;
+  margin: 14px 14px 18px 3px;
+  letter-spacing: 0.3px;
 }
 
 .main-footer__html-logo {
   margin-right: 3px;
+  margin-top: 3px;
 }

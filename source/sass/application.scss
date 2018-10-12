@@ -2,13 +2,13 @@
   background-color: $color-dark;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   @include background;
-  background-position: 0 -68px;
+  background-position: 0 -67px;
   width: 320px;
-  height: 667px;
+  min-height: 666px;
 }
 
 .application__image {
-  margin-top: 108px;
+  margin-top: 109px;
 }
 
 .application__link {
@@ -20,32 +20,34 @@
   font-size: $body-font-size + 4px;
   line-height: $body-line-height - 6px;
   text-align: center;
-  min-width: 270px;
+  width: 280px;
   min-height: 30px;
   border: 3px solid $text-white;
-  border-radius: 40px;
-  margin: 25px 20px 0 20px;
-  padding: 10px 5px;
+  border-radius: 45px;
+  margin: 21px 20px 0 20px;
+  padding: 15px 5px 16px;
+  box-sizing: border-box;
 }
 
 .application__list {
   @include list;
   @include flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
   flex-wrap: wrap;
   width: 230px;
-  margin: 30px auto 0;
+  margin: 31px auto 0;
 }
 
 .application__item {
-  margin: 0 5px;
+  margin: 0 12px;
+  width: 46px;
+  height: 57px;
 }
 
 .application__description {
-  margin: 20px 20px 0;
+  margin: 7px 20px 0px;
+  padding-bottom: 20px;
   color: $text-white;
   text-align: center;
 }
-
-

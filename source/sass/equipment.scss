@@ -1,7 +1,16 @@
 .equipment {
   position: relative;
   background-color: $background-color;
-  padding: 66px 0 99px;
+  padding: 65px 0 99px;
+
+  &::before {
+    @include pseudo;
+    top: -26px;
+    left: 0;
+    width: 320px;
+    height: 26px;
+    background-image: linear-gradient(to right bottom, white 50%, $background-color 50%);
+  }
 }
 
 .equipment input[type="radio"] {
@@ -23,11 +32,11 @@
 }
 
 .equipment .slider__item:first-child {
-  margin-left: 2%;
+  margin-left: 1.9%;
 }
 
 .equipment .slider__item:last-child {
-  margin-right: 2%;
+  margin-right: 2.1%;
 }
 
 .equipment .slider__table {
@@ -43,18 +52,20 @@
   flex-wrap: nowrap;
   position: relative;
   width: 276px;
-  min-height: 60px;
+  min-height: 59px;
   background-color: $text-white;
   border-bottom: 2px solid #e5e5e5;
 }
 
 .equipment .slider__line--first {
   @include flex(flex, column);
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   min-height: 98px;
+  text-align: center;
   background-color: $color-light;
+  border-bottom: none;
 }
 
 .equipment .slider__title {
@@ -63,6 +74,7 @@
   font-weight: $font-bold;
   color: $text-white;
   text-transform: uppercase;
+  margin-top: 15px;
 }
 
 .equipment .slider__value {
@@ -83,53 +95,55 @@
 
 .equipment .slider__description--checked {
   position: absolute;
-  right: 0;
-  top: 5px;
+  right: 2px;
+  top: 4px;
   width: 30px;
   height: 30px;
   box-shadow: inset -3px -3px #3dc644;
-  clip: rect(auto, auto, auto, 15px);
+  clip: rect(3px, auto, auto, 16px);
   transform: rotate(45deg);
 }
 
 .equipment .slider__description--none {
   position: absolute;
-  right: 0;
-  top: 5px;
+  right: -1px;
+  top: 2px;
   width: 30px;
   height: 30px;
 
-    &::before {
-      @include pseudo;
-      top: 8px;
-      right: 12px;
-      width: 3px;
-      height: 33px;
-      background-color: #f25b26;
-      transform: rotate(-45deg);
-    }
+  &::before {
+    @include pseudo;
+    top: 8px;
+    right: 12px;
+    width: 3px;
+    height: 36px;
+    background-color: #f25b26;
+    transform: rotate(-45deg);
+  }
 
-    &::after {
-      @include pseudo;
-      top: 8px;
-      left: 17px;
-      width: 3px;
-      height: 33px;
-      background-color: #f25b26;
-      transform: rotate(45deg);
-    }
+  &::after {
+    @include pseudo;
+    top: 8px;
+    left: 17px;
+    width: 3px;
+    height: 36px;
+    background-color: #f25b26;
+    transform: rotate(45deg);
+   }
 }
 
 .equipment__buttons {
   position: absolute;
-  bottom: 40px;
-  left: 50%;
+  bottom: 32px;
+  left: 52.9%;
+  width: 90px;
   transform: translateX(-50%);
 }
 
 .equipment__buttons label {
   display: inline-block;
-  margin: 6px;
+  vertical-align: top;
+  margin: 0 8px;
   width: 6px;
   height: 6px;
   background-color: #bec2c7;
