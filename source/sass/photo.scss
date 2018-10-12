@@ -1,20 +1,22 @@
+//переделать background
+
 .photo {
   background-color: $text-white;
   background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-position: 0px -60px;
+  background-position: 0px -67px;
   background-repeat: no-repeat;
   background-size: 320px 462px;
   margin-top: 0px;
-  padding-top: 30px;
+  padding-top: 29px;
 }
 
 .photo__title {
   font-size: $body-font-size + 10px;
-  line-height: $body-line-height + 6px;
+  line-height: $body-line-height + 5px;
   font-weight: $font-light;
   color: $text-white;
   text-align: center;
-  margin: 0 20px 85px;
+  margin: 0 20px 83px;
 }
 
 .photo__description {
@@ -24,7 +26,7 @@
   text-align: center;
   color: $color-light;
   background-color: $text-white;
-  padding: 54px 35px 35px;
+  padding: 45px 35px 49px;
 }
 
 .photo__post {

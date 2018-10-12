@@ -8,7 +8,7 @@
 }
 
 .post__caption {
-  margin: 0 20px 35px;
+  margin: 0 20px 34px;
   padding: 0;
   background-color: $background-color;
 }
@@ -18,7 +18,7 @@
   line-height: $body-line-height;
   font-weight: $font-bold;
   color: $color-light;
-  padding: 0 15px;
+  padding: 4px 18px 0;
   margin-bottom: 0;
 }
 
@@ -28,6 +28,7 @@
   font-weight: $font-light;
   color: #818181;
   text-transform: uppercase;
+  padding-left: 1px;
 }
 
 .post__description {
@@ -35,8 +36,8 @@
   line-height: $body-line-height;
   font-weight: $font-normal;
   color: $color-light;
-  padding: 0 15px;
-  margin-top: 0;
+  padding: 0 18px;
+  margin: 0;
 }
 
 .post__likes {
@@ -46,17 +47,18 @@
   font-weight: $font-normal;
   color: $text-pink;
   text-transform: uppercase;
-  padding-left: 48px;
-  padding-bottom: 10px;
+  padding-left: 50px;
+  padding-bottom: 19px;
+  margin: 0;
+  margin-top: 10px;
 
   &::before {
-    content: "";
-    position: absolute;
+    @include pseudo;
     background-image: url("../img/svg/icon-heart.svg");
     background-position: 0 0;
     background-repeat: no-repeat;
     top: 5px;
-    left: 15px;
+    left: 18px;
     width: 13px;
     height: 12px;
   }
