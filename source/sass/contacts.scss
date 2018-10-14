@@ -1,0 +1,100 @@
+.contacts {
+  position: relative;
+  min-height: 650px;
+}
+
+.contacts__wrapper-contacts {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 20px;
+  padding-top: 18px;
+  text-align: center;
+  background-color: $text-white;
+  z-index: 1;
+}
+
+.contacts__description {
+  font-size: $body-font-size + 10px;
+  line-height: $body-line-height + 6px;
+  color: $color-light;
+  margin-bottom: 30px;
+}
+
+.contacts__list {
+  @include list;
+  position: relative;
+  padding-bottom: 40px;
+
+  &::before {
+    @include pseudo;
+    bottom: -30px;
+    left: -20px;
+    width: 160px;
+    height: 30px;
+    background-image: linear-gradient(to right top, transparent 50%, white 50%);
+  }
+
+  &::after {
+    @include pseudo;
+    bottom: -30px;
+    right: -20px;
+    width: 160px;
+    height: 30px;
+    background-image: linear-gradient(to left top, transparent 50%, white 50%);
+  }
+}
+
+.contacts__title {
+  font-size: $body-font-size + 4px;
+  line-height: $body-line-height + 4px;
+  font-weight: $font-bold;
+  color: $color-light;
+  margin: 0;
+}
+
+.contacts__description--email,
+.contacts__description--adress,
+.contacts__description--tel {
+  font-size: $body-font-size + 10px;
+  line-height: $body-line-height + 6px;
+  color: $text-pink;
+  margin: 0;
+}
+
+.contacts__description--email {
+  margin-bottom: 22px;
+}
+
+.contacts__description--adress {
+  margin-bottom: -1px;
+}
+
+.contacts__description--tel {
+  margin-bottom: 17px;
+}
+
+.contacts__link {
+  @include link(none, $text-pink);
+  font-size: $body-font-size + 10px;
+  line-height: $body-line-height + 6px;
+}
+
+.contacts__wrapper-map {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.contacts__map,
+.map__iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.map__iframe {
+  width: 320px;
+  height: 613px;
+  border: 0;
+}

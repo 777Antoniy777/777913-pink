@@ -1,0 +1,93 @@
+.feedback {
+  position: relative;
+  background-color: $text-white;
+  margin-top: -41px;
+  padding: 41px 0 98px;
+
+  &::before {
+    @include pseudo;
+    top: 0;
+    left: -20px;
+    background-color: $text-white;
+    margin-top: -40px;
+  }
+}
+
+.feedback input[type="radio"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+}
+
+.feedback .slider {
+  overflow: hidden;
+}
+
+.feedback .slider__list {
+  @include list;
+  @include flex;
+  width: 300%;
+  transition: transform 1s ease;
+}
+
+.feedback .feedback__item {
+  margin: 0 20px;
+}
+
+.feedback .slider__item {
+  text-align: center;
+}
+
+.feedback .slider__title {
+  font-weight: $font-bold;
+  font-size: $body-font-size + 4px;
+  line-height: $body-line-height + 6px;
+  color: black;
+}
+
+.feedback .slider__description {
+  line-height: $body-line-height + 6px;
+  font-weight: $font-normal;
+  color: $color-light;
+}
+
+.feedback__buttons {
+  position: absolute;
+  bottom: 52px;
+  left: 52.9%;
+  width: 90px;
+  transform: translateX(-50%);
+}
+
+.feedback__buttons label {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 8px;
+  width: 6px;
+  height: 6px;
+  background-color: #bec2c7;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+//стили для управления первым слайдером
+
+.feedback input[type="radio"]:nth-of-type(1):checked ~ .feedback__buttons label[for="first-slider-first-button"],
+.feedback input[type="radio"]:nth-of-type(2):checked ~ .feedback__buttons label[for="first-slider-second-button"],
+.feedback input[type="radio"]:nth-of-type(3):checked ~ .feedback__buttons label[for="first-slider-third-button"] {
+  box-shadow: 0 0 0 3px $color-light;
+  background-color: transparent;
+}
+
+.feedback input[type="radio"]:nth-of-type(1):checked ~ .feedback__wrapper .feedback__list {
+  transform: translateX(0);
+}
+
+.feedback input[type="radio"]:nth-of-type(2):checked ~ .feedback__wrapper .feedback__list {
+  transform: translateX(-320px);
+}
+
+.feedback input[type="radio"]:nth-of-type(3):checked ~ .feedback__wrapper .feedback__list {
+  transform: translateX(-640px);
+}

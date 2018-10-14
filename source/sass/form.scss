@@ -1,0 +1,247 @@
+.form {
+  margin-bottom: 16px;
+}
+
+.form fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.form-wrapper__main {
+  padding: 0 20px;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.form-wrapper__main label {
+  display: inline-block;
+  vertical-align: top;
+  font-size: $body-font-size;
+  line-height: $body-line-height + 6px;
+  font-weight: $font-normal;
+  text-transform: uppercase;
+  margin: 0 0 5px 23px;
+  color: $text-pink;
+
+  &:not(:first-of-type) {
+    margin-top: 17px;
+  }
+}
+
+.form-wrapper__main input {
+  width: 280px;
+  height: 63px;
+  padding: 4px 21px 0;
+  border: 2px solid #e5e5e5;
+  box-sizing: border-box;
+}
+
+.form-wrapper__main input::placeholder,
+.form-wrapper__adress input::placeholder,
+.form-wrapper__comment textarea::placeholder {
+  font-size: $body-font-size + 4px;
+  line-height: $body-line-height + 6px;
+  font-weight: $font-normal;
+  color: $color-light;
+}
+
+.form-wrapper__title {
+  position: relative;
+  top: 56px;
+  font-size: $body-font-size;
+  line-height: $body-line-height - 6px;
+  font-weight: $font-normal;
+  text-transform: uppercase;
+  text-align: center;
+  color: $text-pink;
+  margin: 0 40px;
+}
+
+.form-wrapper__photo-wrapper {
+  background-color: $background-color;
+}
+
+.form-wrapper__photo {
+  @include flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 94px;
+  background-color: $background-color;
+}
+
+.form-wrapper__photo label {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  font-size: $body-font-size + 4px;
+  line-height: $body-line-height + 6px;
+  font-weight: $font-normal;
+  color: $color-light;
+  margin: 5px 0 47px 90px;
+
+  &::before {
+    @include pseudo;
+    top: -4px;
+    left: -70px;
+    width: 35px;
+    height: 35px;
+    border: 2px solid #e5e5e5;
+    background-color: $text-white;
+    cursor: pointer;
+  }
+
+  &::after {
+    display: none;
+
+    @include pseudo;
+    top: -7px;
+    left: -68px;
+    width: 20px;
+    height: 20px;
+    border: 3px solid $text-pink;
+    clip: rect(auto, auto, 10px, 3px);
+    transform: rotate(135deg);
+    cursor: pointer;
+  }
+}
+
+.form-wrapper__photo input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+}
+
+.form-wrapper__photo input[type="checkbox"]:checked + label::after {
+  display: block;
+}
+
+.form-wrapper__adress {
+  padding: 32px 20px 0;
+  margin-bottom: 24px;
+}
+
+.form-wrapper__adress label {
+  display: inline-block;
+  vertical-align: top;
+  font-size: $body-font-size;
+  line-height: $body-line-height + 6px;
+  font-weight: $font-normal;
+  text-transform: uppercase;
+  margin-left: 23px;
+  color: $text-pink;
+
+  &:not(:first-of-type) {
+    margin-top: 17px;
+  }
+}
+
+.form-wrapper__adress input {
+  width: 280px;
+  height: 63px;
+  padding: 4px 21px 0;
+  margin-top: 5px;
+  border: 2px solid #e5e5e5;
+  box-sizing: border-box;
+}
+
+.form-wrapper__app-wrapper {
+  background-color: $background-color;
+}
+
+.form-wrapper__app {
+  @include flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding-top: 56px;
+  padding-bottom: 41px;
+}
+
+.form-wrapper__app input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+}
+
+.form-wrapper__app label {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  font-size: $body-font-size + 4px;
+  line-height: $body-line-height + 6px;
+  font-weight: $font-normal;
+  width: 180px;
+  margin: 39px 0 6px 40px;
+  color: $color-light;
+
+  &::before {
+    @include pseudo;
+    top: -4px;
+    left: -70px;
+    width: 35px;
+    height: 35px;
+    border: 2px solid #e5e5e5;
+    background-color: $text-white;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  &::after {
+    display: none;
+
+    @include pseudo;
+    top: 8px;
+    left: -58px;
+    width: 15px;
+    height: 15px;
+    background-color: $text-pink;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+}
+
+.form-wrapper__app input[type="radio"]:checked + label::after {
+  display: block;
+}
+
+.form-wrapper__comment-wrapper .form-wrapper__title {
+  top: 38px;
+}
+
+.form-wrapper__comment {
+  padding: 16px 20px 41px;
+  margin-top: 38px;
+}
+
+.form-wrapper__comment textarea {
+  width: 280px;
+  height: 201px;
+  border: 2px solid #e5e5e5;
+  padding: 14px 19px;
+  box-sizing: border-box;
+}
+
+.form-wrapper__button {
+  margin: 0 20px;
+}
+
+.form-wrapper__addition {
+  display: block;
+  font-size: $body-font-size;
+  line-height: $body-line-height + 6px;
+  font-weight: $font-normal;
+  text-transform: uppercase;
+  color: $color-light;
+  text-align: center;
+  margin-top: 36px;
+}
+
+.form-wrapper__addition sup {
+  position: relative;
+  top: 0;
+  font-size: $body-font-size;
+  color: $text-pink;
+}

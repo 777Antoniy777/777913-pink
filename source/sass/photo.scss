@@ -1,0 +1,39 @@
+.photo {
+  background-color: $text-white;
+  margin-top: 0;
+}
+
+.photo__title {
+  font-size: $body-font-size + 10px;
+  line-height: $body-line-height + 5px;
+  font-weight: $font-light;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-position: 0 -67px;
+  background-repeat: no-repeat;
+  background-size: 320px 462px;
+  color: $text-white;
+  text-align: center;
+  margin: 0;
+  padding: 29px 20px 83px;
+}
+
+.photo__description {
+  font-size: $body-font-size;
+  line-height: $body-line-height + 6px;
+  font-weight: $font-normal;
+  text-align: center;
+  color: $color-light;
+  background-color: $text-white;
+  padding: 31px 35px 35px;
+
+  &--last {
+    margin: -8px 0 0;
+    padding-left: 19px;
+    padding-right: 21px;
+  }
+}
+
+.photo__post {
+  margin: 0;
+  padding: 0;
+}
