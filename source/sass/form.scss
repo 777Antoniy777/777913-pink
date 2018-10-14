@@ -2,9 +2,16 @@
   margin-bottom: 16px;
 }
 
+.form fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
 .form-wrapper__main {
   padding: 0 20px;
-  margin: 10px 0 25px;
+  margin: 0;
+  margin-bottom: 24px;
 }
 
 .form-wrapper__main label {
@@ -14,16 +21,18 @@
   line-height: $body-line-height + 6px;
   font-weight: $font-normal;
   text-transform: uppercase;
-  margin-left: 23px;
-  margin-bottom: 5px;
+  margin: 0px 0 5px 23px;
   color: $text-pink;
+
+  &:not(:first-of-type) {
+    margin-top: 17px;
+  }
 }
 
 .form-wrapper__main input {
   width: 280px;
   height: 63px;
   padding: 4px 21px 0;
-  margin-bottom: 17px;
   border: 2px solid #e5e5e5;
   box-sizing: border-box;
 }
@@ -38,6 +47,8 @@
 }
 
 .form-wrapper__title {
+  position: relative;
+  top: 56px;
   font-size: $body-font-size;
   line-height: $body-line-height - 6px;
   font-weight: $font-normal;
@@ -47,12 +58,15 @@
   margin: 0 40px;
 }
 
+.form-wrapper__photo-wrapper {
+  background-color: $background-color;
+}
+
 .form-wrapper__photo {
   @include flex;
   align-items: center;
   flex-wrap: wrap;
-  padding-top: 38px;
-  padding-bottom: 38px;
+  padding-top: 94px;
   background-color: $background-color;
 }
 
@@ -64,7 +78,7 @@
   line-height: $body-line-height + 6px;
   font-weight: $font-normal;
   color: $color-light;
-  margin: 43px 0 9px 90px;
+  margin: 5px 0 47px 90px;
 
   &::before {
     @include pseudo;
@@ -103,26 +117,36 @@
 }
 
 .form-wrapper__adress {
-  padding: 32px 20px 25px;
+  padding: 32px 20px 0px;
+  margin-bottom: 24px;
 }
 
 .form-wrapper__adress label {
+  display: inline-block;
+  vertical-align: top;
   font-size: $body-font-size;
   line-height: $body-line-height + 6px;
   font-weight: $font-normal;
   text-transform: uppercase;
   margin-left: 23px;
   color: $text-pink;
+
+  &:not(:first-of-type) {
+    margin-top: 17px;
+  }
 }
 
 .form-wrapper__adress input {
   width: 280px;
   height: 63px;
   padding: 4px 21px 0;
-  margin-bottom: 17px;
   margin-top: 5px;
   border: 2px solid #e5e5e5;
   box-sizing: border-box;
+}
+
+.form-wrapper__app-wrapper {
+  background-color: $background-color;
 }
 
 .form-wrapper__app {
@@ -130,9 +154,8 @@
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
-  padding-top: 38px;
+  padding-top: 56px;
   padding-bottom: 41px;
-  background-color: $background-color;
 }
 
 .form-wrapper__app input {
@@ -182,8 +205,13 @@
   display: block;
 }
 
+.form-wrapper__comment-wrapper .form-wrapper__title {
+  top: 38px;
+}
+
 .form-wrapper__comment {
-  padding: 38px 20px 41px;
+  padding: 16px 20px 41px;
+  margin-top: 38px;
 }
 
 .form-wrapper__comment textarea {
@@ -192,13 +220,6 @@
   border: 2px solid #e5e5e5;
   padding: 14px 19px;
   box-sizing: border-box;
-}
-
-.form-wrapper__comment label {
-  display: inline-block;
-  vertical-align: top;
-  margin-bottom: 16px;
-  margin-left: 48px;
 }
 
 .form-wrapper__button {
