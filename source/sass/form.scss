@@ -21,7 +21,7 @@
   line-height: $body-line-height + 6px;
   font-weight: $font-normal;
   text-transform: uppercase;
-  margin: 0px 0px 5px 23px;
+  margin: 0 0 5px 23px;
   color: $text-pink;
 
   &:not(:first-of-type) {
@@ -112,12 +112,12 @@
   clip: rect(0 0 0 0);
 }
 
-.form-wrapper__photo input[type="checkbox"]:checked +  label::after {
+.form-wrapper__photo input[type="checkbox"]:checked + label::after {
   display: block;
 }
 
 .form-wrapper__adress {
-  padding: 32px 20px 0px;
+  padding: 32px 20px 0;
   margin-bottom: 24px;
 }
 
@@ -190,7 +190,8 @@
 
   &::after {
     display: none;
-    @include pseudo;
+    content: "";
+    position: absolute;
     top: 8px;
     left: -58px;
     width: 15px;
