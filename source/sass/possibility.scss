@@ -1,10 +1,7 @@
 .possibility {
   min-height: 325px;
   text-align: center;
-  margin-top: 0px;
-}
-
-.possibility__wrapper {
+  margin-top: 0;
 }
 
 .possibility__title {
@@ -12,7 +9,7 @@
   line-height: $body-line-height + 6px;
   font-weight: $font-light;
   background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-position: 0px -67px;
+  background-position: 0 -67px;
   background-repeat: no-repeat;
   background-size: 320px 462px;
   color: $text-white;

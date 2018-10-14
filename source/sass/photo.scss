@@ -1,6 +1,6 @@
 .photo {
   background-color: $text-white;
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 .photo__title {
@@ -8,7 +8,7 @@
   line-height: $body-line-height + 5px;
   font-weight: $font-light;
   background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-position: 0px -67px;
+  background-position: 0 -67px;
   background-repeat: no-repeat;
   background-size: 320px 462px;
   color: $text-white;
@@ -27,7 +27,7 @@
   padding: 31px 35px 35px;
 
   &--last {
-    margin: -8px 0px 0;
+    margin: -8px 0 0;
     padding-left: 19px;
     padding-right: 21px;
   }

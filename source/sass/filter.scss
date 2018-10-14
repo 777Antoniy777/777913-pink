@@ -91,9 +91,9 @@
 
 //стили для управления range слайдером
 
-#button-size:checked ~ .filter__list .filter__list-image--size,
-#button-color:checked ~ .filter__list .filter__list-image--color,
-#button-opacity:checked ~ .filter__list .filter__list-image--opacity {
+.filter input[type="radio"]:nth-of-type(1):checked ~ .filter__list .filter__list-image--size,
+.filter input[type="radio"]:nth-of-type(2):checked ~ .filter__list .filter__list-image--color,
+.filter input[type="radio"]:nth-of-type(3):checked ~ .filter__list .filter__list-image--opacity {
   fill: #d22856;
   opacity: 1;
 }
@@ -102,14 +102,14 @@
   display: none;
 }
 
-#button-size:checked ~ .filter__range-wrapper .slider__item--first {
+.filter input[type="radio"]:nth-of-type(1):checked ~ .filter__range-wrapper .slider__item--first {
   display: block;
 }
 
-#button-color:checked ~ .filter__range-wrapper .slider__item--second {
+.filter input[type="radio"]:nth-of-type(2):checked ~ .filter__range-wrapper .slider__item--second {
   display: block;
 }
 
-#button-opacity:checked ~ .filter__range-wrapper .slider__item--third {
+.filter input[type="radio"]:nth-of-type(3):checked ~ .filter__range-wrapper .slider__item--third {
   display: block;
 }
