@@ -93,6 +93,7 @@
 
   &::after {
     display: none;
+
     @include pseudo;
     top: -7px;
     left: -68px;
@@ -190,8 +191,8 @@
 
   &::after {
     display: none;
-    content: "";
-    position: absolute;
+
+    @include pseudo;
     top: 8px;
     left: -58px;
     width: 15px;
@@ -202,7 +203,7 @@
   }
 }
 
-.form-wrapper__app input[type="radio"]:checked +  label::after {
+.form-wrapper__app input[type="radio"]:checked + label::after {
   display: block;
 }
 
@@ -240,7 +241,7 @@
 
 .form-wrapper__addition sup {
   position: relative;
-  top: 0px;
+  top: 0;
   font-size: $body-font-size;
   color: $text-pink;
 }

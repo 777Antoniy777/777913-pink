@@ -1,6 +1,7 @@
 .application {
   background-color: $color-dark;
   background-image: url("../img/bg-back-mobile@1x.jpg");
+
   @include background;
   background-position: 0 -67px;
   width: 320px;
@@ -15,6 +16,7 @@
   @include flex;
   justify-content: center;
   align-items: center;
+
   @include link;
   font-weight: $font-bold;
   font-size: $body-font-size + 4px;
@@ -46,7 +48,7 @@
 }
 
 .application__description {
-  margin: 7px 20px 0px;
+  margin: 7px 20px 0;
   padding-bottom: 20px;
   color: $text-white;
   text-align: center;
