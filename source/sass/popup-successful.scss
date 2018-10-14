@@ -4,8 +4,8 @@
   top: 50%;
   left: 50%;
   width: 320px;
-  min-height: 380px;
-  padding-top: 35px;
+  min-height: 330px;
+  padding-top: 38px;
   background-color: $text-white;
   transform: translate(-50%, -50%);
 }
@@ -16,7 +16,7 @@
   font-weight: $font-bold;
   color: black;
   text-align: center;
-  margin: 0 20px 30px;
+  margin: 0 20px 28px;
 }
 
 .popup-successful__description {
@@ -25,14 +25,14 @@
   font-weight: $font-normal;
   color: $color-light;
   text-align: center;
-  margin: 0 20px 35px;
+  margin: 0 20px 30px;
 }
 
 .popup-successful__wrapper {
   @include flex;
-  min-height: 150px;
+  min-height: 146px;
   background-color: $background-color;
-  padding: 0px 20px;
+  padding: 7px 20px 10px;
 }
 
 .popup-successful__button {

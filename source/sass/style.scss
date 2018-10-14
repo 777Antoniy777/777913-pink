@@ -16,6 +16,7 @@
 @import "photo.scss";
 @import "post.scss";
 @import "filter.scss";
+@import "button.scss";
 
 @font-face {
   font-family: "Open Sans";
@@ -67,19 +68,4 @@ body {
   width: 320px;
   margin: 0 auto;
   padding: 0;
-}
-
-.button {
-  display: inline-block;
-  vertical-align: top;
-  font-size: $body-font-size + 4px;
-  line-height: $body-line-height + 6px;
-  font-weight: $font-bold;
-  width: 276px;
-  min-height: 59px;
-  padding: 0 20px;
-  border: none;
-  color: $text-white;
-  background-color: #2aab6d;
-  cursor: pointer;
 }

@@ -1,6 +1,7 @@
 .filter {
   @include flex;
-  padding: 20px 20px 0;
+  padding: 20px 22px 0 18px;
+  margin: 7px 2px 1px 0;
   background-color: $background-color;
 }
 
@@ -16,37 +17,40 @@
 }
 
 .filter__image {
-  margin-bottom: 40px;
+  margin-bottom: 32px;
 }
 
 .filter__list {
   @include list;
   @include flex;
   align-items: center;
+  margin: 0 28px 0 19px;
 }
 
 .filter__item label {
-  margin: 0 22px;
+  margin: 0 18px 0 17px;
   cursor: pointer;
 }
 
 .filter__list-image {
   opacity: 0.3;
-}
 
-.filter__list-image--size {
-  width: 48px;
-  height: 48px;
-}
+  &--size {
+    width: 48px;
+    height: 48px;
+  }
 
-.filter__list-image--color {
-  width: 48px;
-  height: 48px;
-}
+  &--color {
+    width: 48px;
+    height: 48px;
+    margin-top: 2px;
+    margin-right: 5px;
+  }
 
-.filter__list-image--opacity {
-  width: 32px;
-  height: 32px;
+  &--opacity {
+    width: 32px;
+    height: 32px;
+  }
 }
 
 .filter__range-list {
@@ -54,14 +58,15 @@
 }
 
 .filter__form input[type="range"] {
-  width: 90%;
-  margin: 40px 20px 0;
+  width: 86%;
+  margin: 20px 20px 0 20px;
 }
 
 .filter__buttons {
   @include flex(flex, column);
   min-height: 115px;
-  padding: 38px 0 29px;
+  padding: 36px 0 29px;
+  margin-top: 20px;
 }
 
 .filter__button {
@@ -69,19 +74,19 @@
   line-height: $body-line-height - 6px;
   font-weight: $font-bold;
   width: 280px;
-  min-height: 50px;
-  padding: 5px 10px;
+  min-height: 55px;
+  padding: 3px 10px 7px;
   margin-bottom: 12px;
   color: $text-pink;
   background-color: transparent;
   border: 3px solid $text-pink;
   border-radius: 30px;
   cursor: pointer;
-}
 
-.filter__buttons--reset {
-  color: rgba($color-light, 0.1);
-  border: 3px solid rgba($color-light, 0.1);
+  &--reset {
+    color: rgba($color-light, 0.1);
+    border: 3px solid rgba($color-light, 0.1);
+  }
 }
 
 //стили для управления range слайдером

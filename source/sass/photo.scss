@@ -1,22 +1,20 @@
-//переделать background
-
 .photo {
   background-color: $text-white;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-position: 0px -67px;
-  background-repeat: no-repeat;
-  background-size: 320px 462px;
   margin-top: 0px;
-  padding-top: 29px;
 }
 
 .photo__title {
   font-size: $body-font-size + 10px;
   line-height: $body-line-height + 5px;
   font-weight: $font-light;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-position: 0px -67px;
+  background-repeat: no-repeat;
+  background-size: 320px 462px;
   color: $text-white;
   text-align: center;
-  margin: 0 20px 83px;
+  margin: 0;
+  padding: 29px 20px 83px;
 }
 
 .photo__description {
@@ -26,15 +24,16 @@
   text-align: center;
   color: $color-light;
   background-color: $text-white;
-  padding: 45px 35px 49px;
+  padding: 31px 35px 35px;
+
+  &--last {
+    margin: -8px 0px 0;
+    padding-left: 19px;
+    padding-right: 21px;
+  }
 }
 
 .photo__post {
   margin: 0;
-  margin-top: -14px;
   padding: 0;
-}
-
-.photo__description--last {
-  margin: -40px 0 0 0;
 }

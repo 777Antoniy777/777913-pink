@@ -1,6 +1,10 @@
+.form {
+  margin-bottom: 16px;
+}
+
 .form-wrapper__main {
   padding: 0 20px;
-  margin: 10px 0;
+  margin: 10px 0 25px;
 }
 
 .form-wrapper__main label {
@@ -10,16 +14,16 @@
   line-height: $body-line-height + 6px;
   font-weight: $font-normal;
   text-transform: uppercase;
-  margin-left: 20px;
-  margin-bottom: 10px;
+  margin-left: 23px;
+  margin-bottom: 5px;
   color: $text-pink;
 }
 
 .form-wrapper__main input {
   width: 280px;
-  height: 60px;
-  padding: 0 20px;
-  margin-bottom: 20px;
+  height: 63px;
+  padding: 4px 21px 0;
+  margin-bottom: 17px;
   border: 2px solid #e5e5e5;
   box-sizing: border-box;
 }
@@ -47,7 +51,8 @@
   @include flex;
   align-items: center;
   flex-wrap: wrap;
-  min-height: 604px;
+  padding-top: 38px;
+  padding-bottom: 38px;
   background-color: $background-color;
 }
 
@@ -59,15 +64,14 @@
   line-height: $body-line-height + 6px;
   font-weight: $font-normal;
   color: $color-light;
-  margin-left: 90px;
+  margin: 43px 0 9px 90px;
 
   &::before {
-    content: "";
-    position: absolute;
-    top: -3px;
+    @include pseudo;
+    top: -4px;
     left: -70px;
-    width: 34px;
-    height: 34px;
+    width: 35px;
+    height: 35px;
     border: 2px solid #e5e5e5;
     background-color: $text-white;
     cursor: pointer;
@@ -75,9 +79,8 @@
 
   &::after {
     display: none;
-    content: "";
-    position: absolute;
-    top: -5px;
+    @include pseudo;
+    top: -7px;
     left: -68px;
     width: 20px;
     height: 20px;
@@ -100,8 +103,7 @@
 }
 
 .form-wrapper__adress {
-  min-height: 250px;
-  padding: 48px 20px 0;
+  padding: 32px 20px 25px;
 }
 
 .form-wrapper__adress label {
@@ -109,15 +111,16 @@
   line-height: $body-line-height + 6px;
   font-weight: $font-normal;
   text-transform: uppercase;
-  margin-left: 20px;
+  margin-left: 23px;
   color: $text-pink;
 }
 
 .form-wrapper__adress input {
   width: 280px;
-  height: 60px;
-  padding: 0 20px;
-  margin-bottom: 20px;
+  height: 63px;
+  padding: 4px 21px 0;
+  margin-bottom: 17px;
+  margin-top: 5px;
   border: 2px solid #e5e5e5;
   box-sizing: border-box;
 }
@@ -127,13 +130,9 @@
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
-  min-height: 340px;
-  padding-top: 37px;
+  padding-top: 38px;
+  padding-bottom: 41px;
   background-color: $background-color;
-}
-
-.form-wrapper__title {
-  margin-bottom: 0;
 }
 
 .form-wrapper__app input {
@@ -151,16 +150,15 @@
   line-height: $body-line-height + 6px;
   font-weight: $font-normal;
   width: 180px;
-  margin-left: 40px;
+  margin: 39px 0 6px 40px;
   color: $color-light;
 
   &::before {
-    content: "";
-    position: absolute;
+    @include pseudo;
     top: -4px;
     left: -70px;
-    width: 34px;
-    height: 34px;
+    width: 35px;
+    height: 35px;
     border: 2px solid #e5e5e5;
     background-color: $text-white;
     border-radius: 50%;
@@ -169,9 +167,8 @@
 
   &::after {
     display: none;
-    content: "";
-    position: absolute;
-    top: 7px;
+    @include pseudo;
+    top: 8px;
     left: -58px;
     width: 15px;
     height: 15px;
@@ -186,22 +183,26 @@
 }
 
 .form-wrapper__comment {
-  min-height: 275px;
-  padding: 38px 20px 0;
+  padding: 38px 20px 41px;
 }
 
 .form-wrapper__comment textarea {
-  width: 276px;
-  height: 198px;
+  width: 280px;
+  height: 201px;
   border: 2px solid #e5e5e5;
-  padding: 15px 20px;
+  padding: 14px 19px;
   box-sizing: border-box;
 }
 
 .form-wrapper__comment label {
   display: inline-block;
   vertical-align: top;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
+  margin-left: 48px;
+}
+
+.form-wrapper__button {
+  margin: 0 20px;
 }
 
 .form-wrapper__addition {
@@ -212,15 +213,12 @@
   text-transform: uppercase;
   color: $color-light;
   text-align: center;
-  margin-top: 40px;
-}
-
-.form-wrapper__button {
-  margin: 0 20px;
+  margin-top: 36px;
 }
 
 .form-wrapper__addition sup {
-  display: inline-block;
+  position: relative;
+  top: 0px;
+  font-size: $body-font-size;
   color: $text-pink;
-  margin-top: 15px;
 }

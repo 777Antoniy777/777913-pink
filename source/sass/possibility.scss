@@ -1,22 +1,23 @@
 .possibility {
   min-height: 325px;
   text-align: center;
-  margin-top: -20px;
+  margin-top: 0px;
 }
 
 .possibility__wrapper {
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-position: 0 -60px;
-  background-repeat: no-repeat;
-  background-size: 320px 462px;
 }
 
 .possibility__title {
   font-size: $body-font-size + 10px;
   line-height: $body-line-height + 6px;
   font-weight: $font-light;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-position: 0px -67px;
+  background-repeat: no-repeat;
+  background-size: 320px 462px;
   color: $text-white;
-  padding: 33px 20px 48px;
+  padding: 28px 20px 52px;
+  margin: 0;
 }
 
 .possibility__description {
@@ -24,5 +25,6 @@
   line-height: $body-line-height + 6px;
   color: $color-light;
   background-color: $text-white;
-  padding: 52px 20px 20px;
+  padding: 32px 20px 19px;
+  letter-spacing: 0.3px;
 }
