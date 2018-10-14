@@ -5,11 +5,11 @@
   padding: 41px 0 98px;
 
   &::before {
-  @include pseudo;
-  top: 0;
-  left: -20px;
-  background-color: $text-white;
-  margin-top: -40px;
+    @include pseudo;
+    top: 0;
+    left: -20px;
+    background-color: $text-white;
+    margin-top: -40px;
   }
 }
 
