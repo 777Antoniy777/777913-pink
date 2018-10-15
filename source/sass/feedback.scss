@@ -40,13 +40,18 @@
 }
 
 .feedback .slider__title {
-  font-weight: $font-bold;
   font-size: $body-font-size + 4px;
   line-height: $body-line-height + 6px;
+  font-weight: $font-bold;
   color: black;
 }
 
+.feedback .slider__title--position {
+  display: none;
+}
+
 .feedback .slider__description {
+  font-size: $body-font-size;
   line-height: $body-line-height + 6px;
   font-weight: $font-normal;
   color: $color-light;
@@ -90,4 +95,37 @@
 
 .feedback input[type="radio"]:nth-of-type(3):checked ~ .feedback__wrapper .feedback__list {
   transform: translateX(-640px);
+}
+
+@media (min-width: $tablet-width) {
+  .feedback {
+    margin-top: 32px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .feedback .feedback__item {
+    @include flex(flex, column-reverse);
+    justify-content: flex-end;
+  }
+
+  .feedback .slider__description {
+    font-size: $body-font-size + 4px;
+    margin-bottom: 35px;
+  }
+
+  .feedback .slider__title {
+    font-size: $body-font-size + 6px;
+
+    &--position {
+      display: block;
+      font-size: $body-font-size;
+      line-height: $body-line-height + 6px;
+      font-weight: $font-normal;
+      color: $color-light;
+      margin-top: 2px;
+    }
+  }
 }
