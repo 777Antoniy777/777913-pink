@@ -69,3 +69,9 @@ body {
   margin: 0 auto;
   padding: 0;
 }
+
+@media (min-width: $tablet-width) {
+  .site-wrapper {
+    width: 660px;
+  }
+}

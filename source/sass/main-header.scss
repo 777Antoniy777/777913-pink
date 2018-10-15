@@ -11,15 +11,13 @@
 }
 
 .main-navigation__logo-link {
-  margin: 21px 0 19px;
-  margin-left: 20px;
+  margin: 21px 0 19px 20px;
 }
 
 .main-navigation__button {
   width: 24px;
   height: 23px;
-  margin: 20px 0;
-  margin-right: 20px;
+  margin: 20px 20px 20px 0;
   border: none;
 }
 
@@ -27,4 +25,14 @@
   //  display: none;
   width: 100%;
   box-shadow: 0 -1px rgba(0, 0, 0, 1);
+}
+
+@media (min-width: $tablet-width) {
+  .main-navigation__logo-link {
+    margin: 43px 0 37px 20px;
+  }
+
+  .main-navigation__button {
+    margin: 44px 19px 0 0;
+  }
 }

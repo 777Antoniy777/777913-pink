@@ -18,9 +18,9 @@
   align-items: center;
 
   @include link;
-  font-weight: $font-bold;
   font-size: $body-font-size + 4px;
   line-height: $body-line-height - 6px;
+  font-weight: $font-bold;
   text-align: center;
   width: 280px;
   min-height: 30px;
@@ -48,8 +48,61 @@
 }
 
 .application__description {
+  display: none;
+  font-size: $body-font-size + 26px;
+  line-height: $body-line-height + 31px;
   margin: 7px 20px 0;
   padding-bottom: 20px;
   color: $text-white;
   text-align: center;
+
+  &--last {
+    display: block;
+    font-size: $body-font-size;
+    line-height: $body-line-height;
+    margin: 7px 20px 0;
+    padding-bottom: 20px;
+    color: $text-white;
+    text-align: center;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .application {
+    @include flex(flex, row-reverse);
+    justify-content: flex-end;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: -270px -111px;
+    background-size: 1200px 729px;
+    width: 660px;
+    min-height: 618px;
+  }
+
+  .application__wrapper {
+    width: 340px;
+//    margin-top: 85px;
+  }
+
+  .application__link {
+    width: 300px;
+    margin-top: 10px;
+  }
+
+  .application__list {
+    margin-top: 43px
+  }
+
+  .application__description {
+    display: block;
+    font-size: $body-font-size + 26px;
+    line-height: $body-line-height + 24px;
+    margin: 93px 50px 0;
+
+    &--last {
+      display: block;
+      font-size: $body-font-size + 4px;
+      line-height: $body-line-height;
+      margin: 23px 20px 0;
+    }
+  }
 }
