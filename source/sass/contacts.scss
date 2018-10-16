@@ -21,6 +21,25 @@
   margin-bottom: 30px;
 }
 
+.contacts__item-description {
+  font-size: $body-font-size + 10px;
+  line-height: $body-line-height + 6px;
+  color: $text-pink;
+  margin: 0;
+
+  &--email {
+    margin-bottom: 22px;
+  }
+
+  &--adress {
+    margin-bottom: -1px;
+  }
+
+  &--tel {
+    margin-bottom: 17px;
+  }
+}
+
 .contacts__list {
   @include list;
   position: relative;
@@ -53,27 +72,6 @@
   margin: 0;
 }
 
-.contacts__description--email,
-.contacts__description--adress,
-.contacts__description--tel {
-  font-size: $body-font-size + 10px;
-  line-height: $body-line-height + 6px;
-  color: $text-pink;
-  margin: 0;
-}
-
-.contacts__description--email {
-  margin-bottom: 22px;
-}
-
-.contacts__description--adress {
-  margin-bottom: -1px;
-}
-
-.contacts__description--tel {
-  margin-bottom: 17px;
-}
-
 .contacts__link {
   @include link(none, $text-pink);
   font-size: $body-font-size + 10px;
@@ -97,4 +95,69 @@
   width: 320px;
   height: 613px;
   border: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__description {
+    font-size: $body-font-size + 26px;
+    line-height: $body-line-height + 23px;
+    margin: 0 50px 32px;
+  }
+
+  .contacts__list {
+    @include flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 0px;
+
+    &::before {
+      bottom: -68px;
+      left: -20px;
+      width: 332px;
+      height: 68px;
+    }
+
+    &::after {
+      bottom: -68px;
+      right: -20px;
+      width: 332px;
+      height: 68px;
+    }
+  }
+
+  .contacts__item {
+    width: 300px;
+    margin-top: 11px;
+    margin-bottom: 30px;
+    flex-grow: 1;
+    box-sizing: border-box;
+
+    &--tel {
+      padding-right: 10px;
+    }
+
+    &--email {
+      padding-left: 10px;
+    }
+  }
+
+  .contacts__item-description,
+  .contacts__title {
+    width: 280px;
+    margin: 0 auto;
+
+    &--email {
+      margin-top: 4px;
+    }
+  }
+
+  .contacts__title {
+    margin-bottom: 2px;
+  }
+
+  .map__iframe {
+    width: 660px;
+    height: 750px;
+    border: 0;
+  }
 }

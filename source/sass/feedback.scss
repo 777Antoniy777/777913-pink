@@ -20,11 +20,11 @@
   clip: rect(0 0 0 0);
 }
 
-.feedback .slider {
+.feedback-slider {
   overflow: hidden;
 }
 
-.feedback .slider__list {
+.feedback-slider__list {
   @include list;
   @include flex;
   width: 300%;
@@ -35,22 +35,23 @@
   margin: 0 20px;
 }
 
-.feedback .slider__item {
+.feedback-slider__item {
   text-align: center;
+  width: 320px;
 }
 
-.feedback .slider__title {
+.feedback-slider__title {
   font-size: $body-font-size + 4px;
   line-height: $body-line-height + 6px;
   font-weight: $font-bold;
   color: black;
 }
 
-.feedback .slider__title--position {
+.feedback-slider__title--position {
   display: none;
 }
 
-.feedback .slider__description {
+.feedback-slider__description {
   font-size: $body-font-size;
   line-height: $body-line-height + 6px;
   font-weight: $font-normal;
@@ -76,7 +77,7 @@
   cursor: pointer;
 }
 
-//стили для управления первым слайдером
+//стили для управления первым слайдером на мобильном
 
 .feedback input[type="radio"]:nth-of-type(1):checked ~ .feedback__buttons label[for="first-slider-first-button"],
 .feedback input[type="radio"]:nth-of-type(2):checked ~ .feedback__buttons label[for="first-slider-second-button"],
@@ -100,23 +101,25 @@
 @media (min-width: $tablet-width) {
   .feedback {
     margin-top: 32px;
+    margin-bottom: 20px;
 
     &::before {
       display: none;
     }
   }
 
-  .feedback .feedback__item {
+  .feedback-slider__item {
     @include flex(flex, column-reverse);
     justify-content: flex-end;
+    width: 660px;
   }
 
-  .feedback .slider__description {
+  .feedback-slider__description {
     font-size: $body-font-size + 4px;
     margin-bottom: 35px;
   }
 
-  .feedback .slider__title {
+  .feedback-slider__title {
     font-size: $body-font-size + 6px;
 
     &--position {
@@ -127,5 +130,24 @@
       color: $color-light;
       margin-top: 2px;
     }
+  }
+
+  .feedback__buttons {
+    bottom: 37px;
+    left: 51.2%;
+  }
+
+  //стили для управления первым слайдером на планшете
+
+  feedback input[type="radio"]:nth-of-type(1):checked ~ .feedback__wrapper .feedback__list {
+    transform: translateX(0);
+  }
+
+  .feedback input[type="radio"]:nth-of-type(2):checked ~ .feedback__wrapper .feedback__list {
+    transform: translateX(-660px);
+  }
+
+  .feedback input[type="radio"]:nth-of-type(3):checked ~ .feedback__wrapper .feedback__list {
+    transform: translateX(-1320px);
   }
 }
