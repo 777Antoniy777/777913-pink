@@ -61,3 +61,48 @@
   margin-right: 3px;
   margin-top: 3px;
 }
+
+@media (min-width: $tablet-width) {
+  .main-footer {
+    @include flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 102px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+  }
+
+  .main-footer__logo-footer {
+    margin-bottom: 0px;
+  }
+
+  .main-footer__list {
+    align-items: center;
+    padding-top: 17px;
+    margin: 0;
+    margin-left: 30px;
+  }
+
+  .main-footer__item {
+    margin-bottom: 5px;
+  }
+
+  .main-footer__wrapper {
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0px;
+    margin-top: 10px;
+    width: 165px;
+  }
+
+  .main-footer__description {
+    width: 110px;
+    margin: 15px 4px 12px 21px;
+    word-break: break-all;
+  }
+
+  .main-footer__html-logo {
+    margin-right: 0px;
+    margin-top: 8px;
+  }
+}
