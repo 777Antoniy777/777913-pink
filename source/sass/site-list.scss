@@ -20,3 +20,18 @@
   padding: 16px 0;
   width: 100%;
 }
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    @include flex;
+    width: 680px;
+  }
+
+  .site-list__item {
+    box-shadow: none;
+  }
+
+  .site-list__link {
+    width: 170px;
+  }
+}

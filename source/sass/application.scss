@@ -105,3 +105,45 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .application {
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-position: -680px 0px;
+    background-size: 2560px 853px;
+    width: 1200px;
+    min-height: 853px;
+    box-sizing: border-box;
+    padding: 0 110px;
+    z-index: 1;
+  }
+
+  .application__wrapper {
+    min-height: 535px;
+    margin-top: 120px;
+  }
+
+  .application__description {
+    font-size: $body-font-size + 36px;
+    line-height: $body-line-height + 36px;
+    margin: 0px 50px 0;
+
+    &--last {
+      font-size: $body-font-size + 4px;
+      line-height: $body-line-height;
+      margin: 40px 20px 0;
+    }
+  }
+
+  .application__link {
+    font-size: $body-font-size + 7px;
+    margin-top: 31px;
+  }
+
+  .application__list {
+    margin-top: 66px;
+  }
+}

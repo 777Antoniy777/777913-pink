@@ -1,3 +1,4 @@
+@media (min-width: $mobile-width) and (max-width: $desktop-width) {
 .main-header {
   background-color: $color-light;
   color: $text-white;
@@ -26,13 +27,29 @@
   width: 100%;
   box-shadow: 0 -1px rgba(0, 0, 0, 1);
 }
+}
 
-@media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
   .main-navigation__logo-link {
     margin: 43px 0 37px 20px;
   }
 
   .main-navigation__button {
     margin: 44px 19px 0 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header {
+    position: relative;
+    background-color: $background-header;
+    color: $text-white;
+    min-height: 110px;
+    margin-bottom: -110px;
+    z-index: 2;
+  }
+
+  .main-navigation__button {
+    display: none;
   }
 }

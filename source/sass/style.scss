@@ -76,3 +76,9 @@ body {
     width: 660px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .site-wrapper {
+    width: 1200px;
+  }
+}
