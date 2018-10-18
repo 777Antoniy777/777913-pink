@@ -3,14 +3,6 @@
   background-color: $text-white;
   margin-top: -41px;
   padding: 41px 0 98px;
-
-  &::before {
-    @include pseudo;
-    top: 0;
-    left: -20px;
-    background-color: $text-white;
-    margin-top: -40px;
-  }
 }
 
 .feedback input[type="radio"] {
@@ -149,5 +141,80 @@
 
   .feedback input[type="radio"]:nth-of-type(3):checked ~ .feedback__wrapper .feedback__list {
     transform: translateX(-1320px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback {
+    position: relative;
+    margin-top: 144px;
+    margin-bottom: 22px;
+
+    &::before {
+      @include pseudo;
+      @include background;
+      display: block;
+      background-image: url("../img/svg/icon-quotes.svg");
+      background-size: 79px 64px;
+      width: 79px;
+      height: 64px;
+      top: -71px;
+      left: 46.9%;
+    }
+  }
+
+  .feedback-slider {
+
+    &::before {
+      @include pseudo;
+      display: block;
+      top: 73px;
+      left: 136px;
+      width: 29px;
+      height: 29px;
+      border: 2px solid rgba(0, 0, 0, 0.3);
+      transform: rotate(135deg);
+      clip: rect(2px, auto, auto, 2px);
+      cursor: pointer;
+      z-index: 1;
+    }
+
+    &::after {
+      @include pseudo;
+      display: block;
+      top: 73px;
+      right: 136px;
+      width: 29px;
+      height: 29px;
+      border: 2px solid rgba(0, 0, 0, 0.3);
+      transform: rotate(-45deg);
+      clip: rect(2px, auto, auto, 2px);
+      cursor: pointer;
+      z-index: 1;
+    }
+  }
+
+  .feedback-slider__item {
+    @include flex(flex, column-reverse);
+    justify-content: flex-end;
+    width: 1200px;
+  }
+
+  .feedback-slider__description {
+    margin: 0 200px 35px;
+  }
+
+  .feedback-slider__title {
+    font-size: $body-font-size + 10px;
+    line-height: $body-line-height + 6px;
+
+    &--position {
+      font-size: $body-font-size + 4px;
+      margin-top: 2px;
+    }
+  }
+
+  .feedback__buttons {
+    display: none;
   }
 }

@@ -1,14 +1,15 @@
-@media (min-width: $mobile-width) and (max-width: 659px) {
+@media (min-width: 0) and (max-width: 659px) {
   .equipment {
     position: relative;
     background-color: $background-color;
     padding: 65px 0 99px;
+    min-width: 320px;
 
     &::before {
       @include pseudo;
       top: -26px;
       left: 0;
-      width: 320px;
+      width: 100%;
       height: 26px;
       background-image: linear-gradient(to right bottom, white 50%, $background-color 50%);
     }
@@ -23,6 +24,7 @@
 
   .equipment-slider {
     overflow: hidden;
+    min-width: 320px;
   }
 
   .equipment-slider__list {
@@ -184,6 +186,7 @@
 @media (min-width: $tablet-width) {
   .equipment {
     position: relative;
+    min-width: 660px;
     padding-top: 37px;
     padding-bottom: 69px;
     margin-bottom: 29px;
@@ -193,7 +196,7 @@
       @include pseudo;
       top: -50px;
       left: 0;
-      width: 660px;
+      width: 100%;
       height: 50px;
       background-image: linear-gradient(to right bottom, white 50%, $background-color 50%);
     }
@@ -327,5 +330,87 @@
   .equipment-slider__item:last-of-type .equipment-slider__line--first:nth-of-type(1) {
     border-right: none;
     width: 154px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .equipment {
+    position: relative;
+    min-width: 1200px;
+    padding-top: 68px;
+    padding-bottom: 97px;
+    margin-bottom: 45px;
+    background-color: $background-color;
+
+    &::before {
+      @include pseudo;
+      top: -80px;
+      left: 0;
+      width: 100%;
+      height: 83px;
+      background-image: linear-gradient(to right bottom, white 50%, $background-color 50%);
+    }
+  }
+
+  .equipment__wrapper {
+    @include flex;
+  }
+
+  .equipment-slider__list {
+    margin: 0 auto;
+  }
+
+  .equipment-slider__line {
+    width: 233px;
+    min-height: 59px;
+
+    &--first {
+      width: 233px;
+      min-height: 98px;
+    }
+
+    &--empty {
+      width: 235px;
+      min-height: 96px;
+    }
+  }
+
+  .equipment-slider__title {
+    font-size: $body-font-size + 4px;
+    line-height: $body-line-height + 6px;
+    margin-top: 16px;
+  }
+
+  .equipment-slider__value {
+    font-size: $body-font-size + 10px;
+    line-height: $body-line-height + 6px;
+  }
+
+  .equipment-slider__description {
+
+    &--tablet {
+      font-size: $body-font-size + 4px;
+      line-height: $body-line-height + 6px;
+      width: 180px;
+      margin-left: 21px;
+    }
+
+    &--checked {
+      right: 45%;
+      top: 7px;
+    }
+
+    &--none {
+      right: 44%;
+      top: 4px;
+    }
+  }
+
+  .equipment-slider__item:nth-of-type(2) .equipment-slider__line--first:nth-of-type(1) {
+    width: 234px;
+  }
+
+  .equipment-slider__item:last-of-type .equipment-slider__line--first:nth-of-type(1) {
+    width: 234px;
   }
 }

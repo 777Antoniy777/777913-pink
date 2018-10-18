@@ -6,9 +6,10 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="main-page">
-    <div class="site-wrapper">
+<!--    <div class="site-wrapper">-->
       <h1 class="visually-hidden">Сайт приложения 'Пинк'</h1>
       <!--Хедер гл.стр-->
+      <div class="site-wrapper">
       <header class="main-header">
         <nav class="main-navigation">
           <a class="main-navigation__logo-link">
@@ -25,9 +26,11 @@
           </div>
         </nav>
       </header>
+      </div>
       <!--Основная часть гл.стр-->
       <main>
         <!--Платформы-->
+        <div class="site-wrapper">
         <section class="application">
           <h2 class="visually-hidden">Платформы для приложения</h2>
           <img class="application__image" src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="Приложение 'Пинк'">
@@ -68,12 +71,15 @@
           <p class="application__description application__description--last">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
           </div>
         </section>
+        </div>
         <!--Особенности-->
         <section class="features">
           <h2 class="visually-hidden">Особенности</h2>
           <p class="features__description">Устали от серости мегаполиса?</p>
           <p class="features__description features__description--last">Нам есть, что вам предложить!</p>
           <div class="features__wrapper">
+          <div class="site-wrapper">
+          <div class="features__inner-wrapper">
           <ul class="features__list">
             <li class="features__item">
               <h3 class="features__title">Поднимает настроение</h3>
@@ -89,22 +95,33 @@
             </li>
           </ul>
           <div class="features__wrapper-image">
-          <img class="features__image" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Приложение 'Пинк'">
+          <ul class="features__list-image">
+            <li class="features__item-image"><img class="features__image" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Приложение 'Пинк'"></li>
+            <li class="features__item-image"><img class="features__image" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Приложение 'Пинк'"></li>
+            <li class="features__item-image"><img class="features__image" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Приложение 'Пинк'"></li>
+          </ul>
+          </div>
+          </div>
           </div>
           </div>
         </section>
         <!--Исследования-->
         <section class="research">
+          <div class="site-wrapper">
+          <div class="research__inner-wrapper">
           <div class="research__image-wrapper">
             <img class="research__image" src="img/svg/icon-timer.svg" width="238" height="276" alt="Целых 24 часа!">
           </div>
           <div class="research__wrapper">
             <h2 class="research__title">Эффект<br> на 24 часа!</h2>
-            <p class="research__description">Британские ученые провели исследования и доказали, что положительный эффект<br> от использования приложения длится целые сутки!</p>
+            <p class="research__description">Британские ученые провели исследования и доказали,<br> что положительный эффект<br> от использования приложения длится целые сутки!</p>
             <a class="research__link" href="#">Узнать больше об исследовании</a>
+          </div>
+          </div>
           </div>
         </section>
         <!--Отзывы-->
+        <div class="site-wrapper">
         <section class="feedback">
           <h2 class="visually-hidden">Отзывы</h2>
           <input type="radio" name="first-slider" id="first-slider-first-button" checked>
@@ -141,8 +158,10 @@
             <label for="first-slider-third-button"><span class="visually-hidden">Третий слайд</span></label>
           </div>
         </section>
+        </div>
         <!--Комплектация-->
         <section class="equipment">
+          <div class="site-wrapper">
           <h2 class="visually-hidden">Комплектация приложений</h2>
           <input type="radio" name="second-slider" id="second-slider-first-button" checked>
           <input type="radio" name="second-slider" id="second-slider-second-button">
@@ -152,6 +171,7 @@
               <li class="equipment__item equipment-slider__item equipment-slider__item--tablet">
                 <table class="equipment__table equipment-slider__table">
                   <tr class="equipment-slider__line equipment-slider__line--empty">
+                    <td class="equipment-slider__description equipment-slider__description--tablet"></td>
                   </tr>
                   <tr class="equipment-slider__line">
                     <td class="equipment-slider__description equipment-slider__description--tablet">Розовый фильтр</td>
@@ -231,9 +251,11 @@
               <label for="second-slider-third-button"><span class="visually-hidden">Третий слайд</span></label>
             </div>
           </div>
+          </div>
         </section>
         <!--Контакты-->
         <section class="contacts">
+          <div class="site-wrapper">
           <div class="contacts__wrapper-contacts">
             <h2 class="visually-hidden">Контакты</h2>
             <p class="contacts__description">Остались вопросы? Свяжитесь с нами!</p>
@@ -252,12 +274,14 @@
               </li>
             </ul>
           </div>
+          </div>
           <div class="contacts__wrapper-map">
             <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6122088171858!2d30.32330489093596!3d59.93857674840233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1538679898464" allowfullscreen></iframe>
           </div>
         </section>
       </main>
       <!--Футер гл.стр-->
+      <div class="site-wrapper">
       <footer class="main-footer">
         <a class="main-footer__logo-link">
         <img class="main-footer__logo-footer" src="img/svg/logo-pink-blue-mobile.svg" width="147" height="41" alt="приложение 'Пинк'">
@@ -299,6 +323,7 @@
           </a>
         </div>
       </footer>
-    </div>
+      </div>
+<!--    </div>-->
   </body>
 </html>
