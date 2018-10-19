@@ -55,6 +55,14 @@
     margin: 0 12px 10px 0;
   }
 
+  .research__description br {
+    display: none;
+
+    &:not(:nth-of-type(1)) {
+      display: block;
+    }
+  }
+
   .research__link {
     font-size: $body-font-size;
     line-height: $body-line-height;

@@ -5,6 +5,10 @@
   padding: 41px 0 98px;
 }
 
+.feedback__desktop-button {
+  display: none;
+}
+
 .feedback input[type="radio"] {
   position: absolute;
   width: 1px;
@@ -163,34 +167,51 @@
     }
   }
 
-  .feedback-slider {
+  .feedback__desktop-button {
+    display: block;
+    position: absolute;
+    width: 35px;
+    height: 45px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    z-index: 1;
 
-    &::before {
-      @include pseudo;
-      display: block;
-      top: 73px;
-      left: 136px;
-      width: 29px;
-      height: 29px;
-      border: 2px solid rgba(0, 0, 0, 0.3);
-      transform: rotate(135deg);
-      clip: rect(2px, auto, auto, 2px);
-      cursor: pointer;
-      z-index: 1;
+    &:focus {
+      box-shadow: 0 0 0 2px lightblue;
     }
 
-    &::after {
-      @include pseudo;
-      display: block;
-      top: 73px;
-      right: 136px;
-      width: 29px;
-      height: 29px;
-      border: 2px solid rgba(0, 0, 0, 0.3);
-      transform: rotate(-45deg);
-      clip: rect(2px, auto, auto, 2px);
-      cursor: pointer;
-      z-index: 1;
+    &--left {
+      top: 67px;
+      left: 127px;
+
+      &::before {
+        @include pseudo;
+        top: 5px;
+        left: 10px;
+        width: 29px;
+        height: 29px;
+        border: 2px solid rgba(0, 0, 0, 0.3);
+        transform: rotate(135deg);
+        clip: rect(2px, auto, auto, 2px);
+      }
+    }
+
+    &--right {
+      top: 67px;
+      right: 127px;
+
+      &::before {
+        @include pseudo;
+        top: 5px;
+        right: 10px;
+        width: 29px;
+        height: 29px;
+        border: 2px solid rgba(0, 0, 0, 0.3);
+        transform: rotate(-45deg);
+        clip: rect(2px, auto, auto, 2px);
+      }
     }
   }
 

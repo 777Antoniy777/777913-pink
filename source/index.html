@@ -6,7 +6,6 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="main-page">
-<!--    <div class="site-wrapper">-->
       <h1 class="visually-hidden">Сайт приложения 'Пинк'</h1>
       <!--Хедер гл.стр-->
       <div class="site-wrapper">
@@ -124,6 +123,8 @@
         <div class="site-wrapper">
         <section class="feedback">
           <h2 class="visually-hidden">Отзывы</h2>
+          <button class="feedback__desktop-button feedback__desktop-button--left" type="button"><span class="visually-hidden">Следующий слайдер</span></button>
+          <button class="feedback__desktop-button feedback__desktop-button--right" type="button"><span class="visually-hidden">Предыдущий слайдер</span></button>
           <input type="radio" name="first-slider" id="first-slider-first-button" checked>
           <input type="radio" name="first-slider" id="first-slider-second-button">
           <input type="radio" name="first-slider" id="first-slider-third-button">
@@ -167,84 +168,32 @@
           <input type="radio" name="second-slider" id="second-slider-second-button">
           <input type="radio" name="second-slider" id="second-slider-third-button">
           <div class="equipment__wrapper equipment-slider">
-            <ul class="equipment__list equipment-slider__list">
-              <li class="equipment__item equipment-slider__item equipment-slider__item--tablet">
-                <table class="equipment__table equipment-slider__table">
-                  <tr class="equipment-slider__line equipment-slider__line--empty">
-                    <td class="equipment-slider__description equipment-slider__description--tablet"></td>
-                  </tr>
-                  <tr class="equipment-slider__line">
-                    <td class="equipment-slider__description equipment-slider__description--tablet">Розовый фильтр</td>
-                  </tr>
-                  <tr class="equipment-slider__line">
-                    <td class="equipment-slider__description equipment-slider__description--tablet">Смайлики</td>
-                  </tr>
-                  <tr class="equipment-slider__line">
-                    <td class="equipment-slider__description equipment-slider__description--tablet">Комментарии</td>
-                  </tr>
-                </table>
-              </li>
-              <li class="equipment__item equipment-slider__item">
-                <table class="equipment__table equipment-slider__table">
-                  <tr class="equipment-slider__line equipment-slider__line--first equipment-slider__line--hit">
-                    <th class="equipment-slider__title">База</th>
-                    <td class="equipment-slider__value">1,99 usd</td>
-                  </tr>
-                  <tr class="equipment-slider__line">
-                    <td class="equipment-slider__description">Розовый фильтр</td>
-                    <td class="equipment-slider__description equipment-slider__description--checked"><span class="visually-hidden">Присутствует</span></td>
-                  </tr>
-                  <tr class="equipment-slider__line">
-                    <td class="equipment-slider__description">Смайлики</td>
-                    <td class="equipment-slider__description equipment-slider__description--none"><span class="visually-hidden">Присутствует</span></td>
-                  </tr>
-                  <tr class="equipment-slider__line">
-                    <td class="equipment-slider__description">Комментарии</td>
-                    <td class="equipment-slider__description equipment-slider__description--none"><span class="visually-hidden">Отсутствует</span></td>
-                  </tr>
-                </table>
-              </li>
-              <li class="equipment__item equipment-slider__item">
-                <table class="equipment__table equipment-slider__table">
-                  <tr class="equipment-slider__line equipment-slider__line--first equipment-slider__line--hit">
-                    <th class="equipment-slider__title">Стандарт</th>
-                    <td class="equipment-slider__value">3,99 usd</td>
-                  </tr>
-                  <tr class="equipment-slider__line">
-                    <td class="equipment-slider__description">Розовый фильтр</td>
-                    <td class="equipment-slider__description equipment-slider__description--checked"><span class="visually-hidden">Присутствует</span></td>
-                  </tr>
-                  <tr class="equipment-slider__line">
-                    <td class="equipment-slider__description">Смайлики</td>
-                    <td class="equipment-slider__description equipment-slider__description--checked"><span class="visually-hidden">Присутствует</span></td>
-                  </tr>
-                  <tr class="equipment-slider__line">
-                    <td class="equipment-slider__description">Комментарии</td>
-                    <td class="equipment-slider__description equipment-slider__description--none"><span class="visually-hidden">Отсутствует</span></td>
-                  </tr>
-                </table>
-              </li>
-              <li class="equipment__item equipment-slider__item">
-                <table class="equipment__table equipment-slider__table">
-                  <tr class="equipment-slider__line equipment-slider__line--first equipment-slider__line--hit">
-                    <th class="equipment-slider__title">Анлим</th>
-                    <td class="equipment-slider__value">9,99 usd</td>
-                  </tr>
-                  <tr class="equipment-slider__line">
-                    <td class="equipment-slider__description">Розовый фильтр</td>
-                    <td class="equipment-slider__description equipment-slider__description--checked"><span class="visually-hidden">Присутствует</span></td>
-                  </tr>
-                  <tr class="equipment-slider__line">
-                    <td class="equipment-slider__description">Смайлики</td>
-                    <td class="equipment-slider__description equipment-slider__description--checked"><span class="visually-hidden">Присутствует</span></td>
-                  </tr>
-                  <tr class="equipment-slider__line">
-                    <td class="equipment-slider__description">Комментарии</td>
-                    <td class="equipment-slider__description equipment-slider__description--checked"><span class="visually-hidden">Отсутствует</span></td>
-                  </tr>
-                </table>
-              </li>
-            </ul>
+            <table class="equipment__table equipment-slider__table">
+              <tr class="equipment-slider__line equipment-slider__line--first">
+                <th class="equipment-slider__title equipment-slider__title--empty equipment-slider__title--tablet"></th>
+                <th class="equipment-slider__title">База<br><span class="equipment-slider__value">1,99 usd</span></th>
+                <th class="equipment-slider__title">Стандарт<br><span class="equipment-slider__value">3,99 usd</span></th>
+                <th class="equipment-slider__title">Анлим<br><span class="equipment-slider__value">9,99 usd</span></th>
+              </tr>
+              <tr class="equipment-slider__line">
+                <td class="equipment-slider__description equipment-slider__description--tablet">Розовый фильтр</td>
+                <td class="equipment-slider__sign equipment-slider__sign--checked"><span class="equipment-slider__description--mobile">Розовый фильтр</span><span class="visually-hidden">Присутствует</span></td>
+                <td class="equipment-slider__sign equipment-slider__sign--checked"><span class="equipment-slider__description--mobile">Розовый фильтр</span><span class="visually-hidden">Присутствует</span></td>
+                <td class="equipment-slider__sign equipment-slider__sign--checked equipment-slider__sign--last"><span class="equipment-slider__description--mobile">Розовый фильтр</span><span class="visually-hidden">Присутствует</span></td>
+              </tr>
+              <tr class="equipment-slider__line">
+                <td class="equipment-slider__description equipment-slider__description--tablet">Смайлики</td>
+                <td class="equipment-slider__sign equipment-slider__sign--none"><span class="equipment-slider__description--mobile">Смайлики</span><span class="visually-hidden">Отсутствует</span></td>
+                <td class="equipment-slider__sign equipment-slider__sign--checked"><span class="equipment-slider__description--mobile">Смайлики</span><span class="visually-hidden">Присутствует</span></td>
+                <td class="equipment-slider__sign equipment-slider__sign--checked equipment-slider__sign--last"><span class="equipment-slider__description--mobile">Смайлики</span><span class="visually-hidden">Присутствует</span></td>
+              </tr>
+              <tr class="equipment-slider__line">
+                <td class="equipment-slider__description equipment-slider__description--tablet">Комментарии</td>
+                <td class="equipment-slider__sign equipment-slider__sign--none"><span class="equipment-slider__description--mobile">Комментарии</span><span class="visually-hidden">Отсутствует</span></td>
+                <td class="equipment-slider__sign equipment-slider__sign--none"><span class="equipment-slider__description--mobile">Комментарии</span><span class="visually-hidden">Отсутствует</span></td>
+                <td class="equipment-slider__sign equipment-slider__sign--checked equipment-slider__sign--last"><span class="equipment-slider__description--mobile">Комментарии</span><span class="visually-hidden">Присутствует</span></td>
+              </tr>
+            </table>
             <div class="equipment__buttons">
               <label for="second-slider-first-button"><span class="visually-hidden">Первый слайд</span></label>
               <label for="second-slider-second-button"><span class="visually-hidden">Второй слайд</span></label>
@@ -266,7 +215,7 @@
               </li>
               <li class="contacts__item contacts__item--email">
                 <p class="contacts__title">Пишите:</p>
-                <p class="contacts__item-description contacts__item-description--email">mail@htmlacademy.ru</p>
+                <p class="contacts__item-description contacts__item-description--email"><a class="contacts__link" href="#">mail@htmlacademy.ru</a></p>
               </li>
               <li class="contacts__item contacts__item--adress">
                 <p class="contacts__title">Приезжайте в гости:</p>
@@ -324,6 +273,5 @@
         </div>
       </footer>
       </div>
-<!--    </div>-->
   </body>
 </html>

@@ -29,6 +29,16 @@
   margin: 21px 20px 0 20px;
   padding: 15px 5px 16px;
   box-sizing: border-box;
+
+  &:hover {
+    color: $text-pink;
+    background-color: $text-white;
+  }
+
+  &:active {
+    color: rgba($text-pink, 0.3);
+    background-color: $text-white;
+  }
 }
 
 .application__list {
