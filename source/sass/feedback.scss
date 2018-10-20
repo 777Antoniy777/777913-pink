@@ -68,9 +68,17 @@
   margin: 0 8px;
   width: 6px;
   height: 6px;
-  background-color: #bec2c7;
+  background-color: rgba($color-light, 0.3);
   border-radius: 50%;
   cursor: pointer;
+
+  &:hover {
+    background-color: rgba($color-light, 0.6);
+  }
+
+  &:active {
+    background-color: rgba($color-light, 0.1);
+  }
 }
 
 //стили для управления первым слайдером на мобильном
