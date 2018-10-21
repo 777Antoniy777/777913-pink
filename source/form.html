@@ -21,7 +21,7 @@
             <ul class="main-navigation__list site-list">
               <li class="site-list__item"><a class="site-list__link" href="index.html">Главная</a></li>
               <li class="site-list__item"><a class="site-list__link" href="photo.html">Фотографии</a></li>
-              <li class="site-list__item site-list__item--active"><a class="site-list__link">Конкурс</a></li>
+              <li class="site-list__item site-list__item--active"><a class="site-list__link site-list__link--active">Конкурс</a></li>
               <li class="site-list__item"><a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
             </ul>
           </div>
@@ -35,15 +35,16 @@
         <div class="site-wrapper">
           <div class="possibility__wrapper">
             <h2 class="possibility__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
-            <p class="possibility__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+            <p class="possibility__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="possibility__description--tablet">Пожалуйста, заполните форму ниже:</span></p>
           </div>
         </div>
       </section>
       <!--Форма-->
-      <div class="site-wrapper">
+<!--      <div class="site-wrapper">-->
         <section class="form">
           <h2 class="visually-hidden">Форма для заполнения</h2>
           <form class="form-wrapper" action="https://echo.htmlacademy.ru" method="post">
+           <div class="site-wrapper">
             <fieldset class="form-wrapper__main-wrapper">
               <legend class="form-wrapper__title visually-hidden">Введите ваши данные</legend>
               <div class="form-wrapper__main">
@@ -55,6 +56,9 @@
                 <input type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
               </div>
             </fieldset>
+            </div>
+            <div class="form-wrapper__photo-background-wrapper">
+            <div class="site-wrapper">
             <fieldset class="form-wrapper__photo-wrapper">
               <legend class="form-wrapper__title">Ваши безбашенные достижения в путешествии</legend>
               <div class="form-wrapper__photo">
@@ -72,6 +76,9 @@
                 <label for="photo-hotel">Разгромил отель</label>
               </div>
             </fieldset>
+            </div>
+            </div>
+            <div class="site-wrapper">
             <fieldset class="form-wrapper__adress-wrapper">
               <legend class="form-wrapper__title visually-hidden">Введите ваши контакты</legend>
               <div class="form-wrapper__adress">
@@ -81,6 +88,9 @@
                 <input type="email" name="email" id="email" placeholder="Введите почту *" required>
               </div>
             </fieldset>
+            </div>
+            <div class="form-wrapper__app-background-wrapper">
+            <div class="site-wrapper">
             <fieldset class="form-wrapper__app-wrapper">
               <legend class="form-wrapper__title">С каким приложением путешествовали?</legend>
               <div class="form-wrapper__app">
@@ -92,6 +102,9 @@
                 <label for="app-windows">Windows Phone</label>
               </div>
             </fieldset>
+            </div>
+            </div>
+            <div class="site-wrapper">
             <fieldset class="form-wrapper__comment-wrapper">
               <legend class="form-wrapper__title">Опишите свои эмоции</legend>
               <div class="form-wrapper__comment">
@@ -99,10 +112,11 @@
               </div>
             </fieldset>
             <button class="form-wrapper__button button" type="submit">Отправить форму</button>
+             </div>
           </form>
           <p class="form-wrapper__addition"><sup>*</sup> — обязательные поля</p>
         </section>
-      </div>
+<!--      </div>-->
     </main>
     <!--Футер стр.формы-->
     <div class="site-wrapper">

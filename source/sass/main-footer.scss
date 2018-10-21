@@ -1,5 +1,5 @@
 .main-footer {
-  min-height: 180px;
+  min-height: 235px;
   padding: 38px 20px 10px 20px;
   background-color: $text-white;
   text-align: center;
@@ -29,6 +29,15 @@
   height: 50px;
   border-radius: 50%;
   box-shadow: inset 0 0 0 3px rgba($color-light, 0.1);
+
+  &:hover {
+    box-shadow: inset 0 0 0 3px $color-light;
+  }
+
+  &:active {
+    box-shadow: inset 0 0 0 3px rgba($color-light, 0.3);
+    opacity: 0.3;
+  }
 }
 
 .main-footer__image {
@@ -54,8 +63,7 @@
 }
 
 .main-footer__description {
-  margin: 14px 14px 18px 3px;
-  letter-spacing: 0.3px;
+  margin: 14px 14px 18px 1px;
 }
 
 .main-footer__html-logo {
@@ -111,7 +119,7 @@
 @media (min-width: $desktop-width) {
   .main-footer {
     min-height: 187px;
-    padding: 0 130px 10px;
+    padding: 0 130px;
   }
 
   .main-footer__logo-footer {

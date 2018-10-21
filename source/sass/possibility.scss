@@ -20,8 +20,36 @@
 .possibility__description {
   font-size: $body-font-size;
   line-height: $body-line-height + 6px;
+  font-weight: $font-normal;
   color: $color-light;
   background-color: $text-white;
   padding: 32px 20px 19px;
-  letter-spacing: 0.3px;
+
+  &--tablet {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .possibility {
+    min-height: 530px;
+  }
+
+  .possibility__title {
+    font-size: $body-font-size + 36px;
+    line-height: $body-line-height + 36px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: -270px -111px;
+    background-size: 1200px 729px;
+    padding: 70px 20px 79px;
+  }
+
+  .possibility__description {
+    font-size: $body-font-size + 4px;
+    padding: 74px 50px 40px;
+
+    &--tablet {
+    display: block;
+  }
+  }
 }

@@ -190,6 +190,14 @@
       box-shadow: 0 0 0 2px lightblue;
     }
 
+    &:hover::before {
+      border: 2px solid rgba($color-light, 0.6);
+    }
+
+    &:active::before {
+      border: 2px solid rgba($color-light, 0.1);
+    }
+
     &--left {
       top: 67px;
       left: 127px;
@@ -198,11 +206,11 @@
         @include pseudo;
         top: 5px;
         left: 10px;
-        width: 29px;
-        height: 29px;
-        border: 2px solid rgba(0, 0, 0, 0.3);
+        width: 30px;
+        height: 30px;
+        border: 2px solid rgba($color-light, 0.3);
         transform: rotate(135deg);
-        clip: rect(2px, auto, auto, 2px);
+        clip: rect(3px, auto, auto, 3px);
       }
     }
 
@@ -214,11 +222,11 @@
         @include pseudo;
         top: 5px;
         right: 10px;
-        width: 29px;
-        height: 29px;
-        border: 2px solid rgba(0, 0, 0, 0.3);
+        width: 30px;
+        height: 30px;
+        border: 2px solid rgba($color-light, 0.3);
         transform: rotate(-45deg);
-        clip: rect(2px, auto, auto, 2px);
+        clip: rect(3px, auto, auto, 3px);
       }
     }
   }
