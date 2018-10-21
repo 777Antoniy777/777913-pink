@@ -46,10 +46,11 @@
 
   .possibility__description {
     font-size: $body-font-size + 4px;
-    padding: 74px 50px 40px;
+    padding: 74px 50px 0;
+    margin-bottom: 0;
 
     &--tablet {
     display: block;
-  }
+    }
   }
 }

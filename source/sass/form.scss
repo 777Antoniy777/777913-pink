@@ -11,7 +11,6 @@
 .form-wrapper__main {
   padding: 0 20px;
   margin: 0;
-//  margin-bottom: 24px;
   margin-bottom: 42px;
 }
 
@@ -22,7 +21,8 @@
   line-height: $body-line-height + 6px;
   font-weight: $font-normal;
   text-transform: uppercase;
-  margin: 0 0 5px 23px;
+  padding-left: 22px;
+  margin: 0;
   color: $text-pink;
 
   &:not(:first-of-type) {
@@ -34,6 +34,8 @@
   width: 280px;
   height: 63px;
   padding: 4px 21px 0;
+  margin-top: 5px;
+  margin-left: -22px;
   border: 2px solid #e5e5e5;
   box-sizing: border-box;
 }
@@ -48,8 +50,6 @@
 }
 
 .form-wrapper__title {
-//  position: relative;
-//  top: 56px;
   font-size: $body-font-size;
   line-height: $body-line-height - 6px;
   font-weight: $font-normal;
@@ -68,7 +68,6 @@
   @include flex;
   align-items: center;
   flex-wrap: wrap;
-//  padding-top: 94px;
   background-color: $background-color;
 }
 
@@ -244,4 +243,119 @@
   top: 0;
   font-size: $body-font-size;
   color: $text-pink;
+}
+
+@media (min-width: $tablet-width) {
+  .form-wrapper {
+    @include flex(flex, column);
+  }
+
+  .form-wrapper__main-background-wrapper {
+    order: 1;
+  }
+
+  .form-wrapper__app-background-wrapper {
+    order: 2;
+  }
+
+  .form-wrapper__adress-background-wrapper {
+    order: 3;
+  }
+
+  .form-wrapper__photo-background-wrapper {
+    order: 4;
+  }
+
+  .form-wrapper__comment-background-wrapper {
+    order: 5;
+  }
+
+  .form-wrapper__main {
+    @include flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    margin-top: 8px;
+  }
+
+  .form-wrapper__main label {
+    @include flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 39px 0 30px;
+    padding: 0px 0 0 0;
+    width: 620px;
+  }
+
+  .form-wrapper__main-item span {
+    word-break: break-all;
+    margin-top: 8px;
+  }
+
+  .form-wrapper__main-item:nth-of-type(odd) span {
+      width: 85px;
+  }
+
+  .form-wrapper__main-item:nth-of-type(even) span {
+      width: 50px;
+  }
+
+  .form-wrapper__main-item input {
+    padding-left: 19px;
+  }
+
+  .form-wrapper__main-item:nth-of-type(odd) input[type="text"] {
+    width: 524px;
+  }
+
+  .form-wrapper__main-item:nth-of-type(even) input[type="text"]{
+    width: 564px;
+  }
+
+  .form-wrapper__title {
+    line-height: $body-line-height + 6px;
+    margin: 0 40px;
+    padding: 38px 0;
+  }
+
+  .form-wrapper__app-background-wrapper {
+    background-color: $text-white;
+  }
+
+  .form .form-wrapper__app-wrapper {
+    border: 2px solid #e5e5e5;
+    margin: 0 20px;
+  }
+
+  .form-wrapper__app-wrapper .form-wrapper__title {
+    padding: 22px 20px 22px;
+  }
+
+  .form-wrapper__app {
+    @include flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 19px 60px 0;
+  }
+
+  .form-wrapper__app label {
+    @include flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    margin-left: 57px;
+
+    &::before {
+      top: -4px;
+      left: -59px;
+    }
+
+    &::after {
+      display: none;
+      top: 8px;
+      left: -47px;
+    }
+  }
 }

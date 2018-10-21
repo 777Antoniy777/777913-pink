@@ -40,22 +40,26 @@
         </div>
       </section>
       <!--Форма-->
-<!--      <div class="site-wrapper">-->
         <section class="form">
           <h2 class="visually-hidden">Форма для заполнения</h2>
           <form class="form-wrapper" action="https://echo.htmlacademy.ru" method="post">
+           <div class="form-wrapper__main-background-wrapper">
            <div class="site-wrapper">
             <fieldset class="form-wrapper__main-wrapper">
               <legend class="form-wrapper__title visually-hidden">Введите ваши данные</legend>
               <div class="form-wrapper__main">
-                <label for="surname">Фамилия:</label>
-                <input type="text" name="surname" id="surname" placeholder="Укажите фамилию *" required>
-                <label for="name">Имя:</label>
-                <input type="text" name="name" id="name" placeholder="Введите ваше имя *" required>
-                <label for="patronymic">Отчество:</label>
-                <input type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
+                <label class="form-wrapper__main-item"><span>Фамилия:</span>
+                <input type="text" name="surname" placeholder="Укажите фамилию *" required>
+                </label>
+                <label class="form-wrapper__main-item"><span>Имя:</span>
+                <input type="text" name="name" placeholder="Введите ваше имя *" required>
+                </label>
+                <label class="form-wrapper__main-item"><span>Отчество:</span>
+                <input type="text" name="patronymic" placeholder="Ну и отчество тоже">
+                </label>
               </div>
             </fieldset>
+            </div>
             </div>
             <div class="form-wrapper__photo-background-wrapper">
             <div class="site-wrapper">
@@ -78,6 +82,7 @@
             </fieldset>
             </div>
             </div>
+            <div class="form-wrapper__adress-background-wrapper">
             <div class="site-wrapper">
             <fieldset class="form-wrapper__adress-wrapper">
               <legend class="form-wrapper__title visually-hidden">Введите ваши контакты</legend>
@@ -88,6 +93,7 @@
                 <input type="email" name="email" id="email" placeholder="Введите почту *" required>
               </div>
             </fieldset>
+            </div>
             </div>
             <div class="form-wrapper__app-background-wrapper">
             <div class="site-wrapper">
@@ -104,6 +110,7 @@
             </fieldset>
             </div>
             </div>
+            <div class="form-wrapper__comment-background-wrapper">
             <div class="site-wrapper">
             <fieldset class="form-wrapper__comment-wrapper">
               <legend class="form-wrapper__title">Опишите свои эмоции</legend>
@@ -113,10 +120,10 @@
             </fieldset>
             <button class="form-wrapper__button button" type="submit">Отправить форму</button>
              </div>
+            </div>
           </form>
           <p class="form-wrapper__addition"><sup>*</sup> — обязательные поля</p>
         </section>
-<!--      </div>-->
     </main>
     <!--Футер стр.формы-->
     <div class="site-wrapper">
