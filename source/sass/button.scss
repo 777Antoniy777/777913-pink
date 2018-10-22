@@ -13,3 +13,12 @@
   background-color: #2aab6d;
   cursor: pointer;
 }
+
+@media (min-width: $tablet-width) {
+  .button {
+    width: 300px;
+    min-height: 60px;
+    padding: 16px 20px;
+    border-radius: 3px;
+  }
+}

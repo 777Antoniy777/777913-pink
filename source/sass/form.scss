@@ -31,9 +31,13 @@
 }
 
 .form-wrapper__main input {
+  font-size: $body-font-size + 4px;
+  line-height: $body-line-height + 6px;
+  font-weight: $font-normal;
+  color: $color-light;
   width: 280px;
   height: 63px;
-  padding: 4px 21px 0;
+  padding: 0 21px 0;
   margin-top: 5px;
   margin-left: -22px;
   border: 2px solid #e5e5e5;
@@ -68,7 +72,6 @@
   @include flex;
   align-items: center;
   flex-wrap: wrap;
-  background-color: $background-color;
 }
 
 .form-wrapper__photo label {
@@ -118,6 +121,10 @@
   display: block;
 }
 
+.form-wrapper__adress-wrapper .form-wrapper__title {
+  display: none;
+}
+
 .form-wrapper__adress {
   padding: 32px 20px 0;
   margin-bottom: 42px;
@@ -139,10 +146,15 @@
 }
 
 .form-wrapper__adress input {
+  font-size: $body-font-size + 4px;
+  line-height: $body-line-height + 6px;
+  font-weight: $font-normal;
+  color: $color-light;
   width: 280px;
   height: 63px;
-  padding: 4px 21px 0;
+  padding: 0 21px 0;
   margin-top: 5px;
+  margin-left: -23px;
   border: 2px solid #e5e5e5;
   box-sizing: border-box;
 }
@@ -216,6 +228,10 @@
 }
 
 .form-wrapper__comment textarea {
+  font-size: $body-font-size + 4px;
+  line-height: $body-line-height + 6px;
+  font-weight: $font-normal;
+  color: $color-light;
   width: 280px;
   height: 201px;
   border: 2px solid #e5e5e5;
@@ -294,11 +310,11 @@
   }
 
   .form-wrapper__main-item:nth-of-type(odd) span {
-      width: 85px;
+    width: 85px;
   }
 
   .form-wrapper__main-item:nth-of-type(even) span {
-      width: 50px;
+    width: 50px;
   }
 
   .form-wrapper__main-item input {
@@ -313,14 +329,15 @@
     width: 564px;
   }
 
-  .form-wrapper__title {
+  .form-wrapper__app-background-wrapper .form-wrapper__title {
     line-height: $body-line-height + 6px;
     margin: 0 40px;
-    padding: 38px 0;
+    padding: 22px 25px 22px;
   }
 
   .form-wrapper__app-background-wrapper {
     background-color: $text-white;
+    margin-bottom: 28px;
   }
 
   .form .form-wrapper__app-wrapper {
@@ -328,16 +345,12 @@
     margin: 0 20px;
   }
 
-  .form-wrapper__app-wrapper .form-wrapper__title {
-    padding: 22px 20px 22px;
-  }
-
   .form-wrapper__app {
     @include flex;
     align-items: center;
     justify-content: flex-start;
     flex-wrap: wrap;
-    padding: 19px 60px 0;
+    padding: 19px 60px 16px;
   }
 
   .form-wrapper__app label {
@@ -357,5 +370,151 @@
       top: 8px;
       left: -47px;
     }
+  }
+
+  .form-wrapper__adress-background-wrapper {
+    margin-bottom: 29px;
+  }
+
+  .form-wrapper__adress-wrapper .form-wrapper__title {
+    display: block;
+    line-height: $body-line-height + 6px;
+    margin: 0 40px;
+    padding: 22px 32px 22px;
+  }
+
+  .form-wrapper__adress {
+    padding: 4px 20px 0;
+    margin-bottom: 26px;
+  }
+
+  .form .form-wrapper__adress-wrapper {
+    border: 2px solid #e5e5e5;
+    margin: 0 20px;
+  }
+
+  .form-wrapper__adress label {
+    @include flex(flex, column-reverse);
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    margin-left: 57px;
+    margin-bottom: 22px;
+
+    &::before {
+      @include pseudo;
+      top: 6px;
+      right: 39px;
+      width: 60px;
+      height: 61px;
+      background-color: #e5e5e5;
+    }
+
+    &::after {
+      @include pseudo;
+      @include background;
+      width: 60px;
+      height: 61px;
+    }
+
+    &:nth-child(1)::after {
+      background-image: url("../img/svg/icon-phone.svg");
+      top: 26px;
+      right: 60px;
+      width: 20px;
+      height: 20px;
+    }
+
+    &:nth-child(2)::after {
+      background-image: url("../img/svg/icon-mail.svg");
+      top: 30px;
+      right: 61px;
+      width: 18px;
+      height: 14px;
+    }
+  }
+
+  .form-wrapper__adress input {
+    width: 500px;
+    height: 63px;
+    padding: 0 75px 0 18px;
+    margin: 5px 0 11px -19px;
+  }
+
+  .form-wrapper__photo-background-wrapper {
+    background-color: $text-white;
+    margin-bottom: 29px;
+  }
+
+  .form .form-wrapper__photo-wrapper {
+    border: 2px solid #e5e5e5;
+    margin: 0 20px;
+  }
+
+  .form-wrapper__photo-wrapper .form-wrapper__title {
+    line-height: $body-line-height + 6px;
+    margin: 0 40px;
+    padding: 22px 32px 22px;
+  }
+
+  .form-wrapper__photo {
+    @include flex(flex, column);
+    justify-content: center;
+    align-items: flex-start;
+    padding-bottom: 21px;
+  }
+
+  .form-wrapper__photo label {
+    margin: 20px 0 32px 118px;
+
+    &::before {
+      top: -4px;
+      left: -60px;
+    }
+
+    &::after {
+      top: -7px;
+      left: -57px;
+    }
+  }
+
+  .form .form-wrapper__comment-wrapper {
+    border: 2px solid #e5e5e5;
+    margin: 0 20px;
+  }
+
+  .form-wrapper__comment-wrapper .form-wrapper__title {
+    line-height: $body-line-height + 6px;
+    margin: 0 40px;
+    padding: 22px 39px 22px;
+  }
+
+  .form-wrapper__comment {
+    padding: 9px 58px 44px;
+  }
+
+  .form-wrapper__comment textarea {
+    width: 500px;
+    height: 193px;
+  }
+
+  .form-wrapper__button-wrapper {
+    @include flex;
+  }
+
+  .form-wrapper__button {
+    margin: 67px 20px 0;
+  }
+
+  .form-wrapper__addition {
+    display: inline-block;
+    vertical-align: top;
+    width: 230px;
+    margin: 85px 20px 0 20px;
+  }
+
+  .form-wrapper__addition sup {
+    top: 0;
+    font-size: $body-font-size;
   }
 }
