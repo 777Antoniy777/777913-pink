@@ -7,6 +7,7 @@
   min-height: 330px;
   padding-top: 38px;
   background-color: $text-white;
+  border-radius: 5px;
   transform: translate(-50%, -50%);
 }
 
@@ -37,4 +38,44 @@
 
 .popup-successful__button {
   margin: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .popup-successful {
+    display: block;
+    top: 50%;
+    left: 50%;
+    width: 460px;
+    min-height: 430px;
+    padding-top: 38px;
+    background-color: blue;
+    transform: translate(-50%, -50%);
+  }
+
+  .popup-successful__title {
+    font-size: $body-font-size + 4px;
+    line-height: $body-line-height;
+    font-weight: $font-bold;
+    text-align: center;
+    margin: 0 20px 28px;
+  }
+
+  .popup-successful__description {
+    font-size: $body-font-size;
+    line-height: $body-line-height;
+    font-weight: $font-normal;
+    text-align: center;
+    margin: 0 20px 100px;
+  }
+
+  .popup-successful__wrapper {
+    @include flex;
+    min-height: 163px;
+    background-color: $background-color;
+    padding: 7px 20px 10px;
+  }
+
+  .popup-successful__button {
+    margin: auto;
+  }
 }

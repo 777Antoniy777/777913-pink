@@ -37,3 +37,18 @@
   margin: 0;
   padding: 0;
 }
+
+@media (min-width: $tablet-width) {
+  .photo__title {
+    font-size: $body-font-size + 10px;
+    line-height: $body-line-height + 5px;
+    font-weight: $font-light;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: 0 -67px;
+    background-repeat: no-repeat;
+    background-size: 660px 700px;
+    text-align: center;
+    margin: 0;
+    padding: 29px 20px 83px;
+  }
+}
