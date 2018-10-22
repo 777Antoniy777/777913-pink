@@ -515,3 +515,114 @@
     text-align: right;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .form {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .form-wrapper {
+    @include flex;
+    padding: 0 130px;
+    flex-wrap: wrap;
+  }
+
+  .form-wrapper__main-background-wrapper {
+    width: 470px;
+  }
+
+  .form-wrapper__main-wrapper {
+    width: 450px;
+  }
+
+  .form-wrapper__main {
+    @include flex(flex, column);
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    width: 450px;
+    margin-bottom: 0;
+    margin-top: 8px;
+  }
+
+  .form-wrapper__main label {
+    @include flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 450px;
+    margin: 39px 0 30px;
+    padding: 0px 0 0 0;
+  }
+
+  .form-wrapper__main-item span {
+    word-break: break-all;
+    margin-top: 8px;
+  }
+
+  .form-wrapper__main-item:nth-of-type(odd) span {
+    width: 85px;
+  }
+
+  .form-wrapper__main-item:nth-of-type(even) span {
+    width: 50px;
+  }
+
+  .form-wrapper__main-item input {
+    padding-left: 19px;
+  }
+
+  .form-wrapper__main-item:nth-of-type(odd) input[type="text"] {
+    width: 336px;
+  }
+
+  .form-wrapper__main-item:nth-of-type(even) input[type="text"]{
+    width: 376px;
+  }
+
+  .form-wrapper__app-background-wrapper .form-wrapper__title {
+    line-height: $body-line-height + 6px;
+    margin: 0 40px;
+    padding: 22px 25px 22px;
+  }
+
+  .form-wrapper__app-background-wrapper {
+    width: 470px;
+    background-color: $text-white;
+    margin-bottom: 28px;
+  }
+
+  .form .form-wrapper__app-wrapper {
+    width: 450px;
+    border: 2px solid #e5e5e5;
+    margin: 0 20px;
+  }
+
+  .form-wrapper__app {
+    @include flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 450px;
+    padding: 19px 60px 16px;
+  }
+
+  .form-wrapper__app label {
+    @include flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    margin-left: 57px;
+
+    &::before {
+      top: -4px;
+      left: -59px;
+    }
+
+    &::after {
+      display: none;
+      top: 8px;
+      left: -47px;
+    }
+  }
+}
