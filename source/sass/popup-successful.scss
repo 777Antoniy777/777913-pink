@@ -71,3 +71,24 @@
     padding: 7px 20px 10px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .popup-successful {
+    display: none;
+    width: 780px;
+    min-height: 163px;
+    padding-top: 40px;
+  }
+
+  .popup-successful__title {
+    margin: 0 40px 22px;
+  }
+
+  .popup-successful__description {
+    margin: 0 158px 40px;
+  }
+
+  .popup-successful__description br {
+    display: none;
+  }
+}
