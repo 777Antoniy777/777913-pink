@@ -8,8 +8,8 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="photo-page">
-    <div class="site-wrapper">
       <!--Хедер стр.фото-->
+      <div class="site-wrapper">
       <header class="main-header">
         <nav class="main-navigation">
           <a class="main-navigation__logo-link" href="index.html">
@@ -26,19 +26,26 @@
           </div>
         </nav>
       </header>
+      </div>
       <!--Основная часть стр.фото-->
       <main>
         <section class="photo">
+          <div class="site-wrapper">
           <h1 class="photo__title">Фотографии пользователей</h1>
           <p class="photo__description">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-          <figure class="photo__post post">
-            <img class="post__image post__image--panorama" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фото Анны">
-            <figcaption class="post__caption">
+          </div>
+          <figure class="photo__post post post--panorama">
+            <img class="post__image post__image--panorama" src="img/panorama-mobile@1x.jpg" width="100%" height="137" alt="Фото Анны">
+            <div class="site-wrapper">
+            <figcaption class="post__caption post__caption--panorama">
               <p class="post__title">Анна<span class="post__time"> (5 минут назад)</span></p>
               <p class="post__description">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
               <p class="post__likes">Нравится: 215</p>
             </figcaption>
+            </div>
           </figure>
+          <div class="photo__photo-wrapper">
+          <div class="site-wrapper">
           <figure class="photo__post post">
             <img class="post__image" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фото Левона">
             <figcaption class="post__caption">
@@ -47,6 +54,8 @@
               <p class="post__likes">Нравится: 356</p>
             </figcaption>
           </figure>
+          </div>
+          <div class="site-wrapper">
           <figure class="photo__post post">
             <img class="post__image" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фото Антона">
             <figcaption class="post__caption">
@@ -55,6 +64,8 @@
               <p class="post__likes">Нравится: 666</p>
             </figcaption>
           </figure>
+          </div>
+          <div class="site-wrapper">
           <figure class="photo__post post">
             <img class="post__image" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фото Бориса">
             <figcaption class="post__caption">
@@ -63,6 +74,8 @@
               <p class="post__likes">Нравится: 215</p>
             </figcaption>
           </figure>
+          </div>
+          <div class="site-wrapper">
           <figure class="photo__post post">
             <img class="post__image" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фото Сергея">
             <figcaption class="post__caption">
@@ -71,6 +84,8 @@
               <p class="post__likes">Нравится: 4</p>
             </figcaption>
           </figure>
+          </div>
+          <div class="site-wrapper">
           <figure class="photo__post post">
             <img class="post__image" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фото Максима">
             <figcaption class="post__caption">
@@ -79,6 +94,8 @@
               <p class="post__likes">Нравится: 150</p>
             </figcaption>
           </figure>
+          </div>
+          <div class="site-wrapper">
           <figure class="photo__post post">
             <img class="post__image" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фото Надежды">
             <figcaption class="post__caption">
@@ -87,9 +104,15 @@
               <p class="post__likes">Нравится: 2560</p>
             </figcaption>
           </figure>
+          </div>
+          </div>
+          <div class="site-wrapper">
           <p class="photo__description photo__description--last">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
+          </div>
         </section>
-        <section class="filter">
+        <div class="filter">
+        <div class="site-wrapper">
+        <section class="filter__wrapper">
           <h2 class="visually-hidden">Фильтр</h2>
             <form class="filter__form" action="https://echo.htmlacademy.ru" method="post">
               <img class="filter__image" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Изображение для фильтра">
@@ -126,6 +149,7 @@
                   </label>
                 </li>
               </ul>
+              <div class="filter__inner-wrapper">
               <div class="filter__range-wrapper slider">
                 <ul class="filter__range-list slider__list">
                   <li class="filter__range-item slider__item slider__item--first">
@@ -146,10 +170,14 @@
                 <button class="filter__button" type="submit">Запостить</button>
                 <button class="filter__button filter__button--reset" type="reset">Отмена</button>
               </div>
+              </div>
             </form>
         </section>
+        </div>
+        </div>
       </main>
       <!--Футер стр.фото-->
+      <div class="site-wrapper">
       <footer class="main-footer">
         <a class="main-footer__logo-link" href="index.html">
         <img class="main-footer__logo-footer" src="img/svg/logo-pink-blue-mobile.svg" width="147" height="41" alt="приложение 'Пинк'">
