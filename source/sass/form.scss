@@ -53,6 +53,11 @@
   color: $color-light;
 }
 
+.form-wrapper__main input::-moz-placeholder,
+.form-wrapper__adress input::-moz-placeholder {
+  line-height: 55px;
+}
+
 .form-wrapper__title {
   font-size: $body-font-size;
   line-height: $body-line-height - 6px;
@@ -386,6 +391,10 @@
     padding: 22px 25px 22px;
   }
 
+  @-moz-document url-prefix() {
+   .form-wrapper__app-background-wrapper .form-wrapper__title {margin: 0 119px;}
+  }
+
   .form-wrapper__app-background-wrapper {
     background-color: $text-white;
     margin-bottom: 28px;
@@ -432,6 +441,10 @@
     line-height: $body-line-height + 6px;
     margin: 0 40px;
     padding: 22px 32px 22px;
+  }
+
+  @-moz-document url-prefix() {
+   .form-wrapper__adress-wrapper .form-wrapper__title {margin: 0 177px;}
   }
 
   .form-wrapper__adress {
@@ -506,6 +519,10 @@
     padding: 22px 32px 22px;
   }
 
+  @-moz-document url-prefix() {
+   .form-wrapper__photo-wrapper .form-wrapper__title {margin: 0 89px;}
+  }
+
   .form-wrapper__photo {
     @include flex(flex, column);
     justify-content: center;
@@ -536,6 +553,10 @@
     line-height: $body-line-height + 6px;
     margin: 0 40px;
     padding: 22px 39px 22px;
+  }
+
+  @-moz-document url-prefix() {
+   .form-wrapper__comment-wrapper .form-wrapper__title {margin: 0 176px;}
   }
 
   .form-wrapper__comment {

@@ -65,6 +65,10 @@
     width: 32px;
     height: 32px;
   }
+
+  &:hover {
+    opacity: 0.5;
+  }
 }
 
 .filter__range-list {
@@ -116,6 +120,10 @@ _:-ms-fullscreen, :root .filter__form input[type="range"] {
   cursor: pointer;
   -webkit-appearance: none;
   margin-top: -6px;
+
+  &:active {
+    background-color: $text-pink;
+  }
 }
 
 .filter__form input[type="range"]::-moz-range-thumb {
@@ -126,6 +134,10 @@ _:-ms-fullscreen, :root .filter__form input[type="range"] {
   background-color: $background-color;
   cursor: pointer;
   margin-top: -6px;
+
+  &:active {
+    background-color: $text-pink;
+  }
 }
 
 .filter__form input[type="range"]::-ms-thumb {
@@ -136,6 +148,10 @@ _:-ms-fullscreen, :root .filter__form input[type="range"] {
   background-color: $background-color;
   cursor: pointer;
   margin-top: 0;
+
+  &:active {
+    background-color: $text-pink;
+  }
 }
 
 .filter__buttons {
@@ -159,9 +175,30 @@ _:-ms-fullscreen, :root .filter__form input[type="range"] {
   border-radius: 30px;
   cursor: pointer;
 
+  &:hover {
+    color: $text-white;
+    background-color: $text-pink;
+  }
+
+  &:active {
+    color: rgba($text-white, 0.3);
+  }
+
   &--reset {
     color: rgba($color-light, 0.1);
     border: 3px solid rgba($color-light, 0.1);
+
+    &:hover {
+      color: rgba($color-light, 0.3);
+      background-color: transparent;
+      border: 3px solid rgba($color-light, 0.3);
+    }
+
+    &:active {
+      color: rgba($text-white, 0.3);
+      background-color: rgba($color-light, 0.3);
+      border: 3px solid rgba($color-light, 0);
+    }
   }
 }
 
@@ -391,7 +428,11 @@ _:-ms-fullscreen, :root .filter__form input[type="range"] {
   }
 
   _:-ms-fullscreen, :root .filter__form input[type="range"] {
-    margin: 0 20px 0 50px;
+    margin: 0 20px 0 95px;
+  }
+
+  .filter__form input[type="range"]::-ms-track {
+    width: 288px;
   }
 
   .filter__buttons {
