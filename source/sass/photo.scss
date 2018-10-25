@@ -71,3 +71,26 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .photo__photo-wrapper {
+    width: 960px;
+    padding: 0 120px;
+  }
+
+  .photo__title {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-position: -680px 1px;
+    background-size: 2560px 853px;
+    padding: 174px 275px 101px;
+  }
+
+  .photo__description {
+    padding: 74px 280px 70px;
+
+    &--last {
+      padding-top: 5px;
+      padding-bottom: 55px;
+    }
+  }
+}

@@ -142,3 +142,51 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .post {
+    margin-bottom: 34px;
+
+    &--panorama {
+      margin-bottom: 30px;
+    }
+  }
+
+  .post__image {
+    height: 400px;
+
+    &--panorama {
+      height: 506px;
+    }
+  }
+
+  .post__caption {
+
+    &--panorama {
+      justify-content: space-between;
+      padding-bottom: 16px;
+      margin: 0 130px 20px;
+    }
+  }
+
+  .post__caption--panorama .post__description {
+    position: relative;
+    top: -5px;
+  }
+
+  .post__likes {
+
+    &::before {
+      top: 4px;
+      left: 255px;
+    }
+  }
+
+  .post__caption--panorama .post__likes {
+    padding: 0 62px 0 0;
+
+    &::before {
+      left: 293px;
+    }
+  }
+}
