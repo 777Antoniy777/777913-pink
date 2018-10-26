@@ -86,6 +86,10 @@
     }
   }
 
+  _:-ms-fullscreen, :root .equipment-slider__title {
+    padding-bottom: 20px;
+  }
+
   .equipment-slider__value {
     font-size: $body-font-size + 10px;
     line-height: $body-line-height + 6px;
@@ -121,6 +125,22 @@
     &--tablet {
       display: none;
     }
+  }
+
+  _:-ms-fullscreen, :root .equipment-slider__description--mobile {
+    position: relative;
+    padding-bottom: 13px;
+  }
+
+  _:-ms-fullscreen, :root .equipment-slider__description--mobile::after {
+    content: "";
+    position: absolute;
+    top: -15px;
+    right: 223px;
+    width: 2px;
+    height: 140%;
+    background-color: #e5e5e5;
+    z-index: 2;
   }
 
   .equipment-slider__sign {
@@ -265,6 +285,14 @@
     }
   }
 
+  _:-ms-fullscreen, :root .equipment-slider__line {
+    background-color: white;
+  }
+
+  _:-ms-fullscreen, :root .equipment-slider__title--empty {
+    background-color: #f2f2f2;
+  }
+
   .equipment-slider__title {
     @include flex(flex, column);
     justify-content: center;
@@ -321,6 +349,33 @@
     &--tablet {
       display: block;
     }
+  }
+
+  _:-ms-fullscreen, :root .equipment-slider__description--tablet {
+    position: relative;
+    padding-bottom: 13px;
+  }
+
+  _:-ms-fullscreen, :root .equipment-slider__description--tablet::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -316px;
+    width: 2px;
+    height: 100%;
+    background-color: #e5e5e5;
+    z-index: 2;
+  }
+
+  _:-ms-fullscreen, :root .equipment-slider__description--tablet::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 310px;
+    width: 2px;
+    height: 100%;
+    background-color: #e5e5e5;
+    z-index: 2;
   }
 
   .equipment-slider__sign {
@@ -419,6 +474,10 @@
     }
   }
 
+  _:-ms-fullscreen, :root .equipment-slider__line {
+    min-height: 56px;
+  }
+
   .equipment-slider__title {
     font-size: $body-font-size + 4px;
     line-height: $body-line-height + 6px;
@@ -428,6 +487,11 @@
     &--empty {
       min-height: 77px;
     }
+  }
+
+  _:-ms-fullscreen, :root .equipment-slider__title {
+    padding-bottom: 20px;
+    padding-top: 15px;
   }
 
   .equipment-slider__value {
@@ -441,6 +505,16 @@
     line-height: $body-line-height + 6px;
     width: 237px;
     padding: 14px 5px 0 22px;
+  }
+
+  _:-ms-fullscreen, :root .equipment-slider__description--tablet::after {
+    top: 0;
+    right: -473px;
+  }
+
+  _:-ms-fullscreen, :root .equipment-slider__description--tablet::before {
+    top: 0;
+    left: 469px;
   }
 
   .equipment-slider__sign {

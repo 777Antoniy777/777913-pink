@@ -136,6 +136,10 @@
     margin-top: 120px;
   }
 
+  _:-ms-fullscreen, :root .application__wrapper {
+    margin-top: 215px;
+  }
+
   .application__description {
     font-size: $body-font-size + 36px;
     line-height: $body-line-height + 36px;

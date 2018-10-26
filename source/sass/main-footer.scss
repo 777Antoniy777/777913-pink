@@ -122,6 +122,11 @@
     padding: 0 130px;
   }
 
+  _:-ms-fullscreen, :root .main-footer {
+    min-height: 127px;
+    margin-top: 70px;
+  }
+
   .main-footer__logo-footer {
     margin-bottom: 15px;
   }

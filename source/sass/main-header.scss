@@ -58,6 +58,11 @@
     min-height: 110px;
   }
 
+  _:-ms-fullscreen, :root .main-navigation {
+    position: relative;
+    top: 27px;
+  }
+
   .main-navigation__logo-link {
     margin: auto 0 auto 20px;
   }
