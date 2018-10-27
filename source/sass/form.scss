@@ -326,18 +326,6 @@
     order: 1;
   }
 
-  .form-wrapper__app-background-wrapper {
-    order: 2;
-  }
-
-  .form-wrapper__adress-background-wrapper {
-    order: 3;
-  }
-
-  .form-wrapper__photo-background-wrapper {
-    order: 4;
-  }
-
   .form-wrapper__comment-background-wrapper {
     order: 5;
   }
@@ -381,7 +369,7 @@
     width: 524px;
   }
 
-  .form-wrapper__main-item:nth-of-type(even) input[type="text"]{
+  .form-wrapper__main-item:nth-of-type(even) input[type="text"] {
     width: 564px;
   }
 
@@ -391,17 +379,19 @@
     padding: 22px 25px 22px;
   }
 
-  @-moz-document url-prefix() {
+  @-moz-document url-prefix("") {
     .form-wrapper__app-background-wrapper .form-wrapper__title {
       margin: 0 119px;
     }
   }
 
-  _:-ms-fullscreen, :root .form-wrapper__app-background-wrapper .form-wrapper__title {
+  :-ms-fullscreen,
+  :root .form-wrapper__app-background-wrapper .form-wrapper__title {
     margin: 0 119px;
   }
 
   .form-wrapper__app-background-wrapper {
+    order: 2;
     background-color: $text-white;
     margin-bottom: 28px;
   }
@@ -439,6 +429,7 @@
   }
 
   .form-wrapper__adress-background-wrapper {
+    order: 3;
     margin-bottom: 29px;
   }
 
@@ -449,13 +440,14 @@
     padding: 22px 32px 22px;
   }
 
-  @-moz-document url-prefix() {
+  @-moz-document url-prefix("") {
     .form-wrapper__adress-wrapper .form-wrapper__title {
       margin: 0 177px;
     }
   }
 
-  _:-ms-fullscreen, :root .form-wrapper__adress-wrapper .form-wrapper__title {
+  :-ms-fullscreen,
+  :root .form-wrapper__adress-wrapper .form-wrapper__title {
     margin: 0 177px;
   }
 
@@ -516,6 +508,7 @@
   }
 
   .form-wrapper__photo-background-wrapper {
+    order: 4;
     background-color: $text-white;
     margin-bottom: 29px;
   }
@@ -531,13 +524,14 @@
     padding: 22px 32px 22px;
   }
 
-  @-moz-document url-prefix() {
+  @-moz-document url-prefix("") {
     .form-wrapper__photo-wrapper .form-wrapper__title {
       margin: 0 89px;
     }
   }
 
-  _:-ms-fullscreen, :root .form-wrapper__photo-wrapper .form-wrapper__title {
+  :-ms-fullscreen,
+  :root .form-wrapper__photo-wrapper .form-wrapper__title {
     margin: 0 89px;
   }
 
@@ -573,13 +567,14 @@
     padding: 22px 39px 22px;
   }
 
-  @-moz-document url-prefix() {
+  @-moz-document url-prefix("") {
     .form-wrapper__comment-wrapper .form-wrapper__title {
       margin: 0 176px;
     }
   }
 
-  _:-ms-fullscreen, :root .form-wrapper__comment-wrapper .form-wrapper__title {
+  :-ms-fullscreen,
+  :root .form-wrapper__comment-wrapper .form-wrapper__title {
     margin: 0 176px;
   }
 
@@ -617,7 +612,6 @@
   }
 
   .form .site-wrapper {
-
     &--desktop {
       width: 0;
       margin: 0;
@@ -676,7 +670,7 @@
     width: 340px;
   }
 
-  .form-wrapper__main-item:nth-of-type(even) input[type="text"]{
+  .form-wrapper__main-item:nth-of-type(even) input[type="text"] {
     width: 380px;
   }
 
@@ -694,13 +688,14 @@
     margin: 0;
   }
 
-  @-moz-document url-prefix() {
+  @-moz-document url-prefix("") {
     .form-wrapper__app-background-wrapper .form-wrapper__title {
       margin: 0 31px;
     }
   }
 
-  _:-ms-fullscreen, :root .form-wrapper__app-background-wrapper .form-wrapper__title {
+  :-ms-fullscreen,
+  :root .form-wrapper__app-background-wrapper .form-wrapper__title {
     margin: 0 28px;
   }
 
@@ -727,13 +722,14 @@
     padding: 20px 32px 20px;
   }
 
-  @-moz-document url-prefix() {
+  @-moz-document url-prefix("") {
     .form-wrapper__adress-wrapper .form-wrapper__title {
       margin: 0 337px;
     }
   }
 
-  _:-ms-fullscreen, :root .form-wrapper__adress-wrapper .form-wrapper__title {
+  :-ms-fullscreen,
+  :root .form-wrapper__adress-wrapper .form-wrapper__title {
     margin: 0 337px;
   }
 
@@ -785,13 +781,14 @@
     padding-bottom: 28px;
   }
 
-  @-moz-document url-prefix() {
+  @-moz-document url-prefix("") {
     .form-wrapper__photo-wrapper .form-wrapper__title {
       margin: 0 249px;
     }
   }
 
-  _:-ms-fullscreen, :root .form-wrapper__photo-wrapper .form-wrapper__title {
+  :-ms-fullscreen,
+  :root .form-wrapper__photo-wrapper .form-wrapper__title {
     margin: 0 249px;
   }
 
@@ -833,13 +830,14 @@
     padding: 6px 58px 36px;
   }
 
-  @-moz-document url-prefix() {
+  @-moz-document url-prefix("") {
     .form-wrapper__comment-wrapper .form-wrapper__title {
       margin: 0 337px;
     }
   }
 
-  _:-ms-fullscreen, :root .form-wrapper__comment-wrapper .form-wrapper__title {
+  :-ms-fullscreen,
+  :root .form-wrapper__comment-wrapper .form-wrapper__title {
     margin: 0 337px;
   }
 

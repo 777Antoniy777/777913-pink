@@ -79,17 +79,18 @@
   width: 85.8%;
   height: 2px;
   margin: 29px 20px 17px 20px;
-  -webkit-appearance: none;
+  appearance: none;
 }
 
-_:-ms-fullscreen, :root .filter__form input[type="range"] {
+:-ms-fullscreen,
+:root .filter__form input[type="range"] {
   height: 18px;
   margin: 7px 20px -15px 20px;
 }
 
 .filter__form input[type="range"]::-webkit-slider-runnable-track {
   height: 2px;
-  -webkit-appearance: none;
+  appearance: none;
   background-color: $color-light;
 }
 
@@ -118,7 +119,7 @@ _:-ms-fullscreen, :root .filter__form input[type="range"] {
   border-radius: 50%;
   background-color: $background-color;
   cursor: pointer;
-  -webkit-appearance: none;
+  appearance: none;
   margin-top: -6px;
 
   &:active {
@@ -280,7 +281,6 @@ _:-ms-fullscreen, :root .filter__form input[type="range"] {
   }
 
   .filter__range-item label[for="range-size"] {
-
     &::before {
       @include background;
       top: 2px;
@@ -292,8 +292,19 @@ _:-ms-fullscreen, :root .filter__form input[type="range"] {
     }
   }
 
-  .filter__range-item label[for="range-color"] {
+  @-moz-document url-prefix("") {
+    .filter__range-item label[for="range-size"]::before {
+      top: -22px;
+    }
+  }
 
+  :-ms-fullscreen,
+  :root .filter__range-item label[for="range-size"]::before {
+    top: -7px;
+    left: -275px;
+  }
+
+  .filter__range-item label[for="range-color"] {
     &::before {
       @include background;
       top: 5px;
@@ -305,8 +316,19 @@ _:-ms-fullscreen, :root .filter__form input[type="range"] {
     }
   }
 
-  .filter__range-item label[for="range-opacity"] {
+  @-moz-document url-prefix("") {
+    .filter__range-item label[for="range-color"]::before {
+      top: -20px;
+    }
+  }
 
+  :-ms-fullscreen,
+  :root .filter__range-item label[for="range-color"]::before {
+    top: -4px;
+    left: -275px;
+  }
+
+  .filter__range-item label[for="range-opacity"] {
     &::before {
       @include background;
       top: 5px;
@@ -316,6 +338,18 @@ _:-ms-fullscreen, :root .filter__form input[type="range"] {
       width: 16px;
       height: 16px;
     }
+  }
+
+  @-moz-document url-prefix("") {
+    .filter__range-item label[for="range-opacity"]::before {
+      top: -19px;
+    }
+  }
+
+  :-ms-fullscreen,
+  :root .filter__range-item label[for="range-opacity"]::before {
+    top: -2px;
+    left: -272px;
   }
 
   .filter__range-item {
@@ -332,7 +366,8 @@ _:-ms-fullscreen, :root .filter__form input[type="range"] {
     margin: 19px 0 23px 54px;
   }
 
-  _:-ms-fullscreen, :root .filter__form input[type="range"] {
+  :-ms-fullscreen,
+  :root .filter__form input[type="range"] {
     margin: 0 20px 0 50px;
   }
 
@@ -386,7 +421,6 @@ _:-ms-fullscreen, :root .filter__form input[type="range"] {
   }
 
   .filter__range-item label[for="range-size"] {
-
     &::before {
       top: -10px;
       left: -382px;
@@ -396,8 +430,20 @@ _:-ms-fullscreen, :root .filter__form input[type="range"] {
     }
   }
 
-  .filter__range-item label[for="range-color"] {
+  @-moz-document url-prefix("") {
+    .filter__range-item label[for="range-size"]::before {
+      top: -35px;
+      left: -384px;
+    }
+  }
 
+  :-ms-fullscreen,
+  :root .filter__range-item label[for="range-size"]::before {
+    top: -20px;
+    left: -405px;
+  }
+
+  .filter__range-item label[for="range-color"] {
     &::before {
       top: -7px;
       left: -382px;
@@ -407,8 +453,20 @@ _:-ms-fullscreen, :root .filter__form input[type="range"] {
     }
   }
 
-  .filter__range-item label[for="range-opacity"] {
+  @-moz-document url-prefix("") {
+    .filter__range-item label[for="range-color"]::before {
+      top: -30px;
+      left: -384px;
+    }
+  }
 
+  :-ms-fullscreen,
+  :root .filter__range-item label[for="range-color"]::before {
+    top: -16px;
+    left: -405px;
+  }
+
+  .filter__range-item label[for="range-opacity"] {
     &::before {
       top: -3px;
       left: -374px;
@@ -416,6 +474,19 @@ _:-ms-fullscreen, :root .filter__form input[type="range"] {
       width: 32px;
       height: 32px;
     }
+  }
+
+  @-moz-document url-prefix("") {
+    .filter__range-item label[for="range-opacity"]::before {
+      top: -25px;
+      left: -376px;
+    }
+  }
+
+  :-ms-fullscreen,
+  :root .filter__range-item label[for="range-opacity"]::before {
+    top: -11px;
+    left: -397px;
   }
 
   .filter__range-item {
@@ -428,7 +499,8 @@ _:-ms-fullscreen, :root .filter__form input[type="range"] {
     margin: 19px 0 23px 93px;
   }
 
-  _:-ms-fullscreen, :root .filter__form input[type="range"] {
+  :-ms-fullscreen,
+  :root .filter__form input[type="range"] {
     margin: 0 20px 0 95px;
   }
 

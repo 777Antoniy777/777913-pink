@@ -53,6 +53,7 @@ body {
   font-weight: $font-light;
   font-size: $body-font-size;
   line-height: $body-line-height;
+  min-width: $mobile-width;
 }
 
 .visually-hidden {
@@ -66,18 +67,26 @@ body {
 }
 
 .site-wrapper {
-  width: 320px;
+  width: $mobile-width;
   margin: 0 auto;
   padding: 0;
 }
 
 @media (min-width: $tablet-width) {
+  body {
+    min-width: $tablet-width;
+  }
+
   .site-wrapper {
-    width: 660px;
+    width: $tablet-width;
   }
 }
 
 @media (min-width: $desktop-width) {
+  body {
+    min-width: $desktop-width;
+  }
+
   .site-wrapper {
     width: 1200px;
   }

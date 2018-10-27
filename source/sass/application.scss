@@ -122,7 +122,7 @@
     align-items: center;
     position: relative;
     background-image: url("../img/bg-back-desktop@1x.jpg");
-    background-position: -680px 0px;
+    background-position: -680px 0;
     background-size: 2560px 853px;
     width: 1200px;
     min-height: 853px;
@@ -136,14 +136,15 @@
     margin-top: 120px;
   }
 
-  _:-ms-fullscreen, :root .application__wrapper {
+  :-ms-fullscreen,
+  :root .application__wrapper {
     margin-top: 215px;
   }
 
   .application__description {
     font-size: $body-font-size + 36px;
     line-height: $body-line-height + 36px;
-    margin: 0px 50px 0;
+    margin: 0 50px;
 
     &--last {
       font-size: $body-font-size + 4px;

@@ -111,7 +111,7 @@
     @include flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-bottom: 0px;
+    padding-bottom: 0;
   }
 
   .contacts__item {
@@ -147,18 +147,18 @@
   .contacts__wrapper-map {
     min-width: 660px;
     min-height: 372px;
-    margin-top: 0px;
+    margin-top: 0;
 
     &::before {
-    width: 50%;
-    height: 65px;
-  }
+      width: 50%;
+      height: 65px;
+    }
 
-  &::after {
-    width: 50%;
-    height: 65px;
+    &::after {
+      width: 50%;
+      height: 65px;
+    }
   }
-}
 
   .map__iframe {
     height: 372px;
@@ -230,7 +230,7 @@
     position: relative;
     min-width: 1200px;
     min-height: 502px;
-    margin-top: 0px;
+    margin-top: 0;
 
     &::before {
       width: 50%;

@@ -58,7 +58,8 @@
     min-height: 110px;
   }
 
-  _:-ms-fullscreen, :root .main-navigation {
+  :-ms-fullscreen,
+  :root .main-navigation {
     position: relative;
     top: 27px;
   }

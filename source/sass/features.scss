@@ -184,7 +184,7 @@
     min-width: 1200px;
     min-height: 431px;
     margin-top: 166px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 
     &::before {
       @include pseudo;
@@ -214,7 +214,7 @@
   .features__item {
     width: 245px;
     margin-left: 0;
-    margin-right: 0px;
+    margin-right: 0;
   }
 
   .features__list-description br {
@@ -236,9 +236,8 @@
   .features__wrapper-image {
     position: relative;
     width: 1200px;
-    margin-top: 0;
-    padding: 0 150px;
     margin-top: -84px;
+    padding: 0 150px;
     box-sizing: border-box;
     z-index: 1;
   }
