@@ -9,23 +9,71 @@
     @include flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    min-height: 67px;
   }
 
   .main-navigation__logo-link {
-    margin: 21px 0 19px 20px;
+//    margin: 21px 0 19px 20px;    для открытого меню
+    margin: 21px 0 14px 20px;
   }
 
   .main-navigation__button {
-    width: 24px;
-    height: 23px;
+    position: relative;
+    width: 50px;
+    height: 24px;
     margin: 20px 20px 20px 0;
     border: none;
+    background-color: transparent;
+    cursor: pointer;
   }
 
   .main-navigation__wrapper {
-    //  display: none;
+    display: none;
     width: 100%;
     box-shadow: 0 -1px rgba(0, 0, 0, 1);
+  }
+
+  //  стили для js гл.меню
+
+  .main-navigation--closed .main-navigation__button {
+    &::before,
+    &::after {
+      @include pseudo;
+      left: 0px;
+      width: 50px;
+      height: 4px;
+      background-color: #ffffff;
+    }
+
+    &::before {
+      top: 21px;
+      box-shadow: 0 -10px 0 0 #ffffff;
+    }
+
+    &::after {
+      top: 1px;
+      box-shadow: none;
+    }
+  }
+
+  .main-navigation--opened .main-navigation__button {
+    &::before,
+    &::after {
+      @include pseudo;
+      top: 10px;
+      right: -4px;
+      width: 30px;
+      height: 4px;
+      background-color: #ffffff;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(135deg);
+    }
   }
 }
 
