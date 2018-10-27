@@ -18,9 +18,9 @@
   align-items: center;
 
   @include link;
-  font-weight: $font-bold;
   font-size: $body-font-size + 4px;
   line-height: $body-line-height - 6px;
+  font-weight: $font-bold;
   text-align: center;
   width: 280px;
   min-height: 30px;
@@ -29,6 +29,16 @@
   margin: 21px 20px 0 20px;
   padding: 15px 5px 16px;
   box-sizing: border-box;
+
+  &:hover {
+    color: $text-pink;
+    background-color: $text-white;
+  }
+
+  &:active {
+    color: rgba($text-pink, 0.3);
+    background-color: $text-white;
+  }
 }
 
 .application__list {
@@ -48,8 +58,107 @@
 }
 
 .application__description {
+  display: none;
+  font-size: $body-font-size + 26px;
+  line-height: $body-line-height + 31px;
   margin: 7px 20px 0;
   padding-bottom: 20px;
   color: $text-white;
   text-align: center;
+
+  &--last {
+    display: block;
+    font-size: $body-font-size;
+    line-height: $body-line-height;
+    margin: 7px 20px 0;
+    padding-bottom: 20px;
+    color: $text-white;
+    text-align: center;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .application {
+    @include flex(flex, row-reverse);
+    justify-content: flex-end;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: -270px -111px;
+    background-size: 1200px 729px;
+    width: 660px;
+    min-height: 618px;
+  }
+
+  .application__wrapper {
+    width: 340px;
+  }
+
+  .application__link {
+    width: 300px;
+    margin-top: 10px;
+  }
+
+  .application__list {
+    margin-top: 43px;
+  }
+
+  .application__description {
+    display: block;
+    font-size: $body-font-size + 26px;
+    line-height: $body-line-height + 24px;
+    margin: 93px 50px 0;
+
+    &--last {
+      display: block;
+      font-size: $body-font-size + 4px;
+      line-height: $body-line-height;
+      margin: 23px 20px 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .application {
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-position: -680px 0;
+    background-size: 2560px 853px;
+    width: 1200px;
+    min-height: 853px;
+    box-sizing: border-box;
+    padding: 0 110px;
+    z-index: 1;
+  }
+
+  .application__wrapper {
+    min-height: 535px;
+    margin-top: 120px;
+  }
+
+  :-ms-fullscreen,
+  :root .application__wrapper {
+    margin-top: 215px;
+  }
+
+  .application__description {
+    font-size: $body-font-size + 36px;
+    line-height: $body-line-height + 36px;
+    margin: 0 50px;
+
+    &--last {
+      font-size: $body-font-size + 4px;
+      line-height: $body-line-height;
+      margin: 40px 20px 0;
+    }
+  }
+
+  .application__link {
+    font-size: $body-font-size + 7px;
+    margin-top: 31px;
+  }
+
+  .application__list {
+    margin-top: 66px;
+  }
 }

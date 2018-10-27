@@ -1,0 +1,141 @@
+.research {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .research {
+    display: block;
+  }
+
+  .research__inner-wrapper {
+    @include flex;
+    justify-content: space-between;
+  }
+
+  .research__image-wrapper {
+    position: relative;
+    width: 238px;
+    margin: 9px 0 0 21px;
+
+    &::before {
+      content: "24";
+      position: absolute;
+      top: 76px;
+      left: 63px;
+      font-size: $body-font-size + 82px;
+      line-height: $body-line-height + 126px;
+      font-weight: $font-bold;
+      color: $text-pink;
+    }
+  }
+
+  .research__image {
+    width: 238px;
+    height: 276px;
+  }
+
+  .research__wrapper {
+    width: 311px;
+    margin-right: 20px;
+    padding-top: 21px;
+  }
+
+  .research__title {
+    font-size: $body-font-size + 16px;
+    line-height: $body-line-height + 12px;
+    font-weight: $font-bold;
+    margin-bottom: 10px;
+  }
+
+  .research__description {
+    font-size: $body-font-size;
+    line-height: $body-line-height;
+    font-weight: $font-normal;
+    color: $color-light;
+    margin: 0 12px 10px 0;
+  }
+
+  .research__description br {
+    display: none;
+
+    &:not(:nth-of-type(1)) {
+      display: block;
+    }
+  }
+
+  .research__link {
+    font-size: $body-font-size;
+    line-height: $body-line-height;
+    font-weight: $font-normal;
+    color: $text-pink;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .research {
+    background-color: $background-color;
+    min-width: 1200px;
+    padding-bottom: 60px;
+  }
+
+  .research__inner-wrapper {
+    @include flex;
+    justify-content: space-between;
+    width: 939px;
+    margin: 0 auto;
+    padding-top: 17px;
+  }
+
+  .research__image-wrapper {
+    width: 298px;
+    margin: 0;
+    margin-top: 8px;
+
+    &::before {
+      top: 95px;
+      left: 79px;
+      font-size: $body-font-size + 106px;
+      line-height: $body-line-height + 163px;
+    }
+  }
+
+  .research__image {
+    width: 298px;
+    height: 345px;
+  }
+
+  .research__wrapper {
+    width: 574px;
+    margin-left: 67px;
+    padding-top: 77px;
+  }
+
+  .research__title {
+    font-size: $body-font-size + 16px;
+    line-height: $body-line-height + 6px;
+    margin-bottom: 24px;
+  }
+
+  .research__title br {
+    display: none;
+  }
+
+  .research__description br {
+    display: block;
+
+    &:not(:nth-of-type(1)) {
+      display: none;
+    }
+  }
+
+  .research__description {
+    font-size: $body-font-size + 4px;
+    line-height: $body-line-height + 6px;
+    margin: 0 20px 30px 0;
+  }
+
+  .research__link {
+    font-size: $body-font-size + 4px;
+    line-height: $body-line-height + 6px;
+  }
+}

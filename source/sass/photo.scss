@@ -9,7 +9,7 @@
   font-weight: $font-light;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: 0 -67px;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: 320px 462px;
   color: $text-white;
   text-align: center;
@@ -36,4 +36,61 @@
 .photo__post {
   margin: 0;
   padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .photo__photo-wrapper {
+    @include flex;
+    flex-wrap: wrap;
+    width: 640px;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .photo__photo-wrapper .site-wrapper {
+    width: 300px;
+    margin: 0 10px;
+  }
+
+  .photo__title {
+    font-size: $body-font-size + 36px;
+    line-height: $body-line-height + 36px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: -270px -111px;
+    background-size: 1200px 729px;
+    padding: 69px 20px 140px;
+  }
+
+  .photo__description {
+    font-size: $body-font-size + 4px;
+    padding: 74px 50px 58px;
+
+    &--last {
+      margin: 0;
+      padding-top: 45px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo__photo-wrapper {
+    width: 960px;
+    padding: 0 120px;
+  }
+
+  .photo__title {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-position: -680px 1px;
+    background-size: 2560px 853px;
+    padding: 174px 275px 101px;
+  }
+
+  .photo__description {
+    padding: 74px 280px 70px;
+
+    &--last {
+      padding-top: 5px;
+      padding-bottom: 55px;
+    }
+  }
 }

@@ -17,27 +17,28 @@
 @import "post.scss";
 @import "filter.scss";
 @import "button.scss";
+@import "research.scss";
 
 @font-face {
   font-family: "Open Sans";
-  src: url("../fonts/opensans.woff") format("woff"),
-    url("../fonts/opensans.woff2") format("woff2");
+  src: url("../fonts/opensans.woff2") format("woff2"),
+    url("../fonts/opensans.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Open Sans";
-  src: url("../fonts/opensanslight.woff") format("woff"),
-    url("../fonts/opensanslight.woff2") format("woff2");
+  src: url("../fonts/opensanslight.woff2") format("woff2"),
+    url("../fonts/opensanslight.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Open Sans";
-  src: url("../fonts/opensansbold.woff") format("woff"),
-    url("../fonts/opensansbold.woff2") format("woff2");
+  src: url("../fonts/opensansbold.woff2") format("woff2"),
+    url("../fonts/opensansbold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
@@ -52,6 +53,7 @@ body {
   font-weight: $font-light;
   font-size: $body-font-size;
   line-height: $body-line-height;
+  min-width: $mobile-width;
 }
 
 .visually-hidden {
@@ -65,7 +67,27 @@ body {
 }
 
 .site-wrapper {
-  width: 320px;
+  width: $mobile-width;
   margin: 0 auto;
   padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  body {
+    min-width: $tablet-width;
+  }
+
+  .site-wrapper {
+    width: $tablet-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  body {
+    min-width: $desktop-width;
+  }
+
+  .site-wrapper {
+    width: 1200px;
+  }
 }

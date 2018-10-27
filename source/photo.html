@@ -3,11 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="photo-page">
+    <!--Хедер стр.фото-->
     <div class="site-wrapper">
-      <!--Хедер стр.фото-->
       <header class="main-header">
         <nav class="main-navigation">
           <a class="main-navigation__logo-link" href="index.html">
@@ -17,78 +19,101 @@
           <div class="main-navigation__wrapper">
             <ul class="main-navigation__list site-list">
               <li class="site-list__item"><a class="site-list__link" href="index.html">Главная</a></li>
-              <li class="site-list__item site-list__item--active"><a class="site-list__link">Фотографии</a></li>
+              <li class="site-list__item site-list__item--active"><a class="site-list__link site-list__link--active">Фотографии</a></li>
               <li class="site-list__item"><a class="site-list__link" href="form.html">Конкурс</a></li>
               <li class="site-list__item"><a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
             </ul>
           </div>
         </nav>
       </header>
-      <!--Основная часть стр.фото-->
-      <main>
-        <section class="photo">
+    </div>
+    <!--Основная часть стр.фото-->
+    <main>
+      <section class="photo">
+        <div class="site-wrapper">
           <h1 class="photo__title">Фотографии пользователей</h1>
           <p class="photo__description">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-          <figure class="photo__post post">
-            <img class="post__image post__image--panorama" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фото Анны">
-            <figcaption class="post__caption">
+        </div>
+        <figure class="photo__post post post--panorama">
+          <img class="post__image post__image--panorama" src="img/panorama-mobile@1x.jpg" width="100%" height="137" alt="Фото Анны">
+          <div class="site-wrapper">
+            <figcaption class="post__caption post__caption--panorama">
               <p class="post__title">Анна<span class="post__time"> (5 минут назад)</span></p>
               <p class="post__description">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
               <p class="post__likes">Нравится: 215</p>
             </figcaption>
-          </figure>
-          <figure class="photo__post post">
-            <img class="post__image" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фото Левона">
-            <figcaption class="post__caption">
-              <p class="post__title">Левон<span class="post__time"> (5 часов назад)</span></p>
-              <p class="post__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-              <p class="post__likes">Нравится: 356</p>
-            </figcaption>
-          </figure>
-          <figure class="photo__post post">
-            <img class="post__image" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фото Антона">
-            <figcaption class="post__caption">
-              <p class="post__title">Антон<span class="post__time"> (12 часов назад)</span></p>
-              <p class="post__description">Соседи будут рады!</p>
-              <p class="post__likes">Нравится: 666</p>
-            </figcaption>
-          </figure>
-          <figure class="photo__post post">
-            <img class="post__image" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фото Бориса">
-            <figcaption class="post__caption">
-              <p class="post__title">Борис<span class="post__time"> (20 часов назад)</span></p>
-              <p class="post__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
-              <p class="post__likes">Нравится: 215</p>
-            </figcaption>
-          </figure>
-          <figure class="photo__post post">
-            <img class="post__image" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фото Сергея">
-            <figcaption class="post__caption">
-              <p class="post__title">Сергей<span class="post__time"> (25 часов назад)</span></p>
-              <p class="post__description">Самая кубанская в мире!</p>
-              <p class="post__likes">Нравится: 4</p>
-            </figcaption>
-          </figure>
-          <figure class="photo__post post">
-            <img class="post__image" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фото Максима">
-            <figcaption class="post__caption">
-              <p class="post__title">Максим<span class="post__time"> (40 часов назад)</span></p>
-              <p class="post__description">Где снег-то?</p>
-              <p class="post__likes">Нравится: 150</p>
-            </figcaption>
-          </figure>
-          <figure class="photo__post post">
-            <img class="post__image" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фото Надежды">
-            <figcaption class="post__caption">
-              <p class="post__title">Надежда<span class="post__time"> (45 часов назад)</span></p>
-              <p class="post__description">Всем GM и взаимные лайки!</p>
-              <p class="post__likes">Нравится: 2560</p>
-            </figcaption>
-          </figure>
+          </div>
+        </figure>
+        <div class="photo__photo-wrapper">
+          <div class="site-wrapper">
+            <figure class="photo__post post">
+              <img class="post__image" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фото Левона">
+              <figcaption class="post__caption">
+                <p class="post__title">Левон<span class="post__time"> (5 часов назад)</span></p>
+                <p class="post__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                <p class="post__likes">Нравится: 356</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="site-wrapper">
+            <figure class="photo__post post">
+              <img class="post__image" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фото Антона">
+              <figcaption class="post__caption">
+                <p class="post__title">Антон<span class="post__time"> (12 часов назад)</span></p>
+                <p class="post__description">Соседи будут рады!</p>
+                <p class="post__likes">Нравится: 666</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="site-wrapper">
+            <figure class="photo__post post">
+              <img class="post__image" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фото Бориса">
+              <figcaption class="post__caption">
+                <p class="post__title">Борис<span class="post__time"> (20 часов назад)</span></p>
+                <p class="post__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                <p class="post__likes">Нравится: 215</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="site-wrapper">
+            <figure class="photo__post post">
+              <img class="post__image" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фото Сергея">
+              <figcaption class="post__caption">
+                <p class="post__title">Сергей<span class="post__time"> (25 часов назад)</span></p>
+                <p class="post__description">Самая кубанская в мире!</p>
+                <p class="post__likes">Нравится: 4</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="site-wrapper">
+            <figure class="photo__post post">
+              <img class="post__image" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фото Максима">
+              <figcaption class="post__caption">
+                <p class="post__title">Максим<span class="post__time"> (40 часов назад)</span></p>
+                <p class="post__description">Где снег-то?</p>
+                <p class="post__likes">Нравится: 150</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="site-wrapper">
+            <figure class="photo__post post">
+              <img class="post__image" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фото Надежды">
+              <figcaption class="post__caption">
+                <p class="post__title">Надежда<span class="post__time"> (45 часов назад)</span></p>
+                <p class="post__description">Всем GM и взаимные лайки!</p>
+                <p class="post__likes">Нравится: 2560</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="site-wrapper">
           <p class="photo__description photo__description--last">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
-        </section>
-        <section class="filter">
-          <h2 class="visually-hidden">Фильтр</h2>
+        </div>
+      </section>
+      <div class="filter">
+        <div class="site-wrapper">
+          <section class="filter__wrapper">
+            <h2 class="visually-hidden">Фильтр</h2>
             <form class="filter__form" action="https://echo.htmlacademy.ru" method="post">
               <img class="filter__image" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Изображение для фильтра">
               <input type="radio" name="filter-button" id="button-size" checked>
@@ -124,30 +149,35 @@
                   </label>
                 </li>
               </ul>
-              <div class="filter__range-wrapper slider">
-                <ul class="filter__range-list slider__list">
-                  <li class="filter__range-item slider__item slider__item--first">
-                    <input type="range" name="range-size" id="range-size">
-                    <label for="range-size"><span class="visually-hidden">Переместите ползунок для усиления или уменьшения эффекта</span></label>
-                  </li>
-                  <li class="filter__range-item slider__item slider__item--second">
-                    <input type="range" name="range-color" id="range-color">
-                    <label for="range-color"><span class="visually-hidden">Переместите ползунок для усиления или уменьшения эффекта</span></label>
-                  </li>
-                  <li class="filter__range-item slider__item slider__item--third">
-                    <input type="range" name="range-opacity" id="range-opacity">
-                    <label for="range-opacity"><span class="visually-hidden">Переместите ползунок для усиления или уменьшения эффекта</span></label>
-                  </li>
-                </ul>
-              </div>
-              <div class="filter__buttons">
-                <button class="filter__button" type="submit">Запостить</button>
-                <button class="filter__button filter__button--reset" type="reset">Отмена</button>
+              <div class="filter__inner-wrapper">
+                <div class="filter__range-wrapper slider">
+                  <ul class="filter__range-list slider__list">
+                    <li class="filter__range-item slider__item slider__item--first">
+                      <input type="range" name="range-size" id="range-size">
+                      <label for="range-size"><span class="visually-hidden">Переместите ползунок для усиления или уменьшения эффекта</span></label>
+                    </li>
+                    <li class="filter__range-item slider__item slider__item--second">
+                      <input type="range" name="range-color" id="range-color">
+                      <label for="range-color"><span class="visually-hidden">Переместите ползунок для усиления или уменьшения эффекта</span></label>
+                    </li>
+                    <li class="filter__range-item slider__item slider__item--third">
+                      <input type="range" name="range-opacity" id="range-opacity">
+                      <label for="range-opacity"><span class="visually-hidden">Переместите ползунок для усиления или уменьшения эффекта</span></label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="filter__buttons">
+                  <button class="filter__button" type="submit">Запостить</button>
+                  <button class="filter__button filter__button--reset" type="reset">Отмена</button>
+                </div>
               </div>
             </form>
-        </section>
-      </main>
-      <!--Футер стр.фото-->
+          </section>
+        </div>
+      </div>
+    </main>
+    <!--Футер стр.фото-->
+    <div class="site-wrapper">
       <footer class="main-footer">
         <a class="main-footer__logo-link" href="index.html">
         <img class="main-footer__logo-footer" src="img/svg/logo-pink-blue-mobile.svg" width="147" height="41" alt="приложение 'Пинк'">
