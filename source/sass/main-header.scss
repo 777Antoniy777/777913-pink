@@ -1,6 +1,5 @@
 @media (min-width: 0) and (max-width: 959px) {
   .main-header {
-    background-color: $color-light;
     color: $text-white;
     min-height: 66px;
   }
@@ -9,12 +8,6 @@
     @include flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    min-height: 67px;
-  }
-
-  .main-navigation__logo-link {
-//    margin: 21px 0 19px 20px;    для открытого меню
-    margin: 21px 0 14px 20px;
   }
 
   .main-navigation__button {
@@ -28,7 +21,6 @@
   }
 
   .main-navigation__wrapper {
-    display: none;
     width: 100%;
     box-shadow: 0 -1px rgba(0, 0, 0, 1);
   }
@@ -39,7 +31,7 @@
     &::before,
     &::after {
       @include pseudo;
-      left: 0px;
+      right: 0px;
       width: 50px;
       height: 4px;
       background-color: #ffffff;
@@ -48,15 +40,31 @@
     &::before {
       top: 21px;
       box-shadow: 0 -10px 0 0 #ffffff;
+//      animation-name: first-open;
+//      animation-duration: 2s;
+//      animation-fill-mode: forwards;
     }
 
     &::after {
       top: 1px;
       box-shadow: none;
+//      animation-name: second-open;
+//      animation-duration: 2s;
+//      animation-fill-mode: forwards;
     }
   }
 
+//  @keyframes first-open {
+//    100% {top: 10px; right: -4px; box-shadow: none; width: 30px; transform: rotate(45deg);}
+//  }
+//
+//  @keyframes second-open {
+//    100% {top: 10px; right: -4px; width: 30px; transform: rotate(-45deg);}
+//  }
+
   .main-navigation--opened .main-navigation__button {
+    width: 20px;
+
     &::before,
     &::after {
       @include pseudo;
@@ -75,35 +83,84 @@
       transform: rotate(135deg);
     }
   }
+
+  .main-navigation--closed {
+    position: relative;
+    min-height: 66px;
+    background-color: $background-header;
+    margin-bottom: 1px;
+    z-index: 1;
+  }
+
+  .main-navigation--opened {
+    position: relative;
+    min-height: 200px;
+    background-color: $color-light;
+    z-index: 1;
+  }
+
+  .main-navigation--closed .main-navigation__logo-link {
+    margin: 21px 0 14px 20px;
+  }
+
+  .main-navigation--opened .main-navigation__logo-link {
+    margin: 21px 0 19px 20px;
+  }
+
+  .main-navigation--closed .main-navigation__wrapper {
+    display: none;
+  }
+
+  .main-navigation--nojs .main-navigation__button {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-  .main-navigation__logo-link {
+  .main-header {
+    min-height: 110px;
+  }
+
+  //  стили для js гл.меню
+
+  .main-navigation--closed {
+    min-height: 110px;
+  }
+
+  .main-navigation--closed .main-navigation__logo-link {
     margin: 43px 0 37px 20px;
   }
 
-  .main-navigation__button {
-    margin: 44px 19px 0 0;
+  .main-navigation--opened .main-navigation__logo-link {
+    margin: 43px 0 37px 20px;
+  }
+
+  .main-navigation--closed .main-navigation__button {
+    margin: 43px 20px 0 0;
+  }
+
+  .main-navigation--opened .main-navigation__button {
+    margin: 44px 20px 0 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-header {
     position: relative;
-    background-color: $background-header;
-    color: $text-white;
     min-height: 110px;
-    margin-bottom: -110px;
     padding: 0 93px 0 120px;
+    background-color: $background-header;
     z-index: 2;
   }
 
   .main-navigation {
+    position: relative;
     @include flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    min-height: 110px;
+    min-height: 108px;
+    z-index: 3;
   }
 
   :-ms-fullscreen,

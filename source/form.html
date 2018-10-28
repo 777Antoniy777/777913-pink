@@ -12,7 +12,7 @@
     <!--Хедер стр.формы-->
     <div class="site-wrapper">
       <header class="main-header">
-        <nav class="main-navigation">
+        <nav class="main-navigation main-navigation--opened main-navigation--nojs">
           <a class="main-navigation__logo-link" href="index.html">
           <img class="main-navigation__logo-header" src="img/svg/logo-pink-white-mobile.svg" width="75" height="23" alt="приложение 'Пинк'">
           </a>
@@ -189,5 +189,22 @@
         <button class="popup-failure__button button" type="button">Ок</button>
       </div>
     </div>
+    <script>
+      var main_menu = document.querySelector('.main-navigation');
+      var button_menu = document.querySelector('.main-navigation__button');
+
+      main_menu.classList.remove('main-navigation--nojs');
+
+      button_menu.addEventListener('click', function() {
+
+        if (main_menu.classList.contains('main-navigation--closed')) {
+          main_menu.classList.remove('main-navigation--closed');
+          main_menu.classList.add('main-navigation--opened');
+        } else {
+          main_menu.classList.add('main-navigation--closed');
+          main_menu.classList.remove('main-navigation--opened');
+        }
+      });
+    </script>
   </body>
 </html>
