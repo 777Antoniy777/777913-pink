@@ -36,7 +36,7 @@ gulp.task("images", function() {
       optipng: false,
       zopflipng: false,
       jpegRecompress: false,
-      mozjpeg: ['-optimize', '-progressive'],
+      mozjpeg: ["-optimize", "-progressive"],
       guetzli: false,
       gifsicle: false,
       svgo: true,

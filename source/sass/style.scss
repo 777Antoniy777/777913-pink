@@ -25,6 +25,7 @@
     url("../fonts/opensans.woff") format("woff");
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -33,6 +34,7 @@
     url("../fonts/opensanslight.woff") format("woff");
   font-weight: 300;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -41,6 +43,7 @@
     url("../fonts/opensansbold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
 }
 
 html {

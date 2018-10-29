@@ -5,7 +5,10 @@
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+    <link href="/fonts/opensans.woff2" as="font" rel="preload">
+    <link href="/fonts/opensansbold.woff2" as="font" rel="preload">
+    <link href="/fonts/opensanslight.woff2" as="font" rel="preload">
   </head>
   <body class="main-page">
     <div style="display: none;">
@@ -18,7 +21,7 @@
         <nav class="main-navigation main-navigation--opened main-navigation--nojs">
           <a class="main-navigation__logo-link">
             <!--          <img class="main-navigation__logo-header" src="img/svg/logo-pink-white-mobile.svg" width="75" height="23" alt="приложение 'Пинк'">-->
-            <svg width="75" height="23">
+            <svg class="main-navigation__logo-header" width="75" height="23">
               <use xlink:href="#sprite-logo-pink-white-mobile"/>
             </svg>
           </a>
