@@ -8,13 +8,14 @@
   line-height: $body-line-height + 5px;
   font-weight: $font-light;
   background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-position: 0 -67px;
+  background-position: 0 0;
   background-repeat: repeat;
   background-size: 320px 462px;
   color: $text-white;
   text-align: center;
   margin: 0;
-  padding: 29px 20px 83px;
+  margin-top: -67px;
+  padding: 96px 20px 83px;
 }
 
 .photo__description {
@@ -56,9 +57,10 @@
     font-size: $body-font-size + 36px;
     line-height: $body-line-height + 36px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-position: -270px -111px;
+    background-position: -270px 0;
     background-size: 1200px 729px;
-    padding: 69px 20px 140px;
+    padding: 180px 20px 140px;
+    margin-top: -111px;
   }
 
   .photo__description {
