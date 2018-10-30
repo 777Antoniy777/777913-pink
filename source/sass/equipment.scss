@@ -127,11 +127,11 @@
     }
   }
 
-  :-ms-fullscreen,
-  :root .equipment-slider__description--mobile {
-    position: relative;
-    padding-bottom: 13px;
-  }
+//  :-ms-fullscreen,
+//  :root .equipment-slider__description--mobile {
+//    position: relative;
+//    padding-bottom: 13px;
+//  }
 
   :-ms-fullscreen,
   :root .equipment-slider__description--mobile::after {
@@ -285,15 +285,15 @@
     }
   }
 
-  :-ms-fullscreen,
-  :root .equipment-slider__line {
-    background-color: white;
-  }
+//  :-ms-fullscreen,
+//  :root .equipment-slider__line {
+//    background-color: white;
+//  }
 
-  :-ms-fullscreen,
-  :root .equipment-slider__title--empty {
-    background-color: #f2f2f2;
-  }
+//  :-ms-fullscreen,
+//  :root .equipment-slider__title--empty {
+//    background-color: #f2f2f2;
+//  }
 
   .equipment-slider__title {
     @include flex(flex, column);
@@ -353,35 +353,35 @@
     }
   }
 
-  :-ms-fullscreen,
-  :root .equipment-slider__description--tablet {
-    position: relative;
-    padding-bottom: 13px;
-  }
+//  :-ms-fullscreen,
+//  :root .equipment-slider__description--tablet {
+//    position: relative;
+//    padding-bottom: 13px;
+//  }
 
-  :-ms-fullscreen,
-  :root .equipment-slider__description--tablet::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: -316px;
-    width: 2px;
-    height: 100%;
-    background-color: #e5e5e5;
-    z-index: 2;
-  }
+//  :-ms-fullscreen,
+//  :root .equipment-slider__description--tablet::after {
+//    content: "";
+//    position: absolute;
+//    top: 0;
+//    right: -316px;
+//    width: 2px;
+//    height: 100%;
+//    background-color: #e5e5e5;
+//    z-index: 2;
+//  }
 
-  :-ms-fullscreen,
-  :root .equipment-slider__description--tablet::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 310px;
-    width: 2px;
-    height: 100%;
-    background-color: #e5e5e5;
-    z-index: 2;
-  }
+//  :-ms-fullscreen,
+//  :root .equipment-slider__description--tablet::before {
+//    content: "";
+//    position: absolute;
+//    top: 0;
+//    left: 310px;
+//    width: 2px;
+//    height: 100%;
+//    background-color: #e5e5e5;
+//    z-index: 2;
+//  }
 
   .equipment-slider__sign {
     position: relative;

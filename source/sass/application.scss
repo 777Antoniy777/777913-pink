@@ -9,6 +9,8 @@
 }
 
 .application__image {
+  width: 258px;
+  height: 286px;
   margin-top: 176px;
 }
 
@@ -95,9 +97,19 @@
     margin-top: -111px;
   }
 
+  .application__image {
+    position: relative;
+    top: 8px;
+    width: 700px;
+    height: 545px;
+  }
+
   .application__wrapper {
+    position: relative;
     width: 340px;
     background-color: transparent;
+    margin-right: -360px;
+    z-index: 1;
   }
 
   .application__link {
@@ -133,15 +145,24 @@
     background-position: -680px 1px;
     background-size: 2560px 853px;
     width: 1200px;
-    min-height: 853px;
+    min-height: 854px;
     box-sizing: border-box;
     padding: 0 110px;
     z-index: 1;
   }
 
+  .application__image {
+    top: 20px;
+    left: 106px;
+    width: 1050px;
+    height: 645px;
+  }
+
   .application__wrapper {
     min-height: 535px;
     margin-top: 101px;
+    margin-right: -412px;
+    margin-top: 100px;
   }
 
   :-ms-fullscreen,

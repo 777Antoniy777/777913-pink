@@ -20,10 +20,11 @@
       <header class="main-header">
         <nav class="main-navigation main-navigation--opened main-navigation--nojs">
           <a class="main-navigation__logo-link" href="index.html">
-            <!--          <img class="main-navigation__logo-header" src="img/svg/logo-pink-white-mobile.svg" width="75" height="23" alt="приложение 'Пинк'">-->
-            <svg class="main-navigation__logo-header" width="75" height="23">
-              <use xlink:href='#sprite-logo-pink-white-mobile'/>
-            </svg>
+            <picture class="main-navigation__logo-header">
+                <source media="(min-width: 960px)" srcset="img/svg/sprite-logo-pink-white-desktop.svg">
+                <source media="(min-width: 660px)" srcset="img/svg/sprite-logo-pink-white-tablet.svg">
+                <img src="img/svg/sprite-logo-pink-white-mobile.svg" alt="приложение 'Пинк'">
+            </picture>
           </a>
           <button class="main-navigation__button" type="button"><span class="visually-hidden">Меню сайта</span></button>
           <div class="main-navigation__wrapper">

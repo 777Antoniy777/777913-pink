@@ -20,10 +20,11 @@
       <header class="main-header">
         <nav class="main-navigation main-navigation--opened main-navigation--nojs">
           <a class="main-navigation__logo-link">
-            <!--          <img class="main-navigation__logo-header" src="img/svg/logo-pink-white-mobile.svg" width="75" height="23" alt="приложение 'Пинк'">-->
-            <svg class="main-navigation__logo-header" width="75" height="23">
-              <use xlink:href="#sprite-logo-pink-white-mobile"/>
-            </svg>
+            <picture class="main-navigation__logo-header">
+                <source media="(min-width: 960px)" srcset="img/svg/sprite-logo-pink-white-desktop.svg">
+                <source media="(min-width: 660px)" srcset="img/svg/sprite-logo-pink-white-tablet.svg">
+                <img src="img/svg/sprite-logo-pink-white-mobile.svg" alt="приложение 'Пинк'">
+            </picture>
           </a>
           <button class="main-navigation__button" type="button"><span class="visually-hidden">Меню сайта</span></button>
           <div class="main-navigation__wrapper">
@@ -43,7 +44,11 @@
       <div class="site-wrapper">
         <section class="application">
           <h2 class="visually-hidden">Платформы для приложения</h2>
-          <img class="application__image" src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="Приложение 'Пинк'">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.png, img/iphone-hand-desktop@2x.png">
+              <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png, img/iphone-hand-tablet@2x.png">
+              <img class="application__image" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png" alt="Приложение 'Пинк'">
+            </picture>
           <div class="application__wrapper">
             <p class="application__description">Взгляните на жизнь иначе!</p>
             <a class="application__link" href="#">Скачать приложение</a>
@@ -98,9 +103,15 @@
               </ul>
               <div class="features__wrapper-image">
                 <ul class="features__list-image">
-                  <li class="features__item-image"><img class="features__image" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Приложение 'Пинк'"></li>
-                  <li class="features__item-image"><img class="features__image" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Приложение 'Пинк'"></li>
-                  <li class="features__item-image"><img class="features__image" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Приложение 'Пинк'"></li>
+                  <li class="features__item-image">
+                  <picture>
+                    <source media="(min-width: 960px)" srcset="img/iphone-screen-3-desktop@1x.png, img/iphone-screen-3-desktop@2x.png">
+                    <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png, img/iphone-screen-3-tablet@2x.png">
+                    <img class="features__image" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png" alt="Приложение 'Пинк'">
+                  </picture>
+                  </li>
+                  <li class="features__item-image"><img class="features__image" src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x.png" alt="Приложение 'Пинк'"></li>
+                  <li class="features__item-image"><img class="features__image" src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@2x.png" alt="Приложение 'Пинк'"></li>
                 </ul>
               </div>
             </div>
