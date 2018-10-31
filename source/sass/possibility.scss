@@ -16,6 +16,12 @@
   padding: 95px 20px 52px;
   margin: 0;
   margin-top: -67px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: 707px 467px;
+    background-position: -194px -4px;
+  }
 }
 
 .possibility__description {
@@ -44,6 +50,12 @@
     background-size: 1200px 729px;
     padding: 180px 20px 80px;
     margin-top: -111px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 1200px 727px;
+      background-position: -270px 2px;
+    }
   }
 
   .possibility__description {
@@ -67,6 +79,12 @@
     background-position: -680px 1px;
     background-size: 2560px 853px;
     padding: 174px 75px 101px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: 2560px 853px;
+      background-position: -680px 12px;
+    }
   }
 
   .possibility__description {

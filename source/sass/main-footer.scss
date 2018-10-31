@@ -122,11 +122,12 @@
     padding: 0 130px;
   }
 
-  :-ms-fullscreen,
-  :root .main-footer {
+  /* stylelint-disable */
+  :-ms-fullscreen, :root .main-footer {
     min-height: 127px;
     margin-top: 70px;
   }
+  /* stylelint-enable */
 
   .main-footer__logo-footer {
     margin-bottom: 15px;

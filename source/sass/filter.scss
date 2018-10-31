@@ -31,6 +31,8 @@
 }
 
 .filter__image {
+  width: 280px;
+  height: 374px;
   margin-bottom: 32px;
 }
 
@@ -82,11 +84,12 @@
   appearance: none;
 }
 
-:-ms-fullscreen,
-:root .filter__form input[type="range"] {
+/* stylelint-disable */
+:-ms-fullscreen, :root .filter__form input[type="range"] {
   height: 18px;
   margin: 7px 20px -15px 20px;
 }
+/* stylelint-enable */
 
 .filter__form input[type="range"]::-webkit-slider-runnable-track {
   height: 2px;
@@ -298,11 +301,12 @@
     }
   }
 
-  :-ms-fullscreen,
-  :root .filter__range-item label[for="range-size"]::before {
+  /* stylelint-disable */
+  :-ms-fullscreen, :root .filter__range-item label[for="range-size"]::before {
     top: -7px;
     left: -275px;
   }
+  /* stylelint-enable */
 
   .filter__range-item label[for="range-color"] {
     &::before {
@@ -322,11 +326,12 @@
     }
   }
 
-  :-ms-fullscreen,
-  :root .filter__range-item label[for="range-color"]::before {
+  /* stylelint-disable */
+  :-ms-fullscreen, :root .filter__range-item label[for="range-color"]::before {
     top: -4px;
     left: -275px;
   }
+  /* stylelint-enable */
 
   .filter__range-item label[for="range-opacity"] {
     &::before {
@@ -346,11 +351,12 @@
     }
   }
 
-  :-ms-fullscreen,
-  :root .filter__range-item label[for="range-opacity"]::before {
+  /* stylelint-disable */
+  :-ms-fullscreen, :root .filter__range-item label[for="range-opacity"]::before {
     top: -2px;
     left: -272px;
   }
+  /* stylelint-enable */
 
   .filter__range-item {
     width: 274px;
@@ -366,10 +372,11 @@
     margin: 19px 0 23px 54px;
   }
 
-  :-ms-fullscreen,
-  :root .filter__form input[type="range"] {
+  /* stylelint-disable */
+  :-ms-fullscreen, :root .filter__form input[type="range"] {
     margin: 0 20px 0 50px;
   }
+  /* stylelint-enable */
 
   .filter__buttons {
     width: 260px;
@@ -437,11 +444,12 @@
     }
   }
 
-  :-ms-fullscreen,
-  :root .filter__range-item label[for="range-size"]::before {
+  /* stylelint-disable */
+  :-ms-fullscreen, :root .filter__range-item label[for="range-size"]::before {
     top: -20px;
     left: -405px;
   }
+  /* stylelint-enable */
 
   .filter__range-item label[for="range-color"] {
     &::before {
@@ -460,11 +468,12 @@
     }
   }
 
-  :-ms-fullscreen,
-  :root .filter__range-item label[for="range-color"]::before {
+  /* stylelint-disable */
+  :-ms-fullscreen, :root .filter__range-item label[for="range-color"]::before {
     top: -16px;
     left: -405px;
   }
+  /* stylelint-enable */
 
   .filter__range-item label[for="range-opacity"] {
     &::before {
@@ -483,11 +492,12 @@
     }
   }
 
-  :-ms-fullscreen,
-  :root .filter__range-item label[for="range-opacity"]::before {
+  /* stylelint-disable */
+  :-ms-fullscreen, :root .filter__range-item label[for="range-opacity"]::before {
     top: -11px;
     left: -397px;
   }
+  /* stylelint-enable */
 
   .filter__range-item {
     width: 410px;
@@ -499,10 +509,11 @@
     margin: 19px 0 23px 93px;
   }
 
-  :-ms-fullscreen,
-  :root .filter__form input[type="range"] {
+  /* stylelint-disable */
+  :-ms-fullscreen, :root .filter__form input[type="range"] {
     margin: 0 20px 0 95px;
   }
+  /* stylelint-enable */
 
   .filter__form input[type="range"]::-ms-track {
     width: 288px;

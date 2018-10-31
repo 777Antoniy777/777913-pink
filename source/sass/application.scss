@@ -6,6 +6,12 @@
   width: 320px;
   min-height: 666px;
   margin-top: -67px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: 707px 467px;
+    background-position: -194px -4px;
+  }
 }
 
 .application__image {
@@ -95,6 +101,12 @@
     width: 660px;
     min-height: 729px;
     margin-top: -111px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 1200px 727px;
+      background-position: -270px 2px;
+    }
   }
 
   .application__image {
@@ -149,6 +161,12 @@
     box-sizing: border-box;
     padding: 0 110px;
     z-index: 1;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: 2560px 853px;
+      background-position: -680px 12px;
+    }
   }
 
   .application__image {
@@ -165,10 +183,11 @@
     margin-top: 100px;
   }
 
-  :-ms-fullscreen,
-  :root .application__wrapper {
+  /* stylelint-disable */
+  :-ms-fullscreen, :root .application__wrapper {
     margin-top: 215px;
   }
+  /* stylelint-enable */
 
   .application__description {
     font-size: $body-font-size + 36px;

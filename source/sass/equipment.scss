@@ -85,10 +85,11 @@
     }
   }
 
-  :-ms-fullscreen,
-  :root .equipment-slider__title {
+  /* stylelint-disable */
+  :-ms-fullscreen, :root .equipment-slider__title {
     padding-bottom: 20px;
   }
+  /* stylelint-enable */
 
   .equipment-slider__value {
     font-size: $body-font-size + 10px;
@@ -127,14 +128,15 @@
     }
   }
 
-//  :-ms-fullscreen,
-//  :root .equipment-slider__description--mobile {
-//    position: relative;
-//    padding-bottom: 13px;
-//  }
+  /* stylelint-disable */
+  :-ms-fullscreen, :root .equipment-slider__description--mobile {
+    position: relative;
+    padding-bottom: 13px;
+  }
+  /* stylelint-enable */
 
-  :-ms-fullscreen,
-  :root .equipment-slider__description--mobile::after {
+  /* stylelint-disable */
+  :-ms-fullscreen, :root .equipment-slider__description--mobile::after {
     content: "";
     position: absolute;
     top: -15px;
@@ -144,6 +146,7 @@
     background-color: #e5e5e5;
     z-index: 2;
   }
+  /* stylelint-enable */
 
   .equipment-slider__sign {
     position: relative;
@@ -271,6 +274,13 @@
     @include flex(flex, column);
     border-collapse: collapse;
   }
+  
+  /* stylelint-disable */
+  :-ms-fullscreen, :root .equipment-slider__line {
+    background-color: white;
+    min-height: 0;
+  }
+  /* stylelint-enable */
 
   .equipment-slider__line {
     @include flex;
@@ -285,15 +295,11 @@
     }
   }
 
-//  :-ms-fullscreen,
-//  :root .equipment-slider__line {
-//    background-color: white;
-//  }
-
-//  :-ms-fullscreen,
-//  :root .equipment-slider__title--empty {
-//    background-color: #f2f2f2;
-//  }
+  /* stylelint-disable */
+  _:-ms-fullscreen, :root .equipment-slider__title--empty {
+    background-color: #f2f2f2;
+  }
+  /* stylelint-enable */
 
   .equipment-slider__title {
     @include flex(flex, column);
@@ -353,35 +359,20 @@
     }
   }
 
-//  :-ms-fullscreen,
-//  :root .equipment-slider__description--tablet {
-//    position: relative;
-//    padding-bottom: 13px;
-//  }
-
-//  :-ms-fullscreen,
-//  :root .equipment-slider__description--tablet::after {
-//    content: "";
-//    position: absolute;
-//    top: 0;
-//    right: -316px;
-//    width: 2px;
-//    height: 100%;
-//    background-color: #e5e5e5;
-//    z-index: 2;
-//  }
-
-//  :-ms-fullscreen,
-//  :root .equipment-slider__description--tablet::before {
-//    content: "";
-//    position: absolute;
-//    top: 0;
-//    left: 310px;
-//    width: 2px;
-//    height: 100%;
-//    background-color: #e5e5e5;
-//    z-index: 2;
-//  }
+  /* stylelint-disable */
+  :-ms-fullscreen, :root .equipment-slider__description--tablet {
+    padding-bottom: 7px;
+  }
+  /* stylelint-enable */
+  
+  /* stylelint-disable */
+  _:-ms-fullscreen, :root .equipment-slider__sign {
+    width: 111px;
+    padding: 22px;
+    border-right: 2px solid #e5e5e5;
+    background-color: transparent;
+  }
+  /* stylelint-enable */
 
   .equipment-slider__sign {
     position: relative;
@@ -470,39 +461,35 @@
   }
 
   .equipment-slider__line {
-    min-height: 60px;
+    min-height: 59px;
 
     &--first {
       min-height: 98px;
     }
   }
-
-  :-ms-fullscreen,
-  :root .equipment-slider__line {
-    min-height: 56px;
+  
+  /* stylelint-disable */
+  :-ms-fullscreen, :root .equipment-slider__title {
+    padding: 20px 0;
   }
+  /* stylelint-enable */
 
   .equipment-slider__title {
     font-size: $body-font-size + 4px;
     line-height: $body-line-height + 6px;
     width: 236px;
-    padding-top: 1px;
+    padding-top: 0;
+    padding-bottom: 3px;
 
     &--empty {
       min-height: 77px;
     }
   }
 
-  :-ms-fullscreen,
-  :root .equipment-slider__title {
-    padding-bottom: 20px;
-    padding-top: 15px;
-  }
-
   .equipment-slider__value {
     font-size: $body-font-size + 10px;
     line-height: $body-line-height + 6px;
-    margin-top: 3px;
+    margin-top: 0;
   }
 
   .equipment-slider__description {
@@ -511,18 +498,19 @@
     width: 237px;
     padding: 14px 5px 0 22px;
   }
-
-  :-ms-fullscreen,
-  :root .equipment-slider__description--tablet::after {
-    top: 0;
-    right: -473px;
+  
+  /* stylelint-disable */
+  :-ms-fullscreen, :root .equipment-slider__description--tablet {
+    padding-bottom: 15px;
   }
-
-  :-ms-fullscreen,
-  :root .equipment-slider__description--tablet::before {
-    top: 0;
-    left: 469px;
+  /* stylelint-enable */
+  
+  /* stylelint-disable */
+  _:-ms-fullscreen, :root .equipment-slider__sign {
+    width: 175px;
+    padding: 29px;
   }
+  /* stylelint-enable */
 
   .equipment-slider__sign {
     width: 231px;

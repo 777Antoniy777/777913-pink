@@ -385,10 +385,11 @@
     }
   }
 
-  :-ms-fullscreen,
-  :root .form-wrapper__app-background-wrapper .form-wrapper__title {
+  /* stylelint-disable */
+  :-ms-fullscreen, :root .form-wrapper__app-background-wrapper .form-wrapper__title  {
     margin: 0 119px;
   }
+  /* stylelint-enable */
 
   .form-wrapper__app-background-wrapper {
     order: 2;
@@ -446,10 +447,11 @@
     }
   }
 
-  :-ms-fullscreen,
-  :root .form-wrapper__adress-wrapper .form-wrapper__title {
+  /* stylelint-disable */
+  :-ms-fullscreen, :root .form-wrapper__adress-wrapper .form-wrapper__title {
     margin: 0 177px;
   }
+  /* stylelint-enable */
 
   .form-wrapper__adress {
     padding: 4px 20px 0;
@@ -530,10 +532,11 @@
     }
   }
 
-  :-ms-fullscreen,
-  :root .form-wrapper__photo-wrapper .form-wrapper__title {
+  /* stylelint-disable */
+  :-ms-fullscreen, :root .form-wrapper__photo-wrapper .form-wrapper__title {
     margin: 0 89px;
   }
+  /* stylelint-enable */
 
   .form-wrapper__photo {
     @include flex(flex, column);
@@ -573,10 +576,11 @@
     }
   }
 
-  :-ms-fullscreen,
-  :root .form-wrapper__comment-wrapper .form-wrapper__title {
+  /* stylelint-disable */
+  :-ms-fullscreen, :root .form-wrapper__comment-wrapper .form-wrapper__title {
     margin: 0 176px;
   }
+  /* stylelint-enable */
 
   .form-wrapper__comment {
     padding: 9px 58px 44px;
@@ -694,10 +698,11 @@
     }
   }
 
-  :-ms-fullscreen,
-  :root .form-wrapper__app-background-wrapper .form-wrapper__title {
+  /* stylelint-disable */
+  :-ms-fullscreen, :root .form-wrapper__app-background-wrapper .form-wrapper__title  {
     margin: 0 28px;
   }
+  /* stylelint-enable */
 
   .form-wrapper__app {
     width: 430px;
@@ -728,10 +733,11 @@
     }
   }
 
-  :-ms-fullscreen,
-  :root .form-wrapper__adress-wrapper .form-wrapper__title {
+  /* stylelint-disable */
+  :-ms-fullscreen, :root .form-wrapper__adress-wrapper .form-wrapper__title  {
     margin: 0 337px;
   }
+  /* stylelint-enable */
 
   .form-wrapper__adress {
     @include flex;
@@ -787,10 +793,11 @@
     }
   }
 
-  :-ms-fullscreen,
-  :root .form-wrapper__photo-wrapper .form-wrapper__title {
+  /* stylelint-disable */
+  :-ms-fullscreen, :root .form-wrapper__photo-wrapper .form-wrapper__title {
     margin: 0 249px;
   }
+  /* stylelint-enable */
 
   .form-wrapper__photo label {
     width: 209px;
@@ -836,10 +843,11 @@
     }
   }
 
-  :-ms-fullscreen,
-  :root .form-wrapper__comment-wrapper .form-wrapper__title {
+  /* stylelint-disable */
+  :-ms-fullscreen, :root .form-wrapper__comment-wrapper .form-wrapper__title {
     margin: 0 337px;
   }
+  /* stylelint-enable */
 
   .form-wrapper__comment textarea {
     width: 820px;

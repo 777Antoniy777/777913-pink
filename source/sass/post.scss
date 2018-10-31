@@ -2,9 +2,20 @@
   @include flex(flex, column);
 }
 
+.post--panorama picture {
+  height: 137px;
+}
+
 .post__image {
+  width: 280px;
+  height: 180px;
   margin: 0 auto;
   padding: 0;
+
+  &--panorama {
+    width: 100%;
+    height: 137px;
+  }
 }
 
 .post__caption {
@@ -72,6 +83,10 @@
     &--panorama {
       margin-bottom: 30px;
     }
+  }
+
+  .post--panorama picture {
+    height: 509px;
   }
 
   .post__image {
@@ -150,6 +165,10 @@
     &--panorama {
       margin-bottom: 30px;
     }
+  }
+
+  .post--panorama picture {
+    height: 506px;
   }
 
   .post__image {

@@ -181,11 +181,12 @@
     z-index: 3;
   }
 
-  :-ms-fullscreen,
-  :root .main-navigation {
+  /* stylelint-disable */
+  :-ms-fullscreen, :root .main-navigation {
     position: relative;
     top: 27px;
   }
+  /* stylelint-enable */
 
   .main-navigation__logo-link {
     margin: 27px 0 auto 10px;

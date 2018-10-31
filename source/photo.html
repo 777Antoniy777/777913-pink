@@ -45,7 +45,14 @@
           <p class="photo__description">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         </div>
         <figure class="photo__post post post--panorama">
-          <img class="post__image post__image--panorama" src="img/panorama-mobile@1x.jpg" width="100%" height="137" alt="Фото Анны">
+          <picture>
+            <source type="image/webp" media="(min-width: 960px)" srcset="img/panorama-desktop@1x.webp 1x, img/panorama-desktop@2x.webp 2x">
+            <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+            <source type="image/webp" media="(min-width: 660px)" srcset="img/panorama-tablet@1x.webp 1x, img/panorama-tablet@2x.webp 2x">
+            <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+            <source type="image/webp" srcset="img/panorama-mobile@1x.webp 1x, img/panorama-mobile@2x.webp 2x">
+            <img class="post__image post__image--panorama" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Фото Анны">
+          </picture>
           <div class="site-wrapper">
             <figcaption class="post__caption post__caption--panorama">
               <p class="post__title">Анна<span class="post__time"> (5 минут назад)</span></p>
@@ -57,7 +64,14 @@
         <div class="photo__photo-wrapper">
           <div class="site-wrapper">
             <figure class="photo__post post">
-              <img class="post__image" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фото Левона">
+              <picture class="post__image">
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x">
+                <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.webp 1x, img/photo-car-tablet@2x.webp 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+                <source type="image/webp" srcset="img/photo-car-mobile@1x.webp 1x, img/photo-car-mobile@2x.webp 2x">
+                <img src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Фото Левона">
+              </picture>
               <figcaption class="post__caption">
                 <p class="post__title">Левон<span class="post__time"> (5 часов назад)</span></p>
                 <p class="post__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
@@ -67,7 +81,14 @@
           </div>
           <div class="site-wrapper">
             <figure class="photo__post post">
-              <img class="post__image" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фото Антона">
+              <picture class="post__image">
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@2x.webp 2x">
+                <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.webp 1x, img/photo-drumset-tablet@2x.webp 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+                <source type="image/webp" srcset="img/photo-drumset-mobile@1x.webp 1x, img/photo-drumset-mobile@2x.webp 2x">
+                <img src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Фото Антона">
+              </picture>
               <figcaption class="post__caption">
                 <p class="post__title">Антон<span class="post__time"> (12 часов назад)</span></p>
                 <p class="post__description">Соседи будут рады!</p>
@@ -77,7 +98,14 @@
           </div>
           <div class="site-wrapper">
             <figure class="photo__post post">
-              <img class="post__image" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фото Бориса">
+              <picture class="post__image">
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x">
+                <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.webp 1x, img/photo-window-tablet@2x.webp 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+                <source type="image/webp" srcset="img/photo-window-mobile@1x.webp 1x, img/photo-window-mobile@2x.webp 2x">
+                <img src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Фото Бориса">
+              </picture>
               <figcaption class="post__caption">
                 <p class="post__title">Борис<span class="post__time"> (20 часов назад)</span></p>
                 <p class="post__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
@@ -87,7 +115,14 @@
           </div>
           <div class="site-wrapper">
             <figure class="photo__post post">
-              <img class="post__image" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фото Сергея">
+              <picture class="post__image">
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.webp 1x, img/photo-fair-desktop@2x.webp 2x">
+                <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.webp 1x, img/photo-fair-tablet@2x.webp 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+                <source type="image/webp" srcset="img/photo-fair-mobile@1x.webp 1x, img/photo-fair-mobile@2x.webp 2x">
+                <img src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Фото Сергея">
+              </picture>
               <figcaption class="post__caption">
                 <p class="post__title">Сергей<span class="post__time"> (25 часов назад)</span></p>
                 <p class="post__description">Самая кубанская в мире!</p>
@@ -97,7 +132,14 @@
           </div>
           <div class="site-wrapper">
             <figure class="photo__post post">
-              <img class="post__image" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фото Максима">
+              <picture class="post__image">
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x">
+                <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.webp 1x, img/photo-pov-tablet@2x.webp 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+                <source type="image/webp" srcset="img/photo-pov-mobile@1x.webp 1x, img/photo-pov-mobile@2x.webp 2x">
+                <img src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Фото Максима">
+              </picture>
               <figcaption class="post__caption">
                 <p class="post__title">Максим<span class="post__time"> (40 часов назад)</span></p>
                 <p class="post__description">Где снег-то?</p>
@@ -107,7 +149,14 @@
           </div>
           <div class="site-wrapper">
             <figure class="photo__post post">
-              <img class="post__image" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фото Надежды">
+              <picture class="post__image">
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x">
+                <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.webp 1x, img/photo-wing-tablet@2x.webp 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+                <source type="image/webp" srcset="img/photo-wing-mobile@1x.webp 1x, img/photo-wing-mobile@2x.webp 2x">
+                <img src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Фото Надежды">
+              </picture>
               <figcaption class="post__caption">
                 <p class="post__title">Надежда<span class="post__time"> (45 часов назад)</span></p>
                 <p class="post__description">Всем GM и взаимные лайки!</p>
@@ -125,7 +174,14 @@
           <section class="filter__wrapper">
             <h2 class="visually-hidden">Фильтр</h2>
             <form class="filter__form" action="https://echo.htmlacademy.ru" method="post">
-              <img class="filter__image" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Изображение для фильтра">
+              <picture>
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
+                <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+                <source type="image/webp" srcset="img/photo-road-mobile@1x.webp 1x, img/photo-road-mobile@2x.webp 2x">
+                <img class="filter__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Изображение для фильтра">
+              </picture>
               <input type="radio" name="filter-button" id="button-size" checked="">
               <input type="radio" name="filter-button" id="button-color">
               <input type="radio" name="filter-button" id="button-opacity">
