@@ -11,14 +11,11 @@
     <link href="/fonts/opensanslight.woff2" as="font" rel="preload">
   </head>
   <body class="main-page">
-    <div style="display: none;">
-      <include src="build/img/svg-sprite.svg"></include>
-    </div>
     <h1 class="visually-hidden">Сайт приложения 'Пинк'</h1>
     <!--Хедер гл.стр-->
     <div class="site-wrapper">
       <header class="main-header">
-        <nav class="main-navigation main-navigation--opened main-navigation--nojs">
+        <nav class="main-navigation main-navigation--closed main-navigation--nojs">
           <a class="main-navigation__logo-link">
             <picture class="main-navigation__logo-header">
                 <source media="(min-width: 960px)" srcset="img/svg/sprite-logo-pink-white-desktop.svg">
@@ -139,7 +136,11 @@
         <div class="site-wrapper">
           <div class="research__inner-wrapper">
             <div class="research__image-wrapper">
-              <img class="research__image" src="img/svg/icon-timer.svg" width="238" height="276" alt="Целых 24 часа!">
+              <svg class="research__image" width="238" height="276" viewBox="0 0 320 320">
+                <use xlink:href="#sprite-icon-timer"/>
+              </svg>
+
+<!--              <img class="research__image" src="img/svg/icon-timer.svg" width="238" height="276" alt="Целых 24 часа!">-->
             </div>
             <div class="research__wrapper">
               <h2 class="research__title">Эффект<br> на 24 часа!</h2>
@@ -308,6 +309,9 @@
           </a>
         </div>
       </footer>
+    </div>
+    <div style="display: none;">
+      <include src="build/img/svg-sprite.svg"></include>
     </div>
     <script>
       var main_menu = document.querySelector(".main-navigation");

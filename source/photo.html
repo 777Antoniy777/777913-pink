@@ -11,13 +11,10 @@
     <link href="/fonts/opensanslight.woff2" as="font" rel="preload">
   </head>
   <body class="photo-page">
-    <div style="display: none;">
-      <include src="build/img/svg-sprite.svg"></include>
-    </div>
     <!--Хедер стр.фото-->
     <div class="site-wrapper">
       <header class="main-header">
-        <nav class="main-navigation main-navigation--opened main-navigation--nojs">
+        <nav class="main-navigation main-navigation--closed main-navigation--nojs">
           <a class="main-navigation__logo-link" href="index.html">
             <picture class="main-navigation__logo-header">
                 <source media="(min-width: 960px)" srcset="img/svg/sprite-logo-pink-white-desktop.svg">
@@ -291,6 +288,9 @@
           </a>
         </div>
       </footer>
+    </div>
+    <div style="display: none;">
+      <include src="build/img/svg-sprite.svg"></include>
     </div>
     <script>
       var main_menu = document.querySelector(".main-navigation");

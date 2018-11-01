@@ -11,14 +11,11 @@
     <link href="/fonts/opensanslight.woff2" as="font" rel="preload">
   </head>
   <body class="form-page">
-    <div style="display: none;">
-      <include src="build/img/svg-sprite.svg"></include>
-    </div>
     <h1 class="visually-hidden">Страница конкурса</h1>
     <!--Хедер стр.формы-->
     <div class="site-wrapper">
       <header class="main-header">
-        <nav class="main-navigation main-navigation--opened main-navigation--nojs">
+        <nav class="main-navigation main-navigation--closed main-navigation--nojs">
           <a class="main-navigation__logo-link" href="index.html">
             <picture class="main-navigation__logo-header">
                 <source media="(min-width: 960px)" srcset="img/svg/sprite-logo-pink-white-desktop.svg">
@@ -204,6 +201,9 @@
       <div class="popup-failure__wrapper">
         <button class="popup-failure__button button" type="button">Ок</button>
       </div>
+    </div>
+    <div style="display: none;">
+      <include src="build/img/svg-sprite.svg"></include>
     </div>
     <script>
       var main_menu = document.querySelector(".main-navigation");

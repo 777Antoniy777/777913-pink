@@ -109,23 +109,33 @@
     z-index: 1;
   }
 
-  .main-navigation--opened {
+  .main-navigation--opened,
+  .main-navigation--nojs {
     position: relative;
     min-height: 200px;
     background-color: $color-light;
     z-index: 1;
   }
 
+  .main-navigation--nojs {
+    margin-bottom: 0;
+  }
+
   .main-navigation--closed .main-navigation__logo-link {
     margin: 21px 0 14px 20px;
   }
 
-  .main-navigation--opened .main-navigation__logo-link {
+  .main-navigation--opened .main-navigation__logo-link,
+  .main-navigation--nojs .main-navigation__logo-link {
     margin: 21px 0 19px 20px;
   }
 
   .main-navigation--closed .main-navigation__wrapper {
     display: none;
+  }
+
+  .main-navigation--nojs .main-navigation__wrapper {
+    display: block;
   }
 
   .main-navigation--nojs .main-navigation__button {
