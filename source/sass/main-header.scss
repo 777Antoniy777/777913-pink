@@ -15,6 +15,11 @@
     height: 23px;
   }
 
+  .main-navigation__logo-header-tablet,
+  .main-navigation__logo-header-desktop {
+    display: none;
+  }
+
   .main-navigation__button {
     position: relative;
     width: 50px;
@@ -57,6 +62,24 @@
       //      animation-duration: 2s;
       //      animation-fill-mode: forwards;
     }
+
+    &:hover::before,
+    &:hover::after {
+      background-color: $text-pink;
+    }
+
+    &:hover::before {
+      box-shadow: 0 -10px 0 0 $text-pink;
+    }
+
+    &:active::before,
+    &:active::after {
+      background-color: rgba($text-pink, 0.3);
+    }
+
+    &:active::before {
+      box-shadow: 0 -10px 0 0 rgba($text-pink, 0.3);
+    }
   }
 
   //  .open-first-icon {
@@ -98,6 +121,16 @@
 
     &::after {
       transform: rotate(135deg);
+    }
+
+    &:hover::before,
+    &:hover::after {
+      background-color: $text-pink;
+    }
+
+    &:active::before,
+    &:active::after {
+      background-color: rgba($text-pink, 0.3);
     }
   }
 
@@ -148,6 +181,20 @@
     min-height: 110px;
   }
 
+  .main-navigation__logo-header {
+    width: 147px;
+    height: 40px;
+  }
+
+  .main-navigation__logo-header-mobile,
+  .main-navigation__logo-header-desktop {
+    display: none;
+  }
+
+  .main-navigation__logo-header-tablet {
+    display: block;
+  }
+
   //  стили для js гл.меню
 
   .main-navigation--closed {
@@ -180,6 +227,27 @@
     z-index: 2;
   }
 
+  .main-navigation__logo-header {
+    width: 147px;
+    height: 40px;
+  }
+
+  .main-navigation__logo-header-mobile,
+  .main-navigation__logo-header-tablet {
+    display: none;
+  }
+
+  .main-navigation__logo-header-desktop {
+    display: block;
+  }
+
+  /* stylelint-disable */
+  :-ms-fullscreen, :root .main-navigation {
+    position: relative;
+    top: 9px;
+  }
+  /* stylelint-enable */
+
   .main-navigation {
     position: relative;
 
@@ -192,9 +260,9 @@
   }
 
   /* stylelint-disable */
-  :-ms-fullscreen, :root .main-navigation {
-    position: relative;
-    top: 27px;
+  :-ms-fullscreen, :root .main-navigation__logo-link {
+    margin-top: 20px;
+    margin-bottom: 23px;
   }
   /* stylelint-enable */
 

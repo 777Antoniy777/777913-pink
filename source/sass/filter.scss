@@ -283,6 +283,27 @@
     }
   }
 
+  /* stylelint-disable */
+  _:-ms-fullscreen, :root .filter__range-item label[for="range-size"]::before {
+    top: -7px;
+    left: -275px;
+  }
+  /* stylelint-enable */
+
+  /* stylelint-disable */
+  _:-ms-fullscreen, :root .filter__range-item label[for="range-color"]::before {
+    top: -7px;
+    left: -275px;
+  }
+  /* stylelint-enable */
+
+  /* stylelint-disable */
+  :-ms-fullscreen, :root .filter__range-item label[for="range-opacity"]::before {
+    top: -2px;
+    left: -272px;
+  }
+  /* stylelint-enable */
+
   .filter__range-item label[for="range-size"] {
     &::before {
       @include background;
@@ -300,13 +321,6 @@
       top: -22px;
     }
   }
-
-  /* stylelint-disable */
-  :-ms-fullscreen, :root .filter__range-item label[for="range-size"]::before {
-    top: -7px;
-    left: -275px;
-  }
-  /* stylelint-enable */
 
   .filter__range-item label[for="range-color"] {
     &::before {
@@ -326,13 +340,6 @@
     }
   }
 
-  /* stylelint-disable */
-  :-ms-fullscreen, :root .filter__range-item label[for="range-color"]::before {
-    top: -4px;
-    left: -275px;
-  }
-  /* stylelint-enable */
-
   .filter__range-item label[for="range-opacity"] {
     &::before {
       @include background;
@@ -350,13 +357,6 @@
       top: -19px;
     }
   }
-
-  /* stylelint-disable */
-  :-ms-fullscreen, :root .filter__range-item label[for="range-opacity"]::before {
-    top: -2px;
-    left: -272px;
-  }
-  /* stylelint-enable */
 
   .filter__range-item {
     width: 274px;
@@ -444,13 +444,6 @@
     }
   }
 
-  /* stylelint-disable */
-  :-ms-fullscreen, :root .filter__range-item label[for="range-size"]::before {
-    top: -20px;
-    left: -405px;
-  }
-  /* stylelint-enable */
-
   .filter__range-item label[for="range-color"] {
     &::before {
       top: -7px;
@@ -467,13 +460,6 @@
       left: -384px;
     }
   }
-
-  /* stylelint-disable */
-  :-ms-fullscreen, :root .filter__range-item label[for="range-color"]::before {
-    top: -16px;
-    left: -405px;
-  }
-  /* stylelint-enable */
 
   .filter__range-item label[for="range-opacity"] {
     &::before {
@@ -493,11 +479,26 @@
   }
 
   /* stylelint-disable */
+  _:-ms-fullscreen, :root .filter__range-item label[for="range-size"]::before {
+    top: -16px;
+    left: -405px;
+  }
+  /* stylelint-enable */
+
+  /* stylelint-disable */
+  _:-ms-fullscreen, :root .filter__range-item label[for="range-color"]::before {
+    top: -16px;
+    left: -405px;
+  }
+  /* stylelint-enable */
+
+  /* stylelint-disable */
   :-ms-fullscreen, :root .filter__range-item label[for="range-opacity"]::before {
     top: -11px;
     left: -397px;
   }
   /* stylelint-enable */
+
 
   .filter__range-item {
     width: 410px;

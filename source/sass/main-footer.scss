@@ -6,7 +6,13 @@
 }
 
 .main-footer__logo-footer {
+  width: 147px;
+  height: 41px;
   margin-bottom: 33px;
+}
+
+.main-navigation__logo-footer-desktop {
+  display: none;
 }
 
 .main-footer__list {
@@ -72,6 +78,12 @@
 }
 
 @media (min-width: $tablet-width) {
+  /* stylelint-disable */
+  :-ms-fullscreen, :root .main-footer {
+    margin-top: 15px;
+  }
+  /* stylelint-enable */
+
   .main-footer {
     @include flex;
     justify-content: space-between;
@@ -131,6 +143,14 @@
 
   .main-footer__logo-footer {
     margin-bottom: 15px;
+  }
+
+  .main-navigation__logo-footer-mobile {
+    display: none;
+  }
+
+  .main-navigation__logo-footer-desktop {
+    display: block;
   }
 
   .main-footer__list {
