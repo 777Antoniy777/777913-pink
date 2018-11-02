@@ -5,6 +5,22 @@
   text-align: center;
 }
 
+.logo-footer-mobile--pink {
+  fill: $text-pink;
+}
+
+.logo-footer-mobile--black {
+  fill: $color-light;
+}
+
+.main-footer__logo-link:active:not([href]) {
+  opacity: 1;
+}
+
+.main-footer__logo-link:active {
+  opacity: 0.3
+}
+
 .main-footer__logo-footer {
   width: 147px;
   height: 41px;
@@ -20,28 +36,28 @@
   @include flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  margin: 0 auto 11px 53px;
-  width: 188px;
+  margin: 2px auto 11px 53px;
+  width: 190px;
   min-height: 66px;
 }
 
 .main-footer__item {
-  margin-right: 12px;
+  margin-right: 17px;
 }
 
 .main-footer__link {
   @include flex;
-  width: 50px;
-  height: 50px;
+  width: 46px;
+  height: 46px;
   border-radius: 50%;
-  box-shadow: inset 0 0 0 3px rgba($color-light, 0.1);
+  box-shadow: 0 0 0 3px rgba($color-light, 0.1);
 
   &:hover {
-    box-shadow: inset 0 0 0 3px $color-light;
+    box-shadow: 0 0 0 3px $color-light;
   }
 
   &:active {
-    box-shadow: inset 0 0 0 3px rgba($color-light, 0.3);
+    box-shadow: 0 0 0 3px rgba($color-light, 0.3);
     opacity: 0.3;
   }
 }
@@ -52,7 +68,7 @@
 }
 
 .main-footer__image--youtube {
-  margin-left: 21px;
+  margin-left: 18px;
 }
 
 .main-footer__wrapper {
@@ -65,7 +81,7 @@
   font-weight: $font-normal;
   width: 180px;
   color: $color-light;
-  margin: 17px auto 10px;
+  margin: 15px auto 10px;
 }
 
 .main-footer__description {
@@ -75,6 +91,18 @@
 .main-footer__html-logo {
   margin-right: 3px;
   margin-top: 3px;
+}
+
+.main-footer__html-link .main-footer__html-logo {
+  fill: $text-pink;
+}
+
+.main-footer__html-link:hover .main-footer__html-logo {
+  fill: $color-light;
+}
+
+.main-footer__html-link:active .main-footer__html-logo {
+  fill: rgba($color-light, 0.3);
 }
 
 @media (min-width: $tablet-width) {
@@ -101,7 +129,7 @@
     align-items: center;
     padding-top: 17px;
     margin: 0;
-    margin-left: 30px;
+    margin-left: 34px;
   }
 
   .main-footer__item {
@@ -141,6 +169,14 @@
   }
   /* stylelint-enable */
 
+  .logo-footer-desktop--pink {
+    fill: $text-pink;
+  }
+
+  .logo-footer-desktop--black {
+    fill: $color-light;
+  }
+
   .main-footer__logo-footer {
     margin-bottom: 15px;
   }
@@ -158,7 +194,7 @@
     align-items: center;
     width: 300px;
     padding-top: 0;
-    margin-left: 109px;
+    margin-left: 118px;
   }
 
   .main-footer__wrapper {

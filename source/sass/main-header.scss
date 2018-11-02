@@ -10,9 +10,26 @@
     flex-wrap: wrap;
   }
 
-  .main-navigation__logo-header {
+  .main-navigation__logo-link .main-navigation__logo-header {
     width: 75px;
     height: 23px;
+    fill: $text-white;
+  }
+
+  .main-navigation__logo-link:hover .main-navigation__logo-header {
+    fill: $text-pink;
+  }
+
+  .main-navigation__logo-link:hover:not([href]) .main-navigation__logo-header {
+    fill: $text-white;
+  }
+
+  .main-navigation__logo-link:active  .main-navigation__logo-header {
+    fill: rgba($text-white, 0.3);
+  }
+
+  .main-navigation__logo-link:active:not([href]) .main-navigation__logo-header {
+    fill: $text-white;
   }
 
   .main-navigation__logo-header-tablet,
@@ -181,7 +198,7 @@
     min-height: 110px;
   }
 
-  .main-navigation__logo-header {
+  .main-navigation__logo-link .main-navigation__logo-header {
     width: 147px;
     height: 40px;
   }
@@ -230,6 +247,31 @@
   .main-navigation__logo-header {
     width: 147px;
     height: 40px;
+    fill: $text-white;
+  }
+
+  .logo-header-desktop--pink {
+    fill: $text-pink;
+  }
+
+//  .main-navigation__logo-link:active .logo-header-desktop--pink {
+//    fill: rgba($text-white, 0.3);
+//  }
+
+  .main-navigation__logo-link:hover .main-navigation__logo-header-desktop {
+    fill: $text-pink;
+  }
+
+  .main-navigation__logo-link:hover:not([href]) .main-navigation__logo-header-desktop {
+    fill: $text-white;
+  }
+
+  .main-navigation__logo-link:active .main-navigation__logo-header-desktop {
+    fill: rgba($text-white, 0.3);
+  }
+
+  .main-navigation__logo-link:active:not([href]) .main-navigation__logo-header-desktop {
+    fill: $text-white;
   }
 
   .main-navigation__logo-header-mobile,

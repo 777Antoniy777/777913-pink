@@ -6,6 +6,7 @@
   width: 320px;
   min-height: 666px;
   margin-top: -67px;
+  overflow: hidden;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");

@@ -62,7 +62,7 @@
     line-height: $body-line-height - 6px;
     font-weight: $font-normal;
     text-transform: none;
-    padding-bottom: 14px;
+    padding-bottom: 12px;
 
     &:not([href]) {
       color: $text-white;
@@ -87,7 +87,7 @@
     }
 
     &--active {
-      box-shadow: inset 0 -2px white;
+      box-shadow: 0 2px white;
     }
   }
 }

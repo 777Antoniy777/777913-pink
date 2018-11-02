@@ -162,12 +162,12 @@
     &--checked {
       &::before {
         @include pseudo;
-        top: 18px;
+        top: 14px;
         right: 17px;
         width: 30px;
         height: 16px;
-        box-shadow: inset 3px -3px #3dc644;
-        transform: rotate(-45deg);
+        box-shadow: 3px -3px #3dc644;
+        transform: rotate(135deg);
       }
     }
 
@@ -274,7 +274,7 @@
     @include flex(flex, column);
     border-collapse: collapse;
   }
-  
+
   /* stylelint-disable */
   :-ms-fullscreen, :root .equipment-slider__line {
     background-color: white;
@@ -364,7 +364,7 @@
     padding-bottom: 7px;
   }
   /* stylelint-enable */
-  
+
   /* stylelint-disable */
   _:-ms-fullscreen, :root .equipment-slider__sign {
     width: 111px;
@@ -388,12 +388,12 @@
     &--checked {
       &::before {
         @include pseudo;
-        top: 12px;
+        top: 7px;
         left: 63px;
         width: 30px;
         height: 16px;
-        box-shadow: inset 3px -3px #3dc644;
-        transform: rotate(-45deg);
+        box-shadow: 3px -3px #3dc644;
+        transform: rotate(135deg);
       }
     }
 
@@ -467,7 +467,7 @@
       min-height: 98px;
     }
   }
-  
+
   /* stylelint-disable */
   :-ms-fullscreen, :root .equipment-slider__title {
     padding: 20px 0;
@@ -498,13 +498,13 @@
     width: 237px;
     padding: 14px 5px 0 22px;
   }
-  
+
   /* stylelint-disable */
   :-ms-fullscreen, :root .equipment-slider__description--tablet {
     padding-bottom: 15px;
   }
   /* stylelint-enable */
-  
+
   /* stylelint-disable */
   _:-ms-fullscreen, :root .equipment-slider__sign {
     width: 175px;
@@ -517,8 +517,8 @@
 
     &--checked {
       &::before {
-        top: 21px;
-        left: 100px;
+        top: 16px;
+        left: 101px;
       }
     }
 
@@ -530,7 +530,7 @@
 
       &::after {
         top: 12px;
-        left: 112px;
+        left: 114px;
       }
     }
   }
