@@ -227,10 +227,23 @@
     }
   }
 
+  /* stylelint-disable */
+  _:-ms-fullscreen, :root .post__caption--panorama .post__title {
+    margin-right: 310px;
+  }
+  /* stylelint-enable */
+
   .post__caption--panorama .post__description {
     position: relative;
     top: -5px;
   }
+
+  /* stylelint-disable */
+  _:-ms-fullscreen, :root .post__caption--panorama .post__description {
+    position: relative;
+    top: 0;
+  }
+  /* stylelint-enable */
 
   .post__likes {
     &::before {

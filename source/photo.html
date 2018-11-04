@@ -9,10 +9,14 @@
     <link href="/fonts/opensans.woff2" as="font" rel="preload">
     <link href="/fonts/opensansbold.woff2" as="font" rel="preload">
     <link href="/fonts/opensanslight.woff2" as="font" rel="preload">
+     <script>
+      // Picture element HTML5 shiv
+      document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.min.js" async></script>
   </head>
   <body class="photo-page">
     <!--Хедер стр.фото-->
-    <div class="site-wrapper">
       <header class="main-header">
         <nav class="main-navigation main-navigation--closed main-navigation--nojs">
           <a class="main-navigation__logo-link" href="index.html" aria-label="Переход на главную страницу сайта">
@@ -33,14 +37,15 @@
           </div>
         </nav>
       </header>
-    </div>
     <!--Основная часть стр.фото-->
     <main>
       <section class="photo">
-        <div class="site-wrapper">
-          <h1 class="photo__title">Фотографии пользователей</h1>
+        <h1 class="photo__title">
+         <div class="site-wrapper">Фотографии пользователей</div>
+        </h1>
+          <div class="site-wrapper">
           <p class="photo__description">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-        </div>
+          </div>
         <figure class="photo__post post post--panorama">
           <a href="#">
           <picture>
@@ -299,22 +304,6 @@
     <div style="display: none;">
       <include src="build/img/svg-sprite.svg"></include>
     </div>
-    <script>
-      var main_menu = document.querySelector(".main-navigation");
-      var button_menu = document.querySelector(".main-navigation__button");
-
-      main_menu.classList.remove("main-navigation--nojs");
-
-      button_menu.addEventListener("click", function() {
-
-        if (main_menu.classList.contains("main-navigation--closed")) {
-          main_menu.classList.remove("main-navigation--closed");
-          main_menu.classList.add("main-navigation--opened");
-        } else {
-          main_menu.classList.add("main-navigation--closed");
-          main_menu.classList.remove("main-navigation--opened");
-        }
-      });
-    </script>
+    <script src="js/menu.js"></script>
   </body>
 </html>

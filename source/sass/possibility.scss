@@ -24,6 +24,10 @@
   }
 }
 
+.possibility__title .site-wrapper {
+  width: 240px;
+}
+
 .possibility__description {
   font-size: $body-font-size;
   line-height: $body-line-height + 6px;
@@ -58,6 +62,10 @@
     }
   }
 
+  .possibility__title .site-wrapper {
+    width: 520px;
+  }
+
   .possibility__description {
     font-size: $body-font-size + 4px;
     padding: 74px 50px 19px;
@@ -85,6 +93,10 @@
       background-size: 2560px 853px;
       background-position: -680px 12px;
     }
+  }
+
+  .possibility__title .site-wrapper {
+    width: 820px;
   }
 
   .possibility__description {

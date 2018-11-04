@@ -1,9 +1,9 @@
 .application {
-  background-color: $color-dark;
   background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: repeat;
-  background-position: 0 0;
-  width: 320px;
+  background-repeat: repeat-x;
+  background-position: center 0;
+  background-size: 320px 462px;
+  background-color: $color-dark;
   min-height: 666px;
   margin-top: -67px;
   overflow: hidden;
@@ -95,11 +95,9 @@
 @media (min-width: $tablet-width) {
   .application {
     @include flex(flex, row-reverse);
-    justify-content: flex-end;
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-position: -270px 0;
     background-size: 1200px 729px;
-    width: 660px;
     min-height: 729px;
     margin-top: -111px;
 
@@ -110,20 +108,41 @@
     }
   }
 
+  .application .site-wrapper {
+    @include flex(flex, row-reverse);
+  }
+
   .application__image {
     position: relative;
     top: 8px;
+    left: 19px;
     width: 700px;
     height: 545px;
   }
+
+  /* stylelint-disable */
+  _:-ms-fullscreen, :root .application__image {
+    left: 18px;
+  }
+  /* stylelint-enable */
 
   .application__wrapper {
     position: relative;
     width: 340px;
     background-color: transparent;
-    margin-right: -360px;
+    margin-right: -380px;
     z-index: 1;
   }
+
+  .application__wrapper .site-wrapper {
+    width: 340px;
+  }
+
+  /* stylelint-disable */
+  :-ms-fullscreen, :root .application__wrapper .site-wrapper {
+    width: 660px;
+  }
+  /* stylelint-enable */
 
   .application__link {
     width: 300px;
@@ -157,7 +176,6 @@
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-position: -680px 1px;
     background-size: 2560px 853px;
-    width: 1200px;
     min-height: 854px;
     box-sizing: border-box;
     padding: 0 110px;
@@ -170,23 +188,35 @@
     }
   }
 
+  .application .site-wrapper {
+    width: 915px;
+    margin: 0 auto;
+  }
+
   .application__image {
     top: 20px;
-    left: 106px;
+    left: 138px;
     width: 1050px;
     height: 645px;
   }
 
+  /* stylelint-disable */
+  :-ms-fullscreen, :root .application__image {
+    left: 138px;
+    top: 33px;
+  }
+  /* stylelint-enable */
+
   .application__wrapper {
     min-height: 535px;
-    margin-top: 101px;
-    margin-right: -412px;
-    margin-top: 100px;
+    margin-right: -443px;
+    margin-top: 179px;
   }
 
   /* stylelint-disable */
-  :-ms-fullscreen, :root .application__wrapper {
-    margin-top: 215px;
+  _:-ms-fullscreen, :root .application__wrapper {
+    left: 0px;
+    top: 13px;
   }
   /* stylelint-enable */
 
