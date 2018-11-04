@@ -16,7 +16,7 @@
     <div class="site-wrapper">
       <header class="main-header">
         <nav class="main-navigation main-navigation--closed main-navigation--nojs">
-          <a class="main-navigation__logo-link" href="index.html" aria-label="Переход на главную страницу сайта">
+          <a class="main-navigation__logo-link" href="index.html" aria-label="Переход на главную страницу сайта" tabindex="1">
             <svg class="main-navigation__logo-header" width="75" height="23" role="img">
               <use class="main-navigation__logo-header-mobile" xlink:href="#sprite-logo-pink-white-mobile"/>
               <use class="main-navigation__logo-header-tablet" xlink:href="#sprite-logo-pink-white-tablet"/>
@@ -26,10 +26,10 @@
           <button class="main-navigation__button" type="button"><span class="visually-hidden">Меню сайта</span></button>
           <div class="main-navigation__wrapper">
             <ul class="main-navigation__list site-list">
-              <li class="site-list__item"><a class="site-list__link" href="index.html">Главная</a></li>
-              <li class="site-list__item"><a class="site-list__link" href="photo.html">Фотографии</a></li>
+              <li class="site-list__item"><a class="site-list__link" href="index.html" tabindex="2">Главная</a></li>
+              <li class="site-list__item"><a class="site-list__link" href="photo.html" tabindex="3">Фотографии</a></li>
               <li class="site-list__item site-list__item--active"><a class="site-list__link site-list__link--active">Конкурс</a></li>
-              <li class="site-list__item"><a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
+              <li class="site-list__item"><a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive" tabindex="4">HTML Academy</a></li>
             </ul>
           </div>
         </nav>
@@ -56,13 +56,13 @@
                 <legend class="form-wrapper__title visually-hidden">Введите ваши данные</legend>
                 <div class="form-wrapper__main">
                   <label class="form-wrapper__main-item"><span>Фамилия:</span>
-                  <input type="text" name="surname" placeholder="Укажите фамилию *" required="">
+                  <input type="text" name="surname" placeholder="Укажите фамилию *" tabindex="5" required>
                   </label>
                   <label class="form-wrapper__main-item"><span>Имя:</span>
-                  <input type="text" name="name" placeholder="Введите ваше имя *" required="">
+                  <input type="text" name="name" placeholder="Введите ваше имя *" tabindex="6" required>
                   </label>
                   <label class="form-wrapper__main-item"><span>Отчество:</span>
-                  <input type="text" name="patronymic" placeholder="Ну и отчество тоже">
+                  <input type="text" name="patronymic" placeholder="Ну и отчество тоже" tabindex="7">
                   </label>
                 </div>
               </fieldset>
@@ -73,17 +73,17 @@
               <fieldset class="form-wrapper__photo-wrapper">
                 <legend class="form-wrapper__title">Ваши безбашенные достижения в путешествии</legend>
                 <div class="form-wrapper__photo">
-                  <input type="checkbox" name="photo-shark" id="photo-shark">
+                  <input type="checkbox" name="photo-shark" id="photo-shark" tabindex="13">
                   <label for="photo-shark">Сделал селфи с акулой</label>
-                  <input type="checkbox" name="photo-beach" id="photo-beach">
+                  <input type="checkbox" name="photo-beach" id="photo-beach" tabindex="14">
                   <label for="photo-beach">Обгорел на пляже</label>
-                  <input type="checkbox" name="photo-chuck" id="photo-chuck">
+                  <input type="checkbox" name="photo-chuck" id="photo-chuck" tabindex="15">
                   <label for="photo-chuck">Видел Чака Норриса</label>
-                  <input type="checkbox" name="photo-gift" id="photo-gift">
+                  <input type="checkbox" name="photo-gift" id="photo-gift" tabindex="16">
                   <label for="photo-gift">Накупил сувениров</label>
-                  <input type="checkbox" name="photo-tower" id="photo-tower">
+                  <input type="checkbox" name="photo-tower" id="photo-tower" tabindex="17">
                   <label for="photo-tower">Удержал башню</label>
-                  <input type="checkbox" name="photo-hotel" id="photo-hotel">
+                  <input type="checkbox" name="photo-hotel" id="photo-hotel" tabindex="18">
                   <label for="photo-hotel">Разгромил отель</label>
                 </div>
               </fieldset>
@@ -95,10 +95,10 @@
                 <legend class="form-wrapper__title">Контактная информация</legend>
                 <div class="form-wrapper__adress">
                   <label>Номер телефона
-                  <input type="tel" name="phone" placeholder="Номер, пожалуйста">
+                  <input type="tel" name="phone" placeholder="Номер, пожалуйста" tabindex="11">
                   </label>
                   <label>Адрес почты
-                  <input type="email" name="email" placeholder="Введите почту *" required="">
+                  <input type="email" name="email" placeholder="Введите почту *" tabindex="12" required>
                   </label>
                 </div>
               </fieldset>
@@ -109,11 +109,11 @@
               <fieldset class="form-wrapper__app-wrapper">
                 <legend class="form-wrapper__title">С каким приложением путешествовали?</legend>
                 <div class="form-wrapper__app">
-                  <input type="radio" name="app" id="app-ios">
+                  <input type="radio" name="app" id="app-ios" tabindex="8">
                   <label for="app-ios">Pink для iOS</label>
-                  <input type="radio" name="app" id="app-android">
+                  <input type="radio" name="app" id="app-android" tabindex="9">
                   <label for="app-android">Pink на Android</label>
-                  <input type="radio" name="app" id="app-windows">
+                  <input type="radio" name="app" id="app-windows" tabindex="10">
                   <label for="app-windows">Windows Phone</label>
                 </div>
               </fieldset>

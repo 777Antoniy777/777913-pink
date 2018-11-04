@@ -138,8 +138,33 @@
   border: 2px solid $text-pink;
 }
 
+.form-wrapper__photo input[type="checkbox"]:focus + label::after,
+.form-wrapper__photo input[type="checkbox"]:focus + label::before {
+  box-shadow: 0 0 0 2px lightblue;
+}
+
 .form-wrapper__photo input[type="checkbox"]:checked + label:hover::before {
   border: 2px solid $color-light;
+}
+
+.form-wrapper__photo input[type="checkbox"]:checked:disabled + label::before {
+  border: 2px solid $text-pink;
+  opacity: 0.5;
+  cursor: auto;
+}
+
+.form-wrapper__photo input[type="checkbox"]:checked:disabled + label::after {
+  opacity: 0.5;
+  cursor: auto;
+}
+
+.form-wrapper__photo input[type="checkbox"]:disabled + label {
+  opacity: 0.5;
+}
+
+.form-wrapper__photo input[type="checkbox"]:disabled + label:hover::before {
+  border: 2px solid #e5e5e5;
+  cursor: auto;
 }
 
 .form-wrapper__adress-wrapper .form-wrapper__title {
@@ -254,6 +279,35 @@
 
 .form-wrapper__app input[type="radio"]:checked + label:hover::before {
   border: 2px solid $color-light;
+}
+
+.form-wrapper__app input[type="radio"]:focus + label::before {
+  box-shadow: 0 0 0 2px lightblue;
+}
+
+.form-wrapper__app input[type="radio"]:checked:disabled + label::before {
+  border: 2px solid $text-pink;
+  opacity: 0.5;
+  cursor: auto;
+}
+
+.form-wrapper__app input[type="radio"]:checked:disabled + label::after {
+  opacity: 0.5;
+  cursor: auto;
+}
+
+.form-wrapper__app input[type="radio"]:disabled + label {
+  opacity: 0.5;
+}
+
+.form-wrapper__app input[type="radio"]:disabled + label:hover::before {
+  border: 2px solid #e5e5e5;
+  cursor: auto;
+}
+
+.form-wrapper__app input[type="radio"]:disabled:checked + label:hover::before {
+  border: 2px solid $text-pink;
+  cursor: auto;
 }
 
 .form-wrapper__comment-wrapper .form-wrapper__title {

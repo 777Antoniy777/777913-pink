@@ -3,6 +3,10 @@
   padding: 38px 20px 10px 20px;
   background-color: $text-white;
   text-align: center;
+
+  &--mobile {
+    display: none;
+  }
 }
 
 .logo-footer-mobile--pink {
@@ -24,7 +28,6 @@
 .main-footer__logo-footer {
   width: 147px;
   height: 41px;
-  margin-bottom: 33px;
 }
 
 .main-navigation__logo-footer-desktop {
@@ -36,7 +39,7 @@
   @include flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  margin: 2px auto 11px 53px;
+  margin: 35px auto 11px 53px;
   width: 190px;
   min-height: 66px;
 }
@@ -118,7 +121,8 @@
     align-items: center;
     min-height: 102px;
     padding-top: 0;
-    padding-bottom: 15px;
+    padding-bottom: 17px;
+    margin-top: 10px;
   }
 
   .main-footer__logo-footer {
@@ -159,7 +163,8 @@
 @media (min-width: $desktop-width) {
   .main-footer {
     min-height: 187px;
-    padding: 0 130px;
+    padding: 0 130px 2px;
+    margin-top: 8px;
   }
 
   /* stylelint-disable */
