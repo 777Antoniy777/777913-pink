@@ -26,7 +26,10 @@
   padding: 0;
   background-color: $background-color;
 
-  &--panorama{
+  &--panorama {
+    width: 280px;
+    margin: 0 auto 20px;
+
     &::before {
       @include pseudo;
       top: -137px;
@@ -137,9 +140,10 @@
 
     &--panorama {
       @include flex;
+      width: 620px;
       min-height: 80px;
       padding-bottom: 24px;
-      margin: 0 20px 20px;
+      margin: 0 auto 20px;
 
       &::before {
         top: -453px;
@@ -221,9 +225,11 @@
 
   .post__caption {
     &--panorama {
+      width: 940px;
       justify-content: space-between;
       padding-bottom: 16px;
       margin: 0 130px 20px;
+      margin: 0 auto 20px;
     }
   }
 

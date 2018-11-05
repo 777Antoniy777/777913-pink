@@ -105,11 +105,16 @@ gulp.task("clean", function() {
   return del("build");
 });
 
+gulp.task("svgdel", function() {
+  return del("build/img/svg/sprite-*.svg");
+});
+
 gulp.task("build" ,gulp.series(
   "clean",
   "copy",
   "css",
   "svgsprite",
+  "svgdel",
   "html"
 ));
 

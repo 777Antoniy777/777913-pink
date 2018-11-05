@@ -1,6 +1,6 @@
 .application {
   background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: repeat-x;
+  background-repeat: repeat;
   background-position: center 0;
   background-size: 320px 462px;
   background-color: $color-dark;
@@ -22,9 +22,21 @@
 }
 
 .application__wrapper {
+  position: relative;
   background-color: $color-dark;
   padding-top: 28px;
   margin-top: -7px;
+  z-index: 2;
+
+  &::before {
+    @include pseudo;
+    top: 0;
+    left: -100%;
+    width: 300%;
+    height: 100%;
+    background-color: $color-dark;
+    z-index: -1;
+  }
 }
 
 .application__link {
@@ -132,6 +144,10 @@
     background-color: transparent;
     margin-right: -380px;
     z-index: 1;
+
+    &::before {
+      display: none;
+    }
   }
 
   .application__wrapper .site-wrapper {
