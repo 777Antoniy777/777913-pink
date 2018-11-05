@@ -4,18 +4,28 @@
   margin-top: 0;
 }
 
-.possibility__title {
-  font-size: $body-font-size + 10px;
-  line-height: $body-line-height + 6px;
-  font-weight: $font-light;
+.possibility__background-wrapper {
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: 0 0;
   background-repeat: repeat;
   background-size: 320px 462px;
+  margin-top: -67px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: 707px 467px;
+    background-position: -194px -4px;
+  }
+}
+
+.possibility__title {
+  font-size: $body-font-size + 10px;
+  line-height: $body-line-height + 6px;
+  font-weight: $font-light;
+  width: 240px;
   color: $text-white;
   padding: 95px 20px 52px;
-  margin: 0;
-  margin-top: -67px;
+  margin: 0 auto;
 }
 
 .possibility__description {
@@ -36,14 +46,24 @@
     min-height: 530px;
   }
 
-  .possibility__title {
-    font-size: $body-font-size + 36px;
-    line-height: $body-line-height + 36px;
+  .possibility__background-wrapper {
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-position: -270px 0;
     background-size: 1200px 729px;
-    padding: 180px 20px 80px;
     margin-top: -111px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 1200px 727px;
+      background-position: -270px 2px;
+    }
+  }
+
+  .possibility__title {
+    font-size: $body-font-size + 36px;
+    line-height: $body-line-height + 36px;
+    width: 520px;
+    padding: 180px 20px 80px;
   }
 
   .possibility__description {
@@ -62,10 +82,20 @@
     min-height: 570px;
   }
 
-  .possibility__title {
+  .possibility__background-wrapper {
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-position: -680px 1px;
     background-size: 2560px 853px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: 2560px 853px;
+      background-position: -680px 12px;
+    }
+  }
+
+  .possibility__title {
+    width: 820px;
     padding: 174px 75px 101px;
   }
 

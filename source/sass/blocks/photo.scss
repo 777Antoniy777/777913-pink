@@ -3,18 +3,28 @@
   margin-top: 0;
 }
 
-.photo__title {
-  font-size: $body-font-size + 10px;
-  line-height: $body-line-height + 5px;
-  font-weight: $font-light;
+.photo__background-wrapper {
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: 0 0;
   background-repeat: repeat;
   background-size: 320px 462px;
+  margin-top: -67px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: 707px 467px;
+    background-position: -194px -4px;
+  }
+}
+
+.photo__title {
+  font-size: $body-font-size + 10px;
+  line-height: $body-line-height + 5px;
+  font-weight: $font-light;
+  width: 195px;
   color: $text-white;
   text-align: center;
-  margin: 0;
-  margin-top: -67px;
+  margin: 0 auto;
   padding: 96px 20px 83px;
 }
 
@@ -40,6 +50,19 @@
 }
 
 @media (min-width: $tablet-width) {
+  .photo__background-wrapper {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: -270px 0;
+    background-size: 1200px 729px;
+    margin-top: -111px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 1200px 727px;
+      background-position: -270px 2px;
+    }
+  }
+
   .photo__photo-wrapper {
     @include flex;
     flex-wrap: wrap;
@@ -56,11 +79,8 @@
   .photo__title {
     font-size: $body-font-size + 36px;
     line-height: $body-line-height + 36px;
-    background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-position: -270px 0;
-    background-size: 1200px 729px;
+    width: 400px;
     padding: 180px 20px 140px;
-    margin-top: -111px;
   }
 
   .photo__description {
@@ -75,15 +95,25 @@
 }
 
 @media (min-width: $desktop-width) {
+  .photo__background-wrapper {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-position: -680px 1px;
+    background-size: 2560px 853px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: 2560px 853px;
+      background-position: -680px 12px;
+    }
+  }
+
   .photo__photo-wrapper {
     width: 960px;
     padding: 0 120px;
   }
 
   .photo__title {
-    background-image: url("../img/bg-back-desktop@1x.jpg");
-    background-position: -680px 1px;
-    background-size: 2560px 853px;
+    width: 400px;
     padding: 174px 275px 101px;
   }
 

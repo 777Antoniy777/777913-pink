@@ -9,41 +9,50 @@
     <link href="/fonts/opensans.woff2" as="font" rel="preload">
     <link href="/fonts/opensansbold.woff2" as="font" rel="preload">
     <link href="/fonts/opensanslight.woff2" as="font" rel="preload">
+    <script>
+      // Picture element HTML5 shiv
+      document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.min.js" async></script>
   </head>
   <body class="main-page">
-    <div style="display: none;">
-      <include src="build/img/svg-sprite.svg"></include>
-    </div>
     <h1 class="visually-hidden">Сайт приложения 'Пинк'</h1>
     <!--Хедер гл.стр-->
-    <div class="site-wrapper">
-      <header class="main-header">
-        <nav class="main-navigation main-navigation--opened main-navigation--nojs">
-          <a class="main-navigation__logo-link">
-            <!--          <img class="main-navigation__logo-header" src="img/svg/logo-pink-white-mobile.svg" width="75" height="23" alt="приложение 'Пинк'">-->
-            <svg class="main-navigation__logo-header" width="75" height="23">
-              <use xlink:href="#sprite-logo-pink-white-mobile"/>
-            </svg>
-          </a>
-          <button class="main-navigation__button" type="button"><span class="visually-hidden">Меню сайта</span></button>
-          <div class="main-navigation__wrapper">
-            <ul class="main-navigation__list site-list">
-              <li class="site-list__item site-list__item--active"><a class="site-list__link site-list__link--active">Главная</a></li>
-              <li class="site-list__item"><a class="site-list__link" href="photo.html">Фотографии</a></li>
-              <li class="site-list__item"><a class="site-list__link" href="form.html">Конкурс</a></li>
-              <li class="site-list__item"><a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
-            </ul>
-          </div>
-        </nav>
-      </header>
-    </div>
+    <header class="main-header">
+      <nav class="main-navigation main-navigation--closed main-navigation--nojs">
+        <a class="main-navigation__logo-link">
+          <svg class="main-navigation__logo-header" width="75" height="23" role="img">
+            <title>Приложение "Пинк"</title>
+            <use class="main-navigation__logo-header-mobile" xlink:href="#sprite-logo-pink-white-mobile"/>
+            <use class="main-navigation__logo-header-tablet" xlink:href="#sprite-logo-pink-white-tablet"/>
+            <use class="main-navigation__logo-header-desktop" xlink:href="#sprite-logo-pink-white-desktop"/>
+          </svg>
+        </a>
+        <button class="main-navigation__button" type="button"><span class="visually-hidden">Меню сайта</span></button>
+        <div class="main-navigation__wrapper">
+          <ul class="main-navigation__list site-list">
+            <li class="site-list__item site-list__item--active"><a class="site-list__link site-list__link--active">Главная</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="photo.html">Фотографии</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="form.html">Конкурс</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
     <!--Основная часть гл.стр-->
     <main>
       <!--Платформы-->
-      <div class="site-wrapper">
-        <section class="application">
-          <h2 class="visually-hidden">Платформы для приложения</h2>
-          <img class="application__image" src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="Приложение 'Пинк'">
+      <section class="application">
+        <h2 class="visually-hidden">Платформы для приложения</h2>
+        <div class="site-wrapper">
+          <picture>
+            <source type="image/webp" media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.webp 1x, img/iphone-hand-desktop@2x.webp 2x">
+            <source media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
+            <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.webp 1x, img/iphone-hand-tablet@2x.webp 2x">
+            <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
+            <source type="image/webp" srcset="img/iphone-hand-mobile@1x.webp 1x, img/iphone-hand-mobile@2x.webp 2x">
+            <img class="application__image" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x" alt="Приложение 'Пинк'">
+          </picture>
           <div class="application__wrapper">
             <p class="application__description">Взгляните на жизнь иначе!</p>
             <a class="application__link" href="#">Скачать приложение</a>
@@ -72,8 +81,8 @@
             </ul>
             <p class="application__description application__description--last">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
       <!--Особенности-->
       <section class="features">
         <h2 class="visually-hidden">Особенности</h2>
@@ -98,9 +107,28 @@
               </ul>
               <div class="features__wrapper-image">
                 <ul class="features__list-image">
-                  <li class="features__item-image"><img class="features__image" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Приложение 'Пинк'"></li>
-                  <li class="features__item-image"><img class="features__image" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Приложение 'Пинк'"></li>
-                  <li class="features__item-image"><img class="features__image" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Приложение 'Пинк'"></li>
+                  <li class="features__item-image">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 960px)" srcset="img/iphone-screen-3-desktop@1x.webp 1x, img/iphone-screen-3-desktop@2x.webp 2x">
+                      <source media="(min-width: 960px)" srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x">
+                      <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.webp 1x, img/iphone-screen-3-tablet@2x.webp 2x">
+                      <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
+                      <source type="image/webp" srcset="img/iphone-screen-mobile@1x.webp 1x, img/iphone-screen-mobile@2x.webp 2x">
+                      <img class="features__image" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="Приложение 'Пинк'">
+                    </picture>
+                  </li>
+                  <li class="features__item-image">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 960px)" srcset="img/iphone-screen-2-desktop@1x.webp 1x, img/iphone-screen-2-desktop@2x.webp 2x">
+                      <img class="features__image" src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x.png 2x" alt="Приложение 'Пинк'">
+                    </picture>
+                  </li>
+                  <li class="features__item-image">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 960px)" srcset="img/iphone-screen-1-desktop@1x.webp 1x, img/iphone-screen-1-desktop@2x.webp 2x">
+                      <img class="features__image" src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@2x.png 2x" alt="Приложение 'Пинк'">
+                    </picture>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -112,7 +140,10 @@
         <div class="site-wrapper">
           <div class="research__inner-wrapper">
             <div class="research__image-wrapper">
-              <img class="research__image" src="img/svg/icon-timer.svg" width="238" height="276" alt="Целых 24 часа!">
+              <svg class="research__image" width="238" height="276" role="img">
+                <title>Целых 24 часа!</title>
+                <use xlink:href="#sprite-icon-timer"/>
+              </svg>
             </div>
             <div class="research__wrapper">
               <h2 class="research__title">Эффект<br> на 24 часа!</h2>
@@ -175,7 +206,7 @@
               <tr class="equipment-slider__line equipment-slider__line--first">
                 <th class="equipment-slider__title equipment-slider__title--empty equipment-slider__title--tablet"></th>
                 <th class="equipment-slider__title">База<br><span class="equipment-slider__value">1,99 usd</span></th>
-                <th class="equipment-slider__title">Стандарт<br><span class="equipment-slider__value">3,99 usd</span></th>
+                <th class="equipment-slider__title equipment-slider__title--hit">Стандарт<br><span class="equipment-slider__value">3,99 usd</span></th>
                 <th class="equipment-slider__title">Анлим<br><span class="equipment-slider__value">9,99 usd</span></th>
               </tr>
               <tr class="equipment-slider__line">
@@ -234,72 +265,53 @@
     </main>
     <!--Футер гл.стр-->
     <div class="site-wrapper">
-      <footer class="main-footer">
+      <footer class="main-footer main-footer--mobile">
         <a class="main-footer__logo-link">
-          <!--        <img class="main-footer__logo-footer" src="img/svg/logo-pink-blue-mobile.svg" width="147" height="41" alt="приложение 'Пинк'">-->
-          <svg class="main-footer__logo-footer" width="147" height="41">
-            <use xlink:href="#sprite-logo-pink-blue-mobile"/>
+          <svg class="main-footer__logo-footer" width="147" height="41" role="img">
+            <title>приложение "Пинк"</title>
+            <use class="main-navigation__logo-footer-mobile" xlink:href="#sprite-logo-pink-blue-mobile"/>
+            <use class="main-navigation__logo-footer-desktop" xlink:href="#sprite-logo-pink-blue-desktop"/>
           </svg>
         </a>
         <ul class="main-footer__list">
           <li class="main-footer__item">
             <a class="main-footer__link" href="#">
               <span class="visually-hidden">Twitter</span>
-              <svg class="main-footer__image main-footer__image--twitter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
-                <g id="W6EeEF_1_">
-                  <g>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.485,3.074,0.263,3.685,1.151 c0.694-0.226,1.372-0.47,2.072-0.691c-0.004,0.841-0.538,1.478-0.883,1.727C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.976-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.32,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.654,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.787,11.283,0.153z"></path>
-                  </g>
-                </g>
+              <svg class="main-footer__image main-footer__image--twitter" width="17.5" height="14.663">
+                <use xlink:href="#sprite-icon-twitter"/>
               </svg>
             </a>
           </li>
           <li class="main-footer__item">
             <a class="main-footer__link" href="#">
               <span class="visually-hidden">Facebook</span>
-              <svg class="main-footer__image main-footer__image--facebook" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.673px" height="18.944px" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
-                <path d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z"></path>
+              <svg class="main-footer__image main-footer__image--facebook" width="8.673" height="18.944">
+                <use xlink:href="#sprite-icon-facebook"/>
               </svg>
             </a>
           </li>
           <li class="main-footer__item">
             <a class="main-footer__link" href="#">
               <span class="visually-hidden">Youtube</span>
-              <svg class="main-footer__image main-footer__image--youtube" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.64px" height="13.96px" viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96" xml:space="preserve">
-                <path d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z"></path>
+              <svg class="main-footer__image main-footer__image--youtube" width="14.64" height="13.96">
+                <use xlink:href="#sprite-icon-youtube"/>
               </svg>
             </a>
           </li>
         </ul>
         <div class="main-footer__wrapper">
           <p class="main-footer__description">Разработано</p>
-          <a class="main-footer__html-link" href="https://htmlacademy.ru/intensive/adaptive">
-            <!--          <img class="main-footer__html-logo" src="img/svg/logo-htmlacademy.svg" width="27" height="35" alt="Логотип HTML Academy">-->
-            <svg class="main-footer__html-logo" width="27" height="35">
+          <a class="main-footer__html-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на сайт HTML Academy">
+            <svg class="main-footer__html-logo" width="27" height="35" role="img">
               <use xlink:href="#sprite-logo-htmlacademy"/>
             </svg>
           </a>
         </div>
       </footer>
     </div>
-    <script>
-      var main_menu = document.querySelector(".main-navigation");
-      var button_menu = document.querySelector(".main-navigation__button");
-      var first_icon = document.querySelector(".main-navigation__button::before");
-      var second_icon = document.querySelector(".main-navigation__button::after");
-
-      main_menu.classList.remove("main-navigation--nojs");
-
-      button_menu.addEventListener("click", function() {
-
-        if (main_menu.classList.contains("main-navigation--closed")) {
-          main_menu.classList.remove("main-navigation--closed");
-          main_menu.classList.add("main-navigation--opened");
-        } else {
-          main_menu.classList.add("main-navigation--closed");
-          main_menu.classList.remove("main-navigation--opened");
-        }
-      });
-    </script>
+    <div style="display: none;">
+      <include src="build/img/svg-sprite.svg"></include>
+    </div>
+    <script src="js/menu.js"></script>
   </body>
 </html>

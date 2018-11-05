@@ -1,21 +1,42 @@
 .application {
-  background-color: $color-dark;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: repeat;
-  background-position: 0 0;
-  width: 320px;
+  background-position: center 0;
+  background-size: 320px 462px;
+  background-color: $color-dark;
   min-height: 666px;
   margin-top: -67px;
+  overflow: hidden;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: 707px 467px;
+    background-position: -194px -4px;
+  }
 }
 
 .application__image {
+  width: 258px;
+  height: 286px;
   margin-top: 176px;
 }
 
 .application__wrapper {
+  position: relative;
   background-color: $color-dark;
   padding-top: 28px;
   margin-top: -7px;
+  z-index: 2;
+
+  &::before {
+    @include pseudo;
+    top: 0;
+    left: -100%;
+    width: 300%;
+    height: 100%;
+    background-color: $color-dark;
+    z-index: -1;
+  }
 }
 
 .application__link {
@@ -86,19 +107,58 @@
 @media (min-width: $tablet-width) {
   .application {
     @include flex(flex, row-reverse);
-    justify-content: flex-end;
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-position: -270px 0;
     background-size: 1200px 729px;
-    width: 660px;
     min-height: 729px;
     margin-top: -111px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 1200px 727px;
+      background-position: -270px 2px;
+    }
   }
 
+  .application .site-wrapper {
+    @include flex(flex, row-reverse);
+  }
+
+  .application__image {
+    position: relative;
+    top: 8px;
+    left: 19px;
+    width: 700px;
+    height: 545px;
+  }
+
+  /* stylelint-disable */
+  _:-ms-fullscreen, :root .application__image {
+    left: 18px;
+  }
+  /* stylelint-enable */
+
   .application__wrapper {
+    position: relative;
     width: 340px;
     background-color: transparent;
+    margin-right: -380px;
+    z-index: 1;
+
+    &::before {
+      display: none;
+    }
   }
+
+  .application__wrapper .site-wrapper {
+    width: 340px;
+  }
+
+  /* stylelint-disable */
+  :-ms-fullscreen, :root .application__wrapper .site-wrapper {
+    width: 660px;
+  }
+  /* stylelint-enable */
 
   .application__link {
     width: 300px;
@@ -132,22 +192,49 @@
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-position: -680px 1px;
     background-size: 2560px 853px;
-    width: 1200px;
-    min-height: 853px;
+    min-height: 854px;
     box-sizing: border-box;
     padding: 0 110px;
     z-index: 1;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: 2560px 853px;
+      background-position: -680px 12px;
+    }
   }
+
+  .application .site-wrapper {
+    width: 915px;
+    margin: 0 auto;
+  }
+
+  .application__image {
+    top: 20px;
+    left: 138px;
+    width: 1050px;
+    height: 645px;
+  }
+
+  /* stylelint-disable */
+  :-ms-fullscreen, :root .application__image {
+    left: 138px;
+    top: 33px;
+  }
+  /* stylelint-enable */
 
   .application__wrapper {
     min-height: 535px;
-    margin-top: 101px;
+    margin-right: -443px;
+    margin-top: 179px;
   }
 
-  :-ms-fullscreen,
-  :root .application__wrapper {
-    margin-top: 215px;
+  /* stylelint-disable */
+  _:-ms-fullscreen, :root .application__wrapper {
+    left: 0px;
+    top: 13px;
   }
+  /* stylelint-enable */
 
   .application__description {
     font-size: $body-font-size + 36px;

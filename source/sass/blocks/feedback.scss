@@ -90,6 +90,13 @@
   background-color: transparent;
 }
 
+.feedback input[type="radio"]:nth-of-type(1):focus ~ .feedback__buttons label[for="first-slider-first-button"],
+.feedback input[type="radio"]:nth-of-type(2):focus ~ .feedback__buttons label[for="first-slider-second-button"],
+.feedback input[type="radio"]:nth-of-type(3):focus ~ .feedback__buttons label[for="first-slider-third-button"] {
+  box-shadow: 0 0 0 3px pink;
+}
+
+
 .feedback input[type="radio"]:nth-of-type(1):checked ~ .feedback__wrapper .feedback__list {
   transform: translateX(0);
 }

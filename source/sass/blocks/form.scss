@@ -138,8 +138,33 @@
   border: 2px solid $text-pink;
 }
 
+.form-wrapper__photo input[type="checkbox"]:focus + label::after,
+.form-wrapper__photo input[type="checkbox"]:focus + label::before {
+  box-shadow: 0 0 0 2px lightblue;
+}
+
 .form-wrapper__photo input[type="checkbox"]:checked + label:hover::before {
   border: 2px solid $color-light;
+}
+
+.form-wrapper__photo input[type="checkbox"]:checked:disabled + label::before {
+  border: 2px solid $text-pink;
+  opacity: 0.5;
+  cursor: auto;
+}
+
+.form-wrapper__photo input[type="checkbox"]:checked:disabled + label::after {
+  opacity: 0.5;
+  cursor: auto;
+}
+
+.form-wrapper__photo input[type="checkbox"]:disabled + label {
+  opacity: 0.5;
+}
+
+.form-wrapper__photo input[type="checkbox"]:disabled + label:hover::before {
+  border: 2px solid #e5e5e5;
+  cursor: auto;
 }
 
 .form-wrapper__adress-wrapper .form-wrapper__title {
@@ -254,6 +279,35 @@
 
 .form-wrapper__app input[type="radio"]:checked + label:hover::before {
   border: 2px solid $color-light;
+}
+
+.form-wrapper__app input[type="radio"]:focus + label::before {
+  box-shadow: 0 0 0 2px lightblue;
+}
+
+.form-wrapper__app input[type="radio"]:checked:disabled + label::before {
+  border: 2px solid $text-pink;
+  opacity: 0.5;
+  cursor: auto;
+}
+
+.form-wrapper__app input[type="radio"]:checked:disabled + label::after {
+  opacity: 0.5;
+  cursor: auto;
+}
+
+.form-wrapper__app input[type="radio"]:disabled + label {
+  opacity: 0.5;
+}
+
+.form-wrapper__app input[type="radio"]:disabled + label:hover::before {
+  border: 2px solid #e5e5e5;
+  cursor: auto;
+}
+
+.form-wrapper__app input[type="radio"]:disabled:checked + label:hover::before {
+  border: 2px solid $text-pink;
+  cursor: auto;
 }
 
 .form-wrapper__comment-wrapper .form-wrapper__title {
@@ -385,10 +439,11 @@
     }
   }
 
-  :-ms-fullscreen,
-  :root .form-wrapper__app-background-wrapper .form-wrapper__title {
+  /* stylelint-disable */
+  :-ms-fullscreen, :root .form-wrapper__app-background-wrapper .form-wrapper__title  {
     margin: 0 119px;
   }
+  /* stylelint-enable */
 
   .form-wrapper__app-background-wrapper {
     order: 2;
@@ -446,10 +501,11 @@
     }
   }
 
-  :-ms-fullscreen,
-  :root .form-wrapper__adress-wrapper .form-wrapper__title {
+  /* stylelint-disable */
+  :-ms-fullscreen, :root .form-wrapper__adress-wrapper .form-wrapper__title {
     margin: 0 177px;
   }
+  /* stylelint-enable */
 
   .form-wrapper__adress {
     padding: 4px 20px 0;
@@ -530,10 +586,11 @@
     }
   }
 
-  :-ms-fullscreen,
-  :root .form-wrapper__photo-wrapper .form-wrapper__title {
+  /* stylelint-disable */
+  :-ms-fullscreen, :root .form-wrapper__photo-wrapper .form-wrapper__title {
     margin: 0 89px;
   }
+  /* stylelint-enable */
 
   .form-wrapper__photo {
     @include flex(flex, column);
@@ -573,10 +630,11 @@
     }
   }
 
-  :-ms-fullscreen,
-  :root .form-wrapper__comment-wrapper .form-wrapper__title {
+  /* stylelint-disable */
+  :-ms-fullscreen, :root .form-wrapper__comment-wrapper .form-wrapper__title {
     margin: 0 176px;
   }
+  /* stylelint-enable */
 
   .form-wrapper__comment {
     padding: 9px 58px 44px;
@@ -694,10 +752,11 @@
     }
   }
 
-  :-ms-fullscreen,
-  :root .form-wrapper__app-background-wrapper .form-wrapper__title {
+  /* stylelint-disable */
+  :-ms-fullscreen, :root .form-wrapper__app-background-wrapper .form-wrapper__title  {
     margin: 0 28px;
   }
+  /* stylelint-enable */
 
   .form-wrapper__app {
     width: 430px;
@@ -728,10 +787,11 @@
     }
   }
 
-  :-ms-fullscreen,
-  :root .form-wrapper__adress-wrapper .form-wrapper__title {
+  /* stylelint-disable */
+  :-ms-fullscreen, :root .form-wrapper__adress-wrapper .form-wrapper__title  {
     margin: 0 337px;
   }
+  /* stylelint-enable */
 
   .form-wrapper__adress {
     @include flex;
@@ -787,10 +847,11 @@
     }
   }
 
-  :-ms-fullscreen,
-  :root .form-wrapper__photo-wrapper .form-wrapper__title {
+  /* stylelint-disable */
+  :-ms-fullscreen, :root .form-wrapper__photo-wrapper .form-wrapper__title {
     margin: 0 249px;
   }
+  /* stylelint-enable */
 
   .form-wrapper__photo label {
     width: 209px;
@@ -836,10 +897,11 @@
     }
   }
 
-  :-ms-fullscreen,
-  :root .form-wrapper__comment-wrapper .form-wrapper__title {
+  /* stylelint-disable */
+  :-ms-fullscreen, :root .form-wrapper__comment-wrapper .form-wrapper__title {
     margin: 0 337px;
   }
+  /* stylelint-enable */
 
   .form-wrapper__comment textarea {
     width: 820px;
