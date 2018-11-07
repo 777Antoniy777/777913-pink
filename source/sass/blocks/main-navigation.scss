@@ -1,5 +1,5 @@
 @media (min-width: 0) and (max-width: 959px) {
-  .main-navigation {
+  .main-navigation .site-wrapper {
     @include flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -203,6 +203,17 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main-navigation {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 119px;
+    box-sizing: border-box;
+  }
+
+  .main-navigation .site-wrapper {
+    width: 229px;
+  }
+
   .main-navigation__logo-tablet {
     display: none;
   }
@@ -210,6 +221,7 @@
   .main-navigation__logo-header {
     width: 147px;
     height: 40px;
+    margin-bottom: 7px;
   }
 
   .main-navigation__logo-mobile,
