@@ -49,7 +49,7 @@
     justify-content: flex-end;
     flex-wrap: wrap;
     width: 720px;
-    margin: 0 12px 2px auto;
+    margin: 2px 12px 2px auto;
   }
 
   .site-list__item {
@@ -87,7 +87,7 @@
     }
 
     &--active {
-      box-shadow: 0 2px white;
+      box-shadow: 0 3px 0 -1px white;
     }
   }
 }

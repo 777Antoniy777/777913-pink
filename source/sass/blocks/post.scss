@@ -1,9 +1,11 @@
-.post {
+.post__inner-wrapper {
   @include flex(flex, column);
+  padding: 0;
+  margin: 0;
 }
 
-.post--panorama a,
-.post--panorama picture {
+.post__inner-wrapper--panorama a,
+.post__inner-wrapper--panorama picture {
   height: 137px;
 }
 
@@ -79,6 +81,14 @@
   color: $color-light;
   padding: 0 18px;
   margin: 0;
+
+  &--last {
+    line-height: $body-line-height + 6px;
+    text-align: center;
+    background-color: $text-white;
+    margin: -8px 0 0;
+    padding: 31px 21px 35px 19px;
+  }
 }
 
 .post__likes {
@@ -114,7 +124,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .post {
+  .post__inner-wrapper {
     @include flex(flex, column);
 
     &--panorama {
@@ -122,8 +132,8 @@
     }
   }
 
-  .post--panorama a,
-  .post--panorama picture {
+  .post__inner-wrapper--panorama a,
+  .post__inner-wrapper--panorama picture {
     height: 509px;
   }
 
@@ -136,6 +146,19 @@
   .post__image--panorama {
     width: 100%;
     height: 509px;
+  }
+
+  .post__wrapper {
+    @include flex;
+    flex-wrap: wrap;
+    width: 640px;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .post__wrapper .site-wrapper {
+    width: 300px;
+    margin: 0 10px;
   }
 
   .post__caption {
@@ -182,6 +205,13 @@
       width: 566px;
       margin-bottom: 0;
     }
+
+    &--last {
+      width: auto;
+      font-size: $body-font-size + 4px;
+      padding: 45px 50px 58px;
+      margin: 0;
+    }
   }
 
   .post__likes {
@@ -214,7 +244,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .post {
+  .post__inner-wrapper {
     margin-bottom: 34px;
 
     &--panorama {
@@ -222,8 +252,8 @@
     }
   }
 
-  .post--panorama a,
-  .post--panorama picture {
+  .post__inner-wrapper--panorama a,
+  .post__inner-wrapper--panorama picture {
     height: 506px;
   }
 
@@ -236,6 +266,11 @@
   .post__image--panorama {
     width: 100%;
     height: 506px;
+  }
+
+  .post__wrapper {
+    width: 960px;
+    padding: 0 120px;
   }
 
   .post__caption {
@@ -253,13 +288,20 @@
   }
   /* stylelint-enable */
 
-  .post__caption--panorama .post__description {
-    position: relative;
-    top: -5px;
+  .post__description {
+    &--panorama {
+      position: relative;
+      top: -5px;
+    }
+
+    &--last {
+      width: auto;
+      padding: 5px 280px 55px;
+    }
   }
 
   /* stylelint-disable */
-  _:-ms-fullscreen, :root .post__caption--panorama .post__description {
+  _:-ms-fullscreen, :root .post__description--panorama {
     position: relative;
     top: 0;
   }
