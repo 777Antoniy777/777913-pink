@@ -328,6 +328,7 @@
   border: 2px solid #e5e5e5;
   padding: 14px 19px;
   box-sizing: border-box;
+  resize: none;
 }
 
 .form-wrapper__button {
@@ -797,6 +798,7 @@
     @include flex;
     justify-content: space-between;
     align-items: baseline;
+    flex-wrap: wrap;
     padding: 0 42px 0 77px;
     margin-bottom: 12px;
     box-sizing: border-box;

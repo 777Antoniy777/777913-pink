@@ -15,7 +15,14 @@
   .main-header {
     position: relative;
     min-height: 110px;
-    padding: 0 93px 0 120px;
+    z-index: 2;
+  }
+
+  .main-header__inner-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     background-color: $background-header;
     z-index: 2;
   }

@@ -1,14 +1,20 @@
 @media (min-width: 0) and (max-width: 959px) {
-  .main-navigation {
+  .main-navigation .site-wrapper {
     @include flex;
     justify-content: space-between;
     flex-wrap: wrap;
   }
 
-  .main-navigation__logo-link .main-navigation__logo-header {
-    width: 75px;
-    height: 23px;
+  .main-navigation__logo-header {
+    width: 147px;
+    height: 40px;
     fill: $text-white;
+  }
+
+  .main-navigation__logo-tablet,
+  .main-navigation__logo-desktop,
+  .main-navigation__logo-glass {
+    display: none;
   }
 
   .main-navigation__logo-link:hover .main-navigation__logo-header {
@@ -27,10 +33,11 @@
     fill: $text-white;
   }
 
-  .main-navigation__logo-header-tablet,
-  .main-navigation__logo-header-desktop {
-    display: none;
+  /* stylelint-disable */
+  _:-ms-fullscreen, :root .main-navigation__logo-header:active {
+    fill: rgba($text-white, 0.3);
   }
+  /* stylelint-enable */
 
   .main-navigation__button {
     position: relative;
@@ -141,12 +148,12 @@
   }
 
   .main-navigation--closed .main-navigation__logo-link {
-    margin: 21px 0 14px 20px;
+    margin: 3px 0 14px -51px;
   }
 
   .main-navigation--opened .main-navigation__logo-link,
   .main-navigation--nojs .main-navigation__logo-link {
-    margin: 21px 0 19px 20px;
+    margin: 4px 0 19px -51px;
   }
 
   .main-navigation--closed .main-navigation__wrapper {
@@ -163,17 +170,12 @@
 }
 
 @media (min-width: $tablet-width) and (max-width: 959px) {
-  .main-navigation__logo-link .main-navigation__logo-header {
-    width: 147px;
-    height: 40px;
-  }
-
-  .main-navigation__logo-header-mobile,
-  .main-navigation__logo-header-desktop {
+  .main-navigation__logo-desktop,
+  .main-navigation__logo-glass {
     display: none;
   }
 
-  .main-navigation__logo-header-tablet {
+  .main-navigation__logo-tablet {
     display: block;
   }
 
@@ -201,57 +203,68 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main-navigation__logo-header {
-    width: 147px;
-    height: 40px;
-    fill: $text-white;
-  }
-
-  .logo-header-desktop--pink {
-    fill: $text-pink;
-  }
-
-  .main-navigation__logo-link:hover .main-navigation__logo-header-desktop {
-    fill: $text-pink;
-  }
-
-  .main-navigation__logo-link:hover:not([href]) .main-navigation__logo-header-desktop {
-    fill: $text-white;
-  }
-
-  .main-navigation__logo-link:active .main-navigation__logo-header-desktop {
-    fill: rgba($text-white, 0.3);
-  }
-
-  .main-navigation__logo-link:active:not([href]) .main-navigation__logo-header-desktop {
-    fill: $text-white;
-  }
-
-  .main-navigation__logo-header-mobile,
-  .main-navigation__logo-header-tablet {
-    display: none;
-  }
-
-  .main-navigation__logo-header-desktop {
-    display: block;
-  }
-
-  /* stylelint-disable */
-  :-ms-fullscreen, :root .main-navigation {
-    position: relative;
-    top: 9px;
-  }
-  /* stylelint-enable */
-
   .main-navigation {
     position: relative;
 
     @include flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
+    width: 1200px;
     min-height: 108px;
+    margin: 0 auto;
+    padding: 28px 119px 29px;
+    box-sizing: border-box;
     z-index: 3;
+  }
+
+  .main-navigation .site-wrapper {
+    width: 229px;
+  }
+
+  .main-navigation__logo-tablet {
+    display: none;
+  }
+
+  .main-navigation__logo-header {
+    width: 147px;
+    height: 40px;
+    margin-bottom: 7px;
+  }
+
+  .main-navigation__logo-mobile,
+  .main-navigation__logo-glass {
+    fill: $text-white;
+  }
+
+  .main-navigation__logo-desktop {
+    fill: $text-pink;
+  }
+
+  .main-navigation__logo-link:hover .main-navigation__logo-mobile,
+  .main-navigation__logo-link:hover .main-navigation__logo-glass {
+    fill: $text-pink;
+  }
+
+  .main-navigation__logo-link:hover:not([href]) .main-navigation__logo-mobile,
+  .main-navigation__logo-link:hover:not([href]) .main-navigation__logo-glass {
+    fill: $text-white;
+  }
+
+  .main-navigation__logo-link:active .main-navigation__logo-mobile,
+  .main-navigation__logo-link:active .main-navigation__logo-glass,
+  .main-navigation__logo-link:active .main-navigation__logo-desktop, {
+    fill: rgba($text-white, 0.3);
+  }
+
+  .main-navigation__logo-link:active:not([href]) .main-navigation__logo-mobile,
+  .main-navigation__logo-link:active:not([href]) .main-navigation__logo-glass {
+    fill: $text-white;
+  }
+
+  .main-navigation__logo-link:hover:not([href]) .main-navigation__logo-desktop,
+  .main-navigation__logo-link:active:not([href]) .main-navigation__logo-desktop {
+    fill: $text-pink;
   }
 
   /* stylelint-disable */
